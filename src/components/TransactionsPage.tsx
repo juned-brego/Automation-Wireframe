@@ -402,12 +402,6 @@ export default function TransactionsPage({ onBack, fileName = '63358723.pdf', to
           <button className="px-3 py-1 border-2 border-indigo-600 text-indigo-600 text-[11px] font-bold rounded hover:bg-indigo-50">
             Send To <span className="italic">Tally</span>
           </button>
-          <button className="w-7 h-7 bg-red-600 rounded flex items-center justify-center hover:bg-red-700">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="white" stroke="none">
-              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-              <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" fill="#dc2626"/>
-            </svg>
-          </button>
         </div>
       </div>
 

@@ -1,20 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Home,
   FileText,
-  DollarSign,
-  Settings,
+  Briefcase,
   MessageCircle,
-  CheckSquare,
   HardDrive,
   HelpCircle,
   Grid3x3,
   Upload,
   Link2,
   Table,
-  GraduationCap,
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -23,13 +20,14 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: SidebarProps) {
+  const [collapsed, setCollapsed] = useState(true);
   const iconBarItems = [
     { id: 'home', icon: Home, label: 'Home', badge: null },
+    { id: 'dashboard', icon: Grid3x3, label: 'Dashboard', badge: null },
     { id: 'data-entry', icon: FileText, label: 'Data Entry', badge: null },
-    { id: 'gst', icon: DollarSign, label: 'GST', badge: 'BETA' },
-    { id: 'chat', icon: MessageCircle, label: 'Chat', badge: 'BETA' },
-    { id: 'task', icon: CheckSquare, label: 'Task', badge: 'BETA' },
-    { id: 'drive', icon: HardDrive, label: 'Drive', badge: null },
+    { id: 'chat', icon: MessageCircle, label: 'Chat', badge: null },
+    { id: 'workspace', icon: Briefcase, label: 'Workspace', badge: null },
+    { id: 'data-room', icon: HardDrive, label: 'Data Room', badge: null },
   ];
 
   const mainMenuItems = [
@@ -37,7 +35,6 @@ export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: Side
     { id: 'bulk-upload', label: 'Bulk Upload', icon: Upload },
     { id: 'transactions', label: 'Transactions', icon: Link2 },
     { id: 'master', label: 'Master', icon: Table },
-    { id: 'learn', label: 'Learn More', icon: GraduationCap },
   ];
 
   return (
@@ -98,9 +95,15 @@ export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: Side
         </div>
       </div>
 
-      {/* Main Sidebar */}
-      <div className="w-[140px] bg-white border-r border-gray-200 py-6 px-0">
-        <nav className="space-y-1">
+      {/* Main Sidebar - Hover to expand */}
+      <div
+        onMouseEnter={() => setCollapsed(false)}
+        onMouseLeave={() => setCollapsed(true)}
+        className={`bg-white border-r border-gray-200 py-6 px-0 flex flex-col transition-all duration-200 overflow-hidden ${
+          collapsed ? 'w-[50px]' : 'w-[140px]'
+        }`}
+      >
+        <nav className="space-y-1 flex-1">
           {mainMenuItems.map((item) => {
             const Icon = item.icon;
             const isActive = activePage === item.id;
@@ -109,14 +112,14 @@ export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: Side
               <button
                 key={item.id}
                 onClick={() => onNavigate?.(item.id)}
-                className={`w-full flex items-center gap-3 px-4 py-3 transition-all text-sm ${
+                className={`w-full flex items-center gap-3 px-4 py-3 transition-all text-sm whitespace-nowrap ${
                   isActive
                     ? 'bg-blue-50 text-blue-600 font-medium'
                     : 'text-gray-700 hover:bg-gray-50'
                 }`}
               >
-                <Icon size={18} />
-                <span className="truncate">{item.label}</span>
+                <Icon size={18} className="flex-shrink-0" />
+                <span className={`truncate transition-opacity duration-200 ${collapsed ? 'opacity-0' : 'opacity-100'}`}>{item.label}</span>
               </button>
             );
           })}

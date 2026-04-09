@@ -48,6 +48,7 @@ interface DataTableProps {
   onView?: (id: string) => void;
   onDelete?: (id: string) => void;
   onCopy?: (id: string) => void;
+  onSelectionChange?: (count: number) => void;
 }
 
 // Default sample data
@@ -269,25 +270,11 @@ const BankingTableRow: React.FC<{
       <td className="px-4 py-3" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-center gap-3">
           <button
-            onClick={() => onView(row.id)}
-            className="text-green-500 hover:text-green-700 transition-colors"
-            title="View"
-          >
-            <Eye size={16} />
-          </button>
-          <button
             onClick={() => onDelete(row.id)}
             className="text-red-500 hover:text-red-700 transition-colors"
             title="Delete"
           >
             <Trash2 size={16} />
-          </button>
-          <button
-            onClick={() => onCopy(row.id)}
-            className="text-gray-600 hover:text-gray-800 transition-colors"
-            title="Copy"
-          >
-            <Copy size={16} />
           </button>
         </div>
       </td>
@@ -427,6 +414,7 @@ const DataTable: React.FC<DataTableProps> = ({
   onView = () => {},
   onDelete = () => {},
   onCopy = () => {},
+  onSelectionChange,
 }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(20);
@@ -450,10 +438,12 @@ const DataTable: React.FC<DataTableProps> = ({
       const newSelected = new Set(selectedRows);
       paginatedData.forEach((row) => newSelected.add(row.id));
       setSelectedRows(newSelected);
+      onSelectionChange?.(newSelected.size);
     } else {
       const newSelected = new Set(selectedRows);
       paginatedData.forEach((row) => newSelected.delete(row.id));
       setSelectedRows(newSelected);
+      onSelectionChange?.(newSelected.size);
     }
   };
 
@@ -465,6 +455,7 @@ const DataTable: React.FC<DataTableProps> = ({
       newSelected.delete(id);
     }
     setSelectedRows(newSelected);
+    onSelectionChange?.(newSelected.size);
   };
 
   return (

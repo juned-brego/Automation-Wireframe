@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import {
   Search,
   ChevronDown,
@@ -88,6 +89,7 @@ const PARTICULARS_OPTIONS = [
   'Advertisement',
 ];
 
+
 interface ParticularsRow {
   id: number;
   particulars: string;
@@ -98,6 +100,7 @@ interface ParticularsRow {
 const TXN_TABS = ['Sales', 'Purchase', 'Payment', 'Receipt', 'Contra'] as const;
 type TxnTab = typeof TXN_TABS[number];
 const SALES_INVOICE_SRC = '/wireframes/sales-invoice/index.html';
+const PURCHASE_INVOICE_SRC = '/wireframes/purchase-invoice/index.html';
 
 interface TabConfig {
   variant: 'table' | 'workflow';
@@ -151,13 +154,17 @@ const TAB_CONFIG: Record<TxnTab, TabConfig> = {
 
 // ─── Component ───
 export default function TransactionsSection() {
-  const [activeTab, setActiveTab] = useState<TxnTab>('Sales');
+  const router = useRouter();
+  const searchParams = useSearchParams();
+  const initialTab = (searchParams.get('tab') as TxnTab) || 'Sales';
+  const [activeTab, setActiveTab] = useState<TxnTab>(initialTab);
   const [searchQuery, setSearchQuery] = useState('');
   const [createDropdownOpen, setCreateDropdownOpen] = useState(false);
   const [uploadModalOpen, setUploadModalOpen] = useState(false);
   const [uploadedFile, setUploadedFile] = useState<File | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [activeInvoiceId, setActiveInvoiceId] = useState<number | null>(null);
+  const [activePurchaseInvoiceId, setActivePurchaseInvoiceId] = useState<number | null>(null);
 
   // Create voucher form state
   const [showCreateForm, setShowCreateForm] = useState(false);
@@ -171,6 +178,7 @@ export default function TransactionsSection() {
   const [formNarration, setFormNarration] = useState('');
   const [activeParticularsDropdown, setActiveParticularsDropdown] = useState<number | null>(null);
   const [particularsSearch, setParticularsSearch] = useState('');
+
 
   const createRef = useRef<HTMLDivElement>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -196,17 +204,28 @@ export default function TransactionsSection() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+
   useEffect(() => {
     const syncInvoiceStateFromHistory = () => {
-      const id = Number(window.history.state?.salesInvoiceId);
+      const salesId = Number(window.history.state?.salesInvoiceId);
+      const purchaseId = Number(window.history.state?.purchaseInvoiceId);
 
-      if (Number.isFinite(id) && id > 0) {
-        setActiveInvoiceId(id);
+      if (Number.isFinite(salesId) && salesId > 0) {
+        setActiveInvoiceId(salesId);
+        setActivePurchaseInvoiceId(null);
         setActiveTab('Sales');
         return;
       }
 
+      if (Number.isFinite(purchaseId) && purchaseId > 0) {
+        setActivePurchaseInvoiceId(purchaseId);
+        setActiveInvoiceId(null);
+        setActiveTab('Purchase');
+        return;
+      }
+
       setActiveInvoiceId(null);
+      setActivePurchaseInvoiceId(null);
     };
 
     const handleInvoiceMessage = (event: MessageEvent) => {
@@ -215,10 +234,16 @@ export default function TransactionsSection() {
       }
 
       if (event.data?.type === 'close-sales-invoice') {
+        setActiveInvoiceId(null);
         if (window.history.state?.salesInvoiceId) {
           window.history.back();
-        } else {
-          setActiveInvoiceId(null);
+        }
+      }
+
+      if (event.data?.type === 'close-purchase-invoice') {
+        setActivePurchaseInvoiceId(null);
+        if (window.history.state?.purchaseInvoiceId) {
+          window.history.back();
         }
       }
     };
@@ -260,6 +285,7 @@ export default function TransactionsSection() {
     setShowCreateForm(false);
   };
 
+
   const filteredAccountOptions = ACCOUNT_OPTIONS.filter(opt =>
     opt.toLowerCase().includes(formAccountSearch.toLowerCase())
   );
@@ -294,6 +320,16 @@ export default function TransactionsSection() {
     );
   };
 
+  const openPurchaseInvoice = (rowId: number) => {
+    setActiveTab('Purchase');
+    setActivePurchaseInvoiceId(rowId);
+    window.history.pushState(
+      { ...(window.history.state ?? {}), purchaseInvoiceId: rowId },
+      '',
+      window.location.href,
+    );
+  };
+
   if (activeInvoiceId !== null) {
     return (
       <div className="h-full bg-slate-100">
@@ -305,6 +341,19 @@ export default function TransactionsSection() {
       </div>
     );
   }
+
+  if (activePurchaseInvoiceId !== null) {
+    return (
+      <div className="h-full bg-slate-100">
+        <iframe
+          title="Purchase invoice wireframe"
+          src={PURCHASE_INVOICE_SRC}
+          className="h-full w-full border-0"
+        />
+      </div>
+    );
+  }
+
 
   if (showCreateForm) {
     return (
@@ -635,7 +684,10 @@ export default function TransactionsSection() {
                       <button
                         key={opt}
                         className="w-full text-left px-4 py-2.5 text-[12px] text-gray-700 hover:bg-gray-50 flex items-center gap-2"
-                        onClick={() => setCreateDropdownOpen(false)}
+                        onClick={() => {
+                          router.push(`/app/da/sales/manual-entry?type=${encodeURIComponent(opt)}&from=${activeTab}`);
+                          setCreateDropdownOpen(false);
+                        }}
                       >
                         <Plus size={12} className="text-gray-400" />
                         {opt}
@@ -657,18 +709,6 @@ export default function TransactionsSection() {
             </button>
           )}
 
-          {/* YouTube + Grid */}
-          <button className="w-7 h-7 bg-red-600 rounded flex items-center justify-center hover:bg-red-700">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="white" stroke="none">
-              <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
-              <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" fill="#dc2626" />
-            </svg>
-          </button>
-          <button className="w-7 h-7 border border-blue-500 rounded flex items-center justify-center hover:bg-blue-50">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" strokeWidth="2">
-              <rect x="3" y="3" width="7" height="7" /><rect x="14" y="3" width="7" height="7" /><rect x="3" y="14" width="7" height="7" /><rect x="14" y="14" width="7" height="7" />
-            </svg>
-          </button>
         </div>
       </div>
 
@@ -708,13 +748,15 @@ export default function TransactionsSection() {
                   <tr
                     key={row.id}
                     className={`border-b border-gray-100 transition-colors ${
-                      activeTab === 'Sales'
+                      (activeTab === 'Sales' || activeTab === 'Purchase')
                         ? 'cursor-pointer hover:bg-blue-50/30'
                         : 'hover:bg-blue-50/30'
                     }`}
                     onClick={() => {
                       if (activeTab === 'Sales') {
                         openSalesInvoice(row.id);
+                      } else if (activeTab === 'Purchase') {
+                        openPurchaseInvoice(row.id);
                       }
                     }}
                   >

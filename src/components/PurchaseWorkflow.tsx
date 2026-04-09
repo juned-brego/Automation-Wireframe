@@ -30,13 +30,13 @@ import {
 } from 'lucide-react';
 
 type Screen =
-  | 'sales-table'
+  | 'purchase-table'
   | 'field-mapping'
   | 'gst-mapping'
   | 'ledger-mapping'
-  | 'sales-transactions';
+  | 'purchase-transactions';
 
-interface SalesWorkflowProps {
+interface PurchaseWorkflowProps {
   onBack?: () => void;
   /** When provided, renders only that specific screen (router-driven mode) */
   screen?: Screen;
@@ -46,7 +46,7 @@ interface SalesWorkflowProps {
   useRouter?: boolean;
 }
 
-interface SalesFile {
+interface PurchaseFile {
   id: number;
   fileName: string;
   type: string;
@@ -78,7 +78,7 @@ interface LedgerMapping {
   ledgerType: string;
 }
 
-interface SalesTransaction {
+interface PurchaseTransaction {
   id: number;
   date: string;
   refNo: string;
@@ -94,7 +94,7 @@ interface SalesTransaction {
   quantity: number;
   rate: number;
   amount: number;
-  salesLedger: string;
+  purchaseLedger: string;
   inputSGST: number;
   inputCGST: number;
   inputIGST: number;
@@ -107,7 +107,7 @@ const tallyFieldOptions = [
   'Date',
   'Quantity',
   'Name of Item',
-  'Sales ledger',
+  'Purchase ledger',
   'Rate',
   'Party A/C Name',
   'Item Narration',
@@ -128,7 +128,7 @@ const initialMappedFields: MappedField[] = [
   { id: 'm2', sheetHeader: 'Invoice Date', tallyField: 'Date', sampleData: '02/05/2026 , 02/07/2026 , 02/09/2026 ...' },
   { id: 'm3', sheetHeader: 'Quantity', tallyField: 'Quantity', sampleData: '1 , 1 , 1 ...' },
   { id: 'm4', sheetHeader: 'Hsn/sac', tallyField: 'Name of Item', sampleData: '9608 , 84779000 , 39269099 ...' },
-  { id: 'm5', sheetHeader: 'Cgst Tax', tallyField: 'Sales ledger', sampleData: '0 , 0 , 0 ...' },
+  { id: 'm5', sheetHeader: 'Cgst Tax', tallyField: 'Purchase ledger', sampleData: '0 , 0 , 0 ...' },
   { id: 'm6', sheetHeader: 'Sgst Tax', tallyField: 'Rate', sampleData: '0 , 0 , 0 ...' },
   { id: 'm7', sheetHeader: 'Utgst Tax', tallyField: 'Party A/C Name', sampleData: '0 , 0 , 0 ...' },
   { id: 'm8', sheetHeader: 'Igst Tax', tallyField: 'Item Narration', sampleData: '152.39 , 45.61 , 45.46 ...' },
@@ -163,7 +163,7 @@ const csvColumnOptions = [
 const ledgerTypeOptions = [
   'Sundry Debtors',
   'Sundry Creditors',
-  'Sales Account',
+  'Purchase Account',
   'Purchase Account',
   'Bank Accounts',
   'Cash',
@@ -172,7 +172,7 @@ const ledgerTypeOptions = [
   'Indirect Expenses',
 ];
 
-const sampleSalesFiles: SalesFile[] = [
+const samplePurchaseFiles: PurchaseFile[] = [
   {
     id: 1,
     fileName: 'Shopify Sales.xlsx',
@@ -199,18 +199,18 @@ const sampleSalesFiles: SalesFile[] = [
 
 const sampleLedgerMappings: LedgerMapping[] = [
   { id: 1, ledgerName: 'Sundry Debtors', ledgerType: 'Sundry Debtors' },
-  { id: 2, ledgerName: 'Sales Account', ledgerType: 'Sales Account' },
+  { id: 2, ledgerName: 'Purchase Account', ledgerType: 'Purchase Account' },
   { id: 3, ledgerName: 'Output IGST', ledgerType: 'Duties & Taxes' },
   { id: 4, ledgerName: 'Output CGST', ledgerType: 'Duties & Taxes' },
   { id: 5, ledgerName: 'Output SGST', ledgerType: 'Duties & Taxes' },
 ];
 
-const sampleSalesTransactions: SalesTransaction[] = [
+const samplePurchaseTransactions: PurchaseTransaction[] = [
   {
     id: 1,
     date: '02/05/2026',
     refNo: 'IN-1237',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '29BAQPS0274P1ZP',
@@ -222,7 +222,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 152.39,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -233,7 +233,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     id: 2,
     date: '02/07/2026',
     refNo: 'IN-1241',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '08AAACF8368D1ZK',
@@ -245,7 +245,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 45.61,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -256,7 +256,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     id: 3,
     date: '02/09/2026',
     refNo: 'IN-1253',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '07AABCB8144N1ZE',
@@ -268,7 +268,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 45.46,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -279,7 +279,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     id: 4,
     date: '02/10/2026',
     refNo: 'IN-1255',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '29AAPCM9179E1ZP',
@@ -291,7 +291,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 152.39,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -302,7 +302,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     id: 5,
     date: '02/11/2026',
     refNo: 'IN-1261',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '33AAJCM6293R1ZM',
@@ -314,7 +314,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 68.49,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -325,7 +325,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     id: 6,
     date: '15/02/2026',
     refNo: 'IN-1281',
-    voucherType: 'Sales',
+    voucherType: 'Purchase',
     partyName: '',
     partyLedger: '',
     gstin: '07AAQCM2193P1ZN',
@@ -337,7 +337,7 @@ const sampleSalesTransactions: SalesTransaction[] = [
     quantity: 1,
     rate: 0,
     amount: 198,
-    salesLedger: '',
+    purchaseLedger: '',
     inputSGST: 0,
     inputCGST: 0,
     inputIGST: 0,
@@ -431,7 +431,7 @@ function StepperIndicator({
   );
 }
 
-function SalesTableScreen({
+function PurchaseTableScreen({
   onSelectFile,
 }: {
   onSelectFile: (fileId: number) => void;
@@ -482,7 +482,7 @@ function SalesTableScreen({
               </tr>
             </thead>
             <tbody>
-              {sampleSalesFiles.map((file) => (
+              {samplePurchaseFiles.map((file) => (
                 <tr
                   key={file.id}
                   className="border-b border-gray-200 hover:bg-gray-50 cursor-pointer"
@@ -1380,7 +1380,7 @@ function LedgerMappingScreen({
   const ledgerSelectOptions = [
     'Sundry Debtors',
     'Sundry Creditors',
-    'Sales Account',
+    'Purchase Account',
     'Purchase Account',
     'Bank Accounts',
     'Cash',
@@ -1542,12 +1542,12 @@ function LedgerMappingScreen({
   );
 }
 
-function SalesTransactionsScreen({
+function PurchaseTransactionsScreen({
   onBack,
 }: {
   onBack: () => void;
 }) {
-  const [transactions, setTransactions] = useState<SalesTransaction[]>(sampleSalesTransactions);
+  const [transactions, setTransactions] = useState<PurchaseTransaction[]>(samplePurchaseTransactions);
   const [selectedRows, setSelectedRows] = useState<Set<number>>(new Set());
   const [showWarningDialog, setShowWarningDialog] = useState(true);
   const [showPreviewModal, setShowPreviewModal] = useState(false);
@@ -1589,15 +1589,15 @@ function SalesTransactionsScreen({
     gstin: '',
     placeOfSupply: '',
     itemName: '',
-    salesLedger: '',
+    purchaseLedger: '',
   });
   const [bulkColumn, setBulkColumn] = useState('');
   const infoRef = useRef<HTMLButtonElement>(null);
 
   const stateOptions = ['Andhra Pradesh','Arunachal Pradesh','Assam','Bihar','Chhattisgarh','Goa','Gujarat','Haryana','Himachal Pradesh','Jharkhand','Karnataka','Kerala','Madhya Pradesh','Maharashtra','Manipur','Meghalaya','Mizoram','Nagaland','Odisha','Punjab','Rajasthan','Sikkim','Tamil Nadu','Telangana','Tripura','Uttar Pradesh','Uttarakhand','West Bengal','Delhi'];
-  const ledgerTypeOptions = ['Sundry Debtors','Sundry Creditors','Bank Accounts','Cash','Sales Account','Purchase Account','Bank Charges','Indirect Expenses','Direct Expenses','Duties & Taxes','Secured Loans','Unsecured Loans','Capital Account'];
+  const ledgerTypeOptions = ['Sundry Debtors','Sundry Creditors','Bank Accounts','Cash','Purchase Account','Purchase Account','Bank Charges','Indirect Expenses','Direct Expenses','Duties & Taxes','Secured Loans','Unsecured Loans','Capital Account'];
 
-  const updateTransaction = (id: number, field: keyof SalesTransaction, value: string | number) => {
+  const updateTransaction = (id: number, field: keyof PurchaseTransaction, value: string | number) => {
     setTransactions(transactions.map((t) => (t.id === id ? { ...t, [field]: value } : t)));
   };
 
@@ -1606,9 +1606,9 @@ function SalesTransactionsScreen({
 
   const partyLedgerOptions = ['Sundry Debtors', 'Cash', 'Bank Accounts'];
   const itemOptions = ['Anti Acne Soap', 'De Tan Soap', 'Muscle Relief Soap', 'Neem Soap', 'Aloe Vera Soap'];
-  const salesLedgerOptions = ['Sales Account', 'Sales Return', 'Export Sales'];
+  const purchaseLedgerOptions = ['Purchase Account', 'Purchase Return', 'Import Purchase'];
   const placeOfSupplyOptions = ['Gujarat', 'Maharashtra', 'Karnataka', 'Tamil Nadu', 'Delhi', 'Rajasthan'];
-  const bulkColumnOptions = ['Party A/C Name', 'Voucher Type', 'Place of Supply', 'Item Name', 'Sales ledger'];
+  const bulkColumnOptions = ['Party A/C Name', 'Voucher Type', 'Place of Supply', 'Item Name', 'Purchase ledger'];
 
   return (
     <div className="flex flex-col h-full bg-white">
@@ -1922,7 +1922,7 @@ function SalesTransactionsScreen({
             <ArrowLeft size={18} className="text-gray-700" />
           </button>
           <FileText size={16} className="text-blue-600" />
-          <h2 className="text-[14px] font-semibold text-gray-900">Sales Transactions</h2>
+          <h2 className="text-[14px] font-semibold text-gray-900">Purchase Transactions</h2>
           <span className="px-2 py-0.5 text-[11px] font-bold text-white bg-orange-500 rounded-full min-w-[24px] text-center">
             {transactions.length}
           </span>
@@ -2161,7 +2161,7 @@ function SalesTransactionsScreen({
               <th className="px-1 py-1 border-r border-gray-200"></th>
               <th className="px-1 py-1 border-r border-gray-200"></th>
               <th className="px-1 py-1 border-r border-gray-200">
-                <input type="text" placeholder="Search" value={searchFilters.salesLedger} onChange={(e) => setSearchFilters({ ...searchFilters, salesLedger: e.target.value })} className="w-full px-1.5 py-1 text-[10px] border border-gray-300 rounded bg-white" />
+                <input type="text" placeholder="Search" value={searchFilters.purchaseLedger} onChange={(e) => setSearchFilters({ ...searchFilters, purchaseLedger: e.target.value })} className="w-full px-1.5 py-1 text-[10px] border border-gray-300 rounded bg-white" />
               </th>
               <th className="px-1 py-1 border-r border-gray-200"></th>
               <th className="px-1 py-1 border-r border-gray-200"></th>
@@ -2256,12 +2256,12 @@ function SalesTransactionsScreen({
                     <span className="text-orange-600 text-[10px]">0</span>
                     <div className="relative">
                       <select
-                        value={tx.salesLedger}
-                        onChange={(e) => updateTransaction(tx.id, 'salesLedger', e.target.value)}
+                        value={tx.purchaseLedger}
+                        onChange={(e) => updateTransaction(tx.id, 'purchaseLedger', e.target.value)}
                         className="w-full pl-1.5 pr-5 py-0.5 text-[10px] border border-gray-300 rounded bg-white appearance-none cursor-pointer text-gray-500"
                       >
                         <option value="">Select Ledger</option>
-                        {salesLedgerOptions.map((opt) => (
+                        {purchaseLedgerOptions.map((opt) => (
                           <option key={opt} value={opt}>{opt}</option>
                         ))}
                       </select>
@@ -2327,8 +2327,8 @@ function SalesTransactionsScreen({
   );
 }
 
-export default function SalesWorkflow({ onBack, screen, onNext, useRouter: useRouterNav }: SalesWorkflowProps) {
-  const [currentScreen, setCurrentScreen] = useState<Screen>(screen || 'sales-table');
+export default function PurchaseWorkflow({ onBack, screen, onNext, useRouter: useRouterNav }: PurchaseWorkflowProps) {
+  const [currentScreen, setCurrentScreen] = useState<Screen>(screen || 'purchase-table');
 
   // Router-driven mode: render only the specified screen — full height, no padding
   if (screen) {
@@ -2352,18 +2352,18 @@ export default function SalesWorkflow({ onBack, screen, onNext, useRouter: useRo
             onSave={onNext || (() => {})}
           />
         )}
-        {screen === 'sales-transactions' && (
-          <SalesTransactionsScreen onBack={onBack || (() => {})} />
+        {screen === 'purchase-transactions' && (
+          <PurchaseTransactionsScreen onBack={onBack || (() => {})} />
         )}
       </div>
     );
   }
 
-  // Legacy internal-state mode: sales-table with file click navigation
+  // Legacy internal-state mode: purchase-table with file click navigation
   const handleSelectFile = (fileId: number) => {
     if (useRouterNav && typeof window !== 'undefined') {
-      // Router mode: navigate to the sales file field-mapping URL
-      window.location.href = `/app/da/sales/${fileId}/field-mapping`;
+      // Router mode: navigate to the purchase file field-mapping URL
+      window.location.href = `/app/da/purchase/${fileId}/field-mapping`;
       return;
     }
     // Fallback: demo mode with internal state
@@ -2372,21 +2372,21 @@ export default function SalesWorkflow({ onBack, screen, onNext, useRouter: useRo
 
   const handleGoBack = () => {
     if (currentScreen === 'field-mapping') {
-      setCurrentScreen('sales-table');
+      setCurrentScreen('purchase-table');
     } else if (currentScreen === 'gst-mapping') {
       setCurrentScreen('field-mapping');
     } else if (currentScreen === 'ledger-mapping') {
       setCurrentScreen('gst-mapping');
-    } else if (currentScreen === 'sales-transactions') {
-      setCurrentScreen('sales-table');
+    } else if (currentScreen === 'purchase-transactions') {
+      setCurrentScreen('purchase-table');
     }
   };
 
-  // Sales table gets padded wrapper; workflow screens get full-height wrapper
-  if (currentScreen === 'sales-table') {
+  // Purchase table gets padded wrapper; workflow screens get full-height wrapper
+  if (currentScreen === 'purchase-table') {
     return (
       <div className="w-full bg-gray-100 rounded-lg p-4">
-        <SalesTableScreen onSelectFile={handleSelectFile} />
+        <PurchaseTableScreen onSelectFile={handleSelectFile} />
       </div>
     );
   }
@@ -2410,12 +2410,12 @@ export default function SalesWorkflow({ onBack, screen, onNext, useRouter: useRo
       {currentScreen === 'ledger-mapping' && (
         <LedgerMappingScreen
           onBack={handleGoBack}
-          onSave={() => setCurrentScreen('sales-transactions')}
+          onSave={() => setCurrentScreen('purchase-transactions')}
         />
       )}
 
-      {currentScreen === 'sales-transactions' && (
-        <SalesTransactionsScreen onBack={() => setCurrentScreen('sales-table')} />
+      {currentScreen === 'purchase-transactions' && (
+        <PurchaseTransactionsScreen onBack={() => setCurrentScreen('purchase-table')} />
       )}
     </div>
   );

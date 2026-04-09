@@ -1,15 +1,13 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import {
-  Plus,
   Bell,
   RefreshCw,
   ChevronDown,
-  Clock,
+  Info,
   Download,
   Upload,
-  Youtube,
   Grid3x3,
   Landmark,
   ShoppingCart,
@@ -42,6 +40,7 @@ interface TopBarProps {
   tabs: string[];
   showMergeDocument?: boolean;
   showDownloadSample?: boolean;
+  selectedCount?: number;
   onUploadClick?: () => void;
 }
 
@@ -53,10 +52,23 @@ export default function TopBar({
   tabs,
   showMergeDocument = false,
   showDownloadSample = false,
+  selectedCount = 0,
   onUploadClick,
 }: TopBarProps) {
   const tabIcon = TAB_ICONS[activeTab] || { icon: Grid3x3, color: 'from-blue-500 to-indigo-600' };
   const IconComponent = tabIcon.icon;
+  const [downloadDropdownOpen, setDownloadDropdownOpen] = useState(false);
+  const downloadRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (downloadRef.current && !downloadRef.current.contains(event.target as Node)) {
+        setDownloadDropdownOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   return (
     <div className="flex flex-col bg-white">
@@ -82,9 +94,6 @@ export default function TopBar({
 
         {/* Right side: Action buttons + Company info */}
         <div className="flex items-center gap-4">
-          <button className="w-10 h-10 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full flex items-center justify-center transition-colors">
-            <Plus className="w-6 h-6" />
-          </button>
           <button className="p-2 hover:bg-gray-100 rounded transition-colors">
             <Bell className="w-5 h-5 text-gray-600" />
           </button>
@@ -120,20 +129,57 @@ export default function TopBar({
 
         <div className="flex items-center gap-2">
           {showDownloadSample && (
-            <button className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
-              Download Sample
-              <ChevronDown className="w-4 h-4" />
-            </button>
+            <div className="relative" ref={downloadRef}>
+              <button
+                onClick={() => setDownloadDropdownOpen(!downloadDropdownOpen)}
+                className="inline-flex items-center gap-2 px-3 py-1.5 border border-gray-300 text-gray-700 text-xs font-medium rounded hover:bg-gray-50 transition-colors"
+              >
+                <Download className="w-3.5 h-3.5" />
+                Download Sample
+                <ChevronDown className="w-3.5 h-3.5" />
+              </button>
+              {downloadDropdownOpen && (
+                <div className="absolute right-0 mt-1 w-56 bg-white border border-gray-200 rounded shadow-lg z-20">
+                  <button
+                    onClick={() => setDownloadDropdownOpen(false)}
+                    className="w-full text-left px-4 py-2.5 text-[12px] text-gray-700 hover:bg-gray-50 flex items-center gap-2"
+                  >
+                    <Download className="w-3.5 h-3.5 text-gray-400" />
+                    Sample item invoice (with item)
+                  </button>
+                  <button
+                    onClick={() => setDownloadDropdownOpen(false)}
+                    className="w-full text-left px-4 py-2.5 text-[12px] text-gray-700 hover:bg-gray-50 flex items-center gap-2 border-t border-gray-100"
+                  >
+                    <Download className="w-3.5 h-3.5 text-gray-400" />
+                    Accounting invoice (without item)
+                  </button>
+                </div>
+              )}
+            </div>
           )}
           {showMergeDocument && (
-            <button className="inline-flex items-center gap-2 px-4 py-2 border border-gray-300 text-gray-700 text-sm font-medium rounded hover:bg-gray-50 transition-colors">
+            <button
+              disabled={selectedCount < 2}
+              className={`inline-flex items-center gap-2 px-3 py-1.5 border text-xs font-medium rounded transition-colors ${
+                selectedCount >= 2
+                  ? 'border-gray-300 text-gray-700 hover:bg-gray-50 cursor-pointer'
+                  : 'border-gray-200 text-gray-400 bg-gray-50 cursor-not-allowed'
+              }`}
+            >
               Merge Document
             </button>
           )}
           {showMergeDocument && (
-            <button className="p-2 hover:bg-gray-100 rounded transition-colors">
-              <Clock className="w-5 h-5 text-gray-600" />
-            </button>
+            <div className="relative group">
+              <button className="p-1.5 hover:bg-gray-100 rounded transition-colors">
+                <Info className="w-4.5 h-4.5 text-gray-500" />
+              </button>
+              <div className="absolute right-0 top-full mt-1 w-56 bg-gray-800 text-white text-[11px] rounded-lg px-3 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-30 shadow-lg">
+                Select same bank file to merge the transactions into one.
+                <div className="absolute -top-1 right-3 w-2 h-2 bg-gray-800 rotate-45" />
+              </div>
+            </div>
           )}
           {(showMergeDocument || !showDownloadSample) && (
             <button className="p-2 hover:bg-gray-100 rounded transition-colors">
@@ -142,16 +188,10 @@ export default function TopBar({
           )}
           <button
             onClick={onUploadClick}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium rounded transition-colors"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-medium rounded transition-colors"
           >
-            <Upload className="w-4 h-4" />
+            <Upload className="w-3.5 h-3.5" />
             Import
-          </button>
-          <button className="p-2 hover:bg-gray-100 rounded transition-colors">
-            <Youtube className="w-5 h-5 text-red-600" />
-          </button>
-          <button className="p-2 hover:bg-gray-100 rounded transition-colors">
-            <Grid3x3 className="w-5 h-5 text-gray-600" />
           </button>
         </div>
       </div>
