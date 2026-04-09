@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brego Business</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {}
+      }
+    }
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; overflow: hidden; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f1f1; }
+    ::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, Fragment } = React;
+
+    /* ─── SVG Icon Components ─── */
+    const Icon = ({ d, size = 18, className = "", fill = "none", strokeWidth = 2 }) => (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill={fill} stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className}>
+        {Array.isArray(d) ? d.map((path, i) => <path key={i} d={path} />) : <path d={d} />}
+      </svg>
+    );
+
+    const HomeIcon = (p) => <Icon {...p} d={["M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z", "M9 22V12h6v10"]} />;
+    const FileTextIcon = (p) => <Icon {...p} d={["M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z", "M14 2v6h6", "M16 13H8", "M16 17H8", "M10 9H8"]} />;
+    const DollarIcon = (p) => <Icon {...p} d={["M12 1v22", "M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"]} />;
+    const MessageIcon = (p) => <Icon {...p} d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />;
+    const CheckSquareIcon = (p) => <Icon {...p} d={["M9 11l3 3L22 4", "M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"]} />;
+    const HardDriveIcon = (p) => <Icon {...p} d={["M22 12H2", "M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z", "M6 16h.01", "M10 16h.01"]} />;
+    const HelpIcon = (p) => <Icon {...p} d={["M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z", "M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3", "M12 17h.01"]} />;
+    const GridIcon = (p) => <Icon {...p} d={["M3 3h7v7H3z", "M14 3h7v7h-7z", "M14 14h7v7h-7z", "M3 14h7v7H3z"]} />;
+    const UploadIcon = (p) => <Icon {...p} d={["M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", "M17 8l-5-5-5 5", "M12 3v12"]} />;
+    const LinkIcon = (p) => <Icon {...p} d={["M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71", "M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"]} />;
+    const TableIcon = (p) => <Icon {...p} d={["M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"]} />;
+    const GradCapIcon = (p) => <Icon {...p} d={["M22 10v6M2 10l10-5 10 5-10 5z", "M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"]} />;
+    const PlusIcon = (p) => <Icon {...p} d={["M12 5v14", "M5 12h14"]} />;
+    const BellIcon = (p) => <Icon {...p} d={["M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9", "M13.73 21a2 2 0 0 1-3.46 0"]} />;
+    const RefreshIcon = (p) => <Icon {...p} d={["M23 4v6h-6", "M1 20v-6h6", "M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"]} />;
+    const ChevronDownIcon = (p) => <Icon {...p} d="M6 9l6 6 6-6" />;
+    const ChevronLeftIcon = (p) => <Icon {...p} d="M15 18l-6-6 6-6" />;
+    const ChevronRightIcon = (p) => <Icon {...p} d="M9 18l6-6-6-6" />;
+    const EyeIcon = (p) => <Icon {...p} d={["M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z", "M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"]} />;
+    const TrashIcon = (p) => <Icon {...p} d={["M3 6h18", "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"]} />;
+    const CopyIcon = (p) => <Icon {...p} d={["M20 9h-9a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2z", "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"]} />;
+    const MoreVertIcon = (p) => <Icon {...p} d={["M12 13a1 1 0 1 0 0-2 1 1 0 0 0 0 2z", "M12 6a1 1 0 1 0 0-2 1 1 0 0 0 0 2z", "M12 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"]} fill="currentColor" />;
+    const FilterIcon = (p) => <Icon {...p} d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />;
+    const ArrowUpDownIcon = (p) => <Icon {...p} d={["M7 15l5 5 5-5", "M7 9l5-5 5 5"]} />;
+    const PlayIcon = (p) => <Icon {...p} d="M5 3l14 9-14 9V3z" fill="currentColor" />;
+    const Share2Icon = (p) => <Icon {...p} d={["M18 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6z", "M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z", "M18 22a3 3 0 1 0 0-6 3 3 0 0 0 0 6z", "M8.59 13.51l6.83 3.98", "M15.41 6.51l-6.82 3.98"]} />;
+    const ClockIcon = (p) => <Icon {...p} d={["M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z", "M12 6v6l4 2"]} />;
+    const YoutubeIcon = (p) => <Icon {...p} d={["M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z", "M9.75 15.02l5.75-3.27-5.75-3.27v6.54z"]} />;
+    const DownloadIcon = (p) => <Icon {...p} d={["M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4", "M7 10l5 5 5-5", "M12 15V3"]} />;
+
+    /* ─── SIDEBAR ─── */
+    function Sidebar({ activePage = "bulk-upload" }) {
+      const iconBarItems = [
+        { id: "home", icon: HomeIcon, label: "Home" },
+        { id: "data-entry", icon: FileTextIcon, label: "Data Entry" },
+        { id: "gst", icon: DollarIcon, label: "GST", badge: "BETA" },
+        { id: "chat", icon: MessageIcon, label: "Chat", badge: "BETA" },
+        { id: "task", icon: CheckSquareIcon, label: "Task", badge: "BETA" },
+        { id: "drive", icon: HardDriveIcon, label: "Drive" },
+      ];
+
+      const mainMenuItems = [
+        { id: "dashboard", label: "Dashboard", icon: GridIcon },
+        { id: "bulk-upload", label: "Bulk Upload", icon: UploadIcon },
+        { id: "transactions", label: "Transactions", icon: LinkIcon },
+        { id: "master", label: "Master", icon: TableIcon },
+        { id: "learn", label: "Learn More", icon: GradCapIcon },
+      ];
+
+      return (
+        <div className="flex h-screen flex-shrink-0">
+          {/* Left Icon Bar */}
+          <div className="w-[50px] flex flex-col items-center py-3" style={{ backgroundColor: "#1E1B4B" }}>
+            {/* Logo - BB Circle Blue */}
+            <div className="mb-3 flex items-center justify-center">
+              <svg width="36" height="36" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clipPath="url(#clip0_sidebar)">
+                  <path d="M69.5094 139.08C107.932 139.08 139.079 107.932 139.079 69.5099C139.079 31.0875 107.932 -0.0600586 69.5094 -0.0600586C31.087 -0.0600586 -0.0605469 31.0875 -0.0605469 69.5099C-0.0605469 107.932 31.087 139.08 69.5094 139.08Z" fill="#204CC7"/>
+                  <path d="M105.693 69.8827C96.7488 82.5632 84.8137 92.7039 70.5137 100.903L74.7926 109.7H79.1544C91.7704 101.345 103.089 90.7622 113.34 78.229C110.819 75.4684 108.288 72.6342 105.693 69.8735V69.8827Z" fill="white"/>
+                  <path d="M64.7715 89.1889L68.9768 97.7652C82.4395 89.6397 93.988 79.6463 103.319 67.4904C101.028 65.1071 98.6535 62.7145 96.3622 60.4048C88.2552 71.8153 77.544 81.2843 64.7807 89.1889H64.7715Z" fill="white"/>
+                  <path d="M64.9277 84.7164C69.2895 68.6864 70.7434 53.3189 65.6915 37.2153C77.1665 38.9269 85.9545 46.6106 93.3805 57.5703C87.7213 66.6711 79.2277 75.7628 64.9277 84.7164Z" fill="white"/>
+                  <path d="M65.5342 58.9139C65.5342 58.9139 59.8749 48.1751 52.9182 44.5219C46.9552 41.3196 44.7375 34.234 45.3449 29.09C45.3449 29.09 67.0617 25.8049 65.5342 58.9231V58.9139Z" fill="white"/>
+                  <path d="M48.64 47.3562L42.5943 54.0645L42.0605 64.8769L64.9277 84.7166C68.2956 63.6163 59.7285 52.2793 48.64 47.3562Z" fill="white"/>
+                  <path d="M62.4813 86.8056L32.8047 79.0483L39.9179 68.2358L62.4813 86.8056Z" fill="white"/>
+                  <path d="M43.8184 86.281L47.3335 93.5138L56.6644 89.5661L43.8184 86.281Z" fill="white"/>
+                  <path d="M25 90.9096L32.5733 101.943L41.3705 99.6332L43.2845 95.161L38.3154 84.8731L30.282 82.7842L25.0092 90.9096H25Z" fill="white"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_sidebar">
+                    <rect width="139" height="139" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+
+            {/* Icons */}
+            <div className="flex flex-col gap-1 flex-1">
+              {iconBarItems.map((item) => {
+                const IconComp = item.icon;
+                const isActive = item.id === "data-entry";
+                return (
+                  <div key={item.id} className="relative group">
+                    <button
+                      className={`w-[42px] h-[42px] flex items-center justify-center rounded-lg transition-colors relative ${
+                        isActive ? "bg-indigo-800 text-white" : "text-gray-400 hover:text-white hover:bg-indigo-900"
+                      }`}
+                    >
+                      <IconComp size={20} />
+                      {item.badge && (
+                        <span className="absolute -top-0.5 -right-0.5 bg-teal-500 text-white text-[6px] font-bold px-1 rounded leading-tight">
+                          {item.badge}
+                        </span>
+                      )}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Bottom icons */}
+            <div className="flex flex-col gap-2 mt-auto">
+              <button className="w-[36px] h-[36px] flex items-center justify-center rounded-full text-gray-400 hover:text-white transition-colors">
+                <HelpIcon size={20} />
+              </button>
+              <button className="w-[36px] h-[36px] rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold">
+                J
+              </button>
+            </div>
+          </div>
+
+          {/* Main sidebar */}
+          <div className="w-[160px] bg-white border-r border-gray-200 py-4">
+            <nav className="space-y-0.5">
+              {mainMenuItems.map((item) => {
+                const IconComp = item.icon;
+                const isActive = activePage === item.id;
+                return (
+                  <button
+                    key={item.id}
+                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-[13px] transition-all ${
+                      isActive
+                        ? "bg-blue-50 text-blue-600 font-medium border-r-2 border-blue-500"
+                        : "text-gray-600 hover:bg-gray-50"
+                    }`}
+                  >
+                    <IconComp size={18} />
+                    <span className="truncate text-left">{item.label}</span>
+                  </button>
+                );
+              })}
+            </nav>
+          </div>
+        </div>
+      );
+    }
+
+    /* ─── TOP BAR ─── */
+    function TopBar({ title, badgeCount, activeTab, onTabChange, tabs, showMergeDocument, showDownloadSample }) {
+      return (
+        <div className="flex flex-col bg-white flex-shrink-0">
+          {/* Header */}
+          <div className="h-[50px] border-b border-gray-100 px-5 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="w-8 h-8 flex items-center justify-center">
+                <svg width="28" height="28" viewBox="0 0 139 139" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M69.5094 139.08C107.932 139.08 139.079 107.932 139.079 69.5099C139.079 31.0875 107.932 -0.0600586 69.5094 -0.0600586C31.087 -0.0600586 -0.0605469 31.0875 -0.0605469 69.5099C-0.0605469 107.932 31.087 139.08 69.5094 139.08Z" fill="#204CC7"/>
+                  <path d="M105.693 69.8827C96.7488 82.5632 84.8137 92.7039 70.5137 100.903L74.7926 109.7H79.1544C91.7704 101.345 103.089 90.7622 113.34 78.229C110.819 75.4684 108.288 72.6342 105.693 69.8735V69.8827Z" fill="white"/>
+                  <path d="M64.7715 89.1889L68.9768 97.7652C82.4395 89.6397 93.988 79.6463 103.319 67.4904C101.028 65.1071 98.6535 62.7145 96.3622 60.4048C88.2552 71.8153 77.544 81.2843 64.7807 89.1889H64.7715Z" fill="white"/>
+                  <path d="M64.9277 84.7164C69.2895 68.6864 70.7434 53.3189 65.6915 37.2153C77.1665 38.9269 85.9545 46.6106 93.3805 57.5703C87.7213 66.6711 79.2277 75.7628 64.9277 84.7164Z" fill="white"/>
+                  <path d="M65.5342 58.9139C65.5342 58.9139 59.8749 48.1751 52.9182 44.5219C46.9552 41.3196 44.7375 34.234 45.3449 29.09C45.3449 29.09 67.0617 25.8049 65.5342 58.9231V58.9139Z" fill="white"/>
+                  <path d="M48.64 47.3562L42.5943 54.0645L42.0605 64.8769L64.9277 84.7166C68.2956 63.6163 59.7285 52.2793 48.64 47.3562Z" fill="white"/>
+                  <path d="M62.4813 86.8056L32.8047 79.0483L39.9179 68.2358L62.4813 86.8056Z" fill="white"/>
+                  <path d="M43.8184 86.281L47.3335 93.5138L56.6644 89.5661L43.8184 86.281Z" fill="white"/>
+                  <path d="M25 90.9096L32.5733 101.943L41.3705 99.6332L43.2845 95.161L38.3154 84.8731L30.282 82.7842L25.0092 90.9096H25Z" fill="white"/>
+                </svg>
+              </div>
+              <h1 className="text-[15px] font-bold text-gray-900">{title}</h1>
+              {badgeCount !== undefined && (
+                <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-green-500 text-white">
+                  {badgeCount}
+                </span>
+              )}
+            </div>
+            <div className="flex items-center gap-3">
+              <button className="w-9 h-9 bg-indigo-500 hover:bg-indigo-600 text-white rounded-full flex items-center justify-center">
+                <PlusIcon size={20} />
+              </button>
+              <button className="p-2 hover:bg-gray-100 rounded-lg"><BellIcon size={18} className="text-gray-500" /></button>
+              <button className="p-2 hover:bg-gray-100 rounded-lg"><RefreshIcon size={18} className="text-gray-500" /></button>
+              <button className="flex items-center gap-1.5 px-3 py-1.5 hover:bg-gray-100 rounded-lg">
+                <span className="text-[13px] text-gray-700 font-medium truncate max-w-[220px]">PAARIJAAT PERSONAL CARE PRIVATE...</span>
+                <ChevronDownIcon size={16} className="text-gray-500" />
+              </button>
+            </div>
+          </div>
+
+          {/* Tab bar */}
+          <div className="border-b border-gray-200 px-5 flex items-center justify-between">
+            <div className="flex items-center">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  onClick={() => onTabChange(tab)}
+                  className={`py-3 px-4 text-[13px] font-medium border-b-2 transition-colors whitespace-nowrap ${
+                    activeTab === tab
+                      ? "text-indigo-600 border-indigo-600"
+                      : "text-gray-500 border-transparent hover:text-gray-700"
+                  }`}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
+            <div className="flex items-center gap-2">
+              {showDownloadSample && (
+                <button className="flex items-center gap-1.5 px-3 py-1.5 border border-gray-300 text-gray-600 text-[12px] font-medium rounded hover:bg-gray-50">
+                  Download Sample <ChevronDownIcon size={14} />
+                </button>
+              )}
+              {showMergeDocument && (
+                <button className="px-3 py-1.5 border border-gray-300 text-gray-600 text-[12px] font-medium rounded hover:bg-gray-50">
+                  Merge Document
+                </button>
+              )}
+              {showMergeDocument && (
+                <button className="p-1.5 hover:bg-gray-100 rounded"><ClockIcon size={18} className="text-gray-500" /></button>
+              )}
+              {showMergeDocument && (
+                <button className="p-1.5 hover:bg-gray-100 rounded"><DownloadIcon size={18} className="text-gray-500" /></button>
+              )}
+              <button className="flex items-center gap-1.5 px-3 py-1.5 bg-red-600 hover:bg-red-700 text-white text-[12px] font-medium rounded">
+                <UploadIcon size={14} /> {showDownloadSample ? "Upload" : "Import"}
+              </button>
+              <button className="p-1.5 hover:bg-gray-100 rounded"><YoutubeIcon size={18} className="text-red-600" /></button>
+              <button className="p-1.5 hover:bg-gray-100 rounded"><GridIcon size={18} className="text-gray-500" /></button>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    /* ─── DATA TABLE ─── */
+    const bankingData = [
+      { id: "1", srNo: 1, fileName: "63358723.pdf", bankName: "HDFC", statementDate: "01 Apr 2025 - 31 Mar 2026", syncedDate: "-", total: 2415, pending: 2415, saved: 0, synced: 0, suggestion: 181, status: "Complete" },
+      { id: "2", srNo: 2, fileName: "Acct Statement_2060_30012026_11.29.55.xls", bankName: "HDFC", statementDate: "13 Jan 2026 - 29 Jan 2026", syncedDate: "-", total: 37, pending: 32, saved: 5, synced: 0, suggestion: 5, status: "Complete" },
+      { id: "3", srNo: 3, fileName: "Acct Statement_2060_30012026_11.29.55.xls", bankName: "HDFC", statementDate: "13 Jan 2026 - 29 Jan 2026", syncedDate: "13 Jan 2026 - 29 Jan 2026", total: 37, pending: 0, saved: 0, synced: 37, suggestion: 1, status: "Complete" },
+      { id: "4", srNo: 4, fileName: "Bank Laani for Upload.xlsx", bankName: "HDFC", statementDate: "09 Apr 2025 - 12 Jan 2026", syncedDate: "09 Apr 2025 - 12 Jan 2026", total: 160, pending: 0, saved: 0, synced: 160, suggestion: 0, status: "Complete" },
+    ];
+
+    const purchaseData = [
+      { id: "1", srNo: 1, fileName: "DONE - EV VEH - 01.02 TO 28.02.xlsx", type: "Item Invoice", statementDate: "-", syncedDate: "-", total: 13, pending: "-", saved: "-", synced: "-" },
+    ];
+
+    function DataTable({ variant }) {
+      const [selected, setSelected] = useState(new Set());
+      const data = variant === "banking" ? bankingData : purchaseData;
+
+      const toggleAll = (checked) => {
+        setSelected(checked ? new Set(data.map(r => r.id)) : new Set());
+      };
+      const toggleOne = (id) => {
+        const s = new Set(selected);
+        s.has(id) ? s.delete(id) : s.add(id);
+        setSelected(s);
+      };
+
+      return (
+        <div className="flex flex-col h-full">
+          <div className="flex-1 overflow-auto">
+            <table className="w-full border-collapse text-[13px]">
+              <thead className="sticky top-0 z-10">
+                <tr className="bg-gray-50 border-b border-gray-200">
+                  <th className="px-3 py-2.5 text-left w-10">
+                    <input type="checkbox" checked={selected.size === data.length && data.length > 0} onChange={e => toggleAll(e.target.checked)} className="w-4 h-4 cursor-pointer" />
+                  </th>
+                  <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Sr.No.</th>
+                  <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">File Name</th>
+                  {variant === "banking" ? (
+                    <>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">
+                        <span className="flex items-center gap-1">Bank Name <ArrowUpDownIcon size={12} className="text-gray-400" /></span>
+                      </th>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Statement Date</th>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Synced Date</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Total</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Pending</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Saved</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Synced</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Suggestion</th>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">
+                        <span className="flex items-center gap-1">Status <FilterIcon size={12} className="text-gray-400" /></span>
+                      </th>
+                    </>
+                  ) : (
+                    <>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Type</th>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Statement Date</th>
+                      <th className="px-3 py-2.5 text-left text-gray-500 font-semibold text-xs">Synced Date</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Total</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Pending</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Saved</th>
+                      <th className="px-3 py-2.5 text-right text-gray-500 font-semibold text-xs">Synced</th>
+                    </>
+                  )}
+                  <th className="px-3 py-2.5 text-center text-gray-500 font-semibold text-xs">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((row) => (
+                  <tr key={row.id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
+                    <td className="px-3 py-2.5">
+                      <input type="checkbox" checked={selected.has(row.id)} onChange={() => toggleOne(row.id)} className="w-4 h-4 cursor-pointer" />
+                    </td>
+                    <td className="px-3 py-2.5 text-gray-700">{row.srNo}</td>
+                    <td className="px-3 py-2.5 text-gray-700">{row.fileName}</td>
+                    {variant === "banking" ? (
+                      <>
+                        <td className="px-3 py-2.5 text-gray-700">{row.bankName}</td>
+                        <td className="px-3 py-2.5 text-gray-700">{row.statementDate}</td>
+                        <td className="px-3 py-2.5 text-gray-700">{row.syncedDate}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.total}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.pending}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.saved}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.synced}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.suggestion}</td>
+                        <td className="px-3 py-2.5 font-semibold text-emerald-500">{row.status}</td>
+                      </>
+                    ) : (
+                      <>
+                        <td className="px-3 py-2.5 text-gray-700">{row.type}</td>
+                        <td className="px-3 py-2.5 text-gray-700">{row.statementDate}</td>
+                        <td className="px-3 py-2.5 text-gray-700">{row.syncedDate}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.total}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.pending}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.saved}</td>
+                        <td className="px-3 py-2.5 text-gray-700 text-right">{row.synced}</td>
+                      </>
+                    )}
+                    <td className="px-3 py-2.5">
+                      <div className="flex items-center justify-center gap-2.5">
+                        <button className="text-green-500 hover:text-green-700"><EyeIcon size={16} /></button>
+                        {variant === "banking" && <button className="text-red-500 hover:text-red-700"><TrashIcon size={16} /></button>}
+                        <button className="text-gray-500 hover:text-gray-700"><CopyIcon size={16} /></button>
+                        {variant === "purchase" && <button className="text-gray-500 hover:text-gray-700"><MoreVertIcon size={16} /></button>}
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          {/* Pagination */}
+          <div className="flex items-center justify-end gap-3 px-4 py-3 border-t border-gray-200 bg-white">
+            <button className="p-1 hover:bg-gray-100 rounded disabled:opacity-40" disabled>
+              <ChevronLeftIcon size={18} className="text-gray-500" />
+            </button>
+            <div className="px-3 py-1 border-2 border-blue-400 rounded bg-blue-50 text-sm font-medium text-blue-600">1</div>
+            <button className="p-1 hover:bg-gray-100 rounded disabled:opacity-40" disabled>
+              <ChevronRightIcon size={18} className="text-gray-500" />
+            </button>
+            <select className="px-2.5 py-1 border border-gray-200 rounded text-[12px] text-gray-600 bg-white cursor-pointer">
+              <option>20 / page</option>
+              <option>50 / page</option>
+              <option>100 / page</option>
+            </select>
+          </div>
+        </div>
+      );
+    }
+
+    /* ─── UPLOAD WORKFLOW ─── */
+    function UploadWorkflow({ type }) {
+      const steps = [
+        { n: 1, title: "Upload", desc: `Click on the upload button to upload the ${type} file` },
+        { n: 2, title: "Map the sheet data", desc: "Map the Excel sheet data with Tally fields" },
+        { n: 3, title: "Save Transaction", desc: "Select the ledger, other details and click on the save button" },
+        { n: 4, title: "Send to Tally", desc: "Click on Send to Tally button to sync the transactions" },
+      ];
+
+      return (
+        <div className="flex-1 overflow-auto bg-white px-8 py-6">
+          <div className="max-w-5xl mx-auto">
+            {/* Header */}
+            <p className="text-center text-blue-500 text-[15px] font-medium mb-10">
+              Please follow below the steps to upload a {type} file
+            </p>
+
+            {/* YouTube video placeholder */}
+            <div className="flex justify-center mb-12">
+              <div className="w-full max-w-lg rounded-xl overflow-hidden shadow-lg" style={{ background: "linear-gradient(135deg, #3b82f6, #1d4ed8)" }}>
+                <div className="relative" style={{ paddingTop: "56.25%" }}>
+                  {/* Channel info */}
+                  <div className="absolute top-4 left-4 flex items-center gap-2">
+                    <div className="w-9 h-9 rounded-full bg-red-600 flex items-center justify-center">
+                      <PlayIcon size={14} className="text-white" />
+                    </div>
+                    <div>
+                      <p className="text-white text-[11px] font-bold leading-tight">How to process sales/purchase & sales/pur...</p>
+                      <p className="text-blue-200 text-[10px]">Brego Business</p>
+                    </div>
+                  </div>
+
+                  {/* Center text + play */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center">
+                    <p className="text-white text-center text-sm font-medium mb-4 px-8 leading-snug">
+                      How to process sales/purchase<br/>& sales/purchase return
+                    </p>
+                    <div className="w-16 h-16 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:bg-red-700 shadow-lg">
+                      <PlayIcon size={28} className="text-white" />
+                    </div>
+                  </div>
+
+                  {/* Bottom bar */}
+                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <button className="text-white/80 hover:text-white"><Share2Icon size={16} /></button>
+                      <button className="text-white/80 hover:text-white"><ClockIcon size={16} /></button>
+                    </div>
+                    <button className="flex items-center gap-1.5 bg-white/95 text-gray-800 px-3 py-1.5 rounded text-[11px] font-medium hover:bg-white">
+                      Watch on <span className="font-bold">YouTube</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stepper */}
+            <div className="relative mb-12 px-8">
+              {/* Line connecting steps */}
+              <div className="absolute top-6 left-[calc(12.5%+16px)] right-[calc(12.5%+16px)] h-0.5 bg-blue-200 z-0"></div>
+
+              {/* Steps */}
+              <div className="grid grid-cols-4 relative z-10">
+                {steps.map((step) => (
+                  <div key={step.n} className="flex flex-col items-center">
+                    {/* Number circle */}
+                    <div className="w-12 h-12 rounded-full bg-blue-100 border-2 border-blue-400 flex items-center justify-center font-bold text-blue-600 text-sm mb-4 bg-white">
+                      {step.n}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Step cards */}
+              <div className="grid grid-cols-4 gap-4 mt-2">
+                {steps.map((step) => (
+                  <div key={step.n} className="bg-gray-50 rounded-lg border border-gray-200 p-5 text-center">
+                    <h3 className="font-bold text-gray-900 text-sm mb-2">{step.title}</h3>
+                    <p className="text-gray-500 text-xs leading-relaxed">{step.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Footer */}
+            <div className="flex items-center justify-center gap-4 pt-6">
+              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
+                <span className="text-[8px] text-gray-400">IMG</span>
+              </div>
+              <p className="text-gray-600 text-[13px]">
+                If you want to read documentation: <a href="#" className="text-blue-500 hover:text-blue-600 font-medium">Click here</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    /* ─── TAB CONFIG ─── */
+    const TABS = ["Banking", "Sales", "Sales-Return", "Purchase", "Purchase-Return", "Journal", "Ledger", "Items"];
+
+    const TAB_CONFIG = {
+      "Banking": { variant: "table", tableVariant: "banking", title: "Banking", badgeCount: 4, showMergeDocument: true, showDownloadSample: false },
+      "Sales": { variant: "upload", uploadType: "sales Excel", title: "Sales (Excel)", showMergeDocument: false, showDownloadSample: true },
+      "Sales-Return": { variant: "upload", uploadType: "sales return excel", title: "Sales Return (Excel)", showMergeDocument: false, showDownloadSample: true },
+      "Purchase": { variant: "table", tableVariant: "purchase", title: "Purchase (Excel)", badgeCount: 1, showMergeDocument: false, showDownloadSample: true },
+      "Purchase-Return": { variant: "upload", uploadType: "purchase return excel", title: "Purchase Return (Excel)", showMergeDocument: false, showDownloadSample: true },
+      "Journal": { variant: "upload", uploadType: "journal", title: "Journal (Excel)", showMergeDocument: false, showDownloadSample: true },
+      "Ledger": { variant: "upload", uploadType: "ledger", title: "Ledger Excel", showMergeDocument: false, showDownloadSample: true },
+      "Items": { variant: "upload", uploadType: "item", title: "Item Excel", showMergeDocument: false, showDownloadSample: true },
+    };
+
+    /* ─── MAIN APP ─── */
+    function App() {
+      const [activeTab, setActiveTab] = useState("Banking");
+      const config = TAB_CONFIG[activeTab];
+
+      return (
+        <div className="flex h-screen overflow-hidden bg-gray-100">
+          <Sidebar activePage="bulk-upload" />
+          <div className="flex-1 flex flex-col overflow-hidden">
+            <TopBar
+              title={config.title}
+              badgeCount={config.badgeCount}
+              activeTab={activeTab}
+              onTabChange={setActiveTab}
+              tabs={TABS}
+              showMergeDocument={config.showMergeDocument}
+              showDownloadSample={config.showDownloadSample}
+            />
+            <div className="flex-1 overflow-hidden bg-white flex flex-col">
+              {config.variant === "table" ? (
+                <DataTable variant={config.tableVariant} />
+              ) : (
+                <UploadWorkflow type={config.uploadType} />
+              )}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
