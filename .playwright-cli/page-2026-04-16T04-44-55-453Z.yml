@@ -1,0 +1,145 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e67]:
+        - generic [ref=e68]: Opened the Add Invoice screen for direct invoice entry.
+        - generic [ref=e69]:
+          - generic [ref=e71]:
+            - generic [ref=e72]:
+              - paragraph [ref=e73]: GSTR-1 Workflow
+              - heading "Add Invoice" [level=2] [ref=e74]
+            - generic [ref=e75]:
+              - generic [ref=e76]:
+                - generic [ref=e77]: "Doc Type :"
+                - combobox [active] [ref=e78]:
+                  - option "B2B"
+                  - option "B2CS"
+                  - option "B2C LARGE"
+                  - option "EXPORT" [selected]
+                  - option "CDNR"
+                  - option "CDNUR"
+                  - option "Advanced Received"
+                  - option "HSN"
+                  - option "Docs"
+              - button "Add Row" [ref=e79] [cursor=pointer]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - paragraph [ref=e83]: Count of Documents
+                - paragraph [ref=e84]: "0"
+              - generic [ref=e85]:
+                - paragraph [ref=e86]: Taxable Amount
+                - paragraph [ref=e87]: ₹0.00
+              - generic [ref=e88]:
+                - paragraph [ref=e89]: Tax Amount
+                - paragraph [ref=e90]: ₹0.00
+              - generic [ref=e91]:
+                - paragraph [ref=e92]: Invoice Value
+                - paragraph [ref=e93]: ₹0.00
+            - table [ref=e95]:
+              - rowgroup [ref=e96]:
+                - row "Sr.No. Export Type Invoice Number Invoice Date Invoice Value Port Code Shipping Bill Number Shipping Bill Date Rate (%) Total Taxable Value Cess Amount" [ref=e137]:
+                  - columnheader [ref=e98]
+                  - columnheader "Sr.No." [ref=e99]
+                  - columnheader "Export Type" [ref=e138]
+                  - columnheader "Invoice Number" [ref=e100]
+                  - columnheader "Invoice Date" [ref=e101]
+                  - columnheader "Invoice Value" [ref=e102]
+                  - columnheader "Port Code" [ref=e139]
+                  - columnheader "Shipping Bill Number" [ref=e140]
+                  - columnheader "Shipping Bill Date" [ref=e141]
+                  - columnheader "Rate (%)" [ref=e105]
+                  - columnheader "Total Taxable Value" [ref=e106]
+                  - columnheader "Cess Amount" [ref=e107]
+              - rowgroup [ref=e109]:
+                - row "1" [ref=e142]:
+                  - cell [ref=e111]:
+                    - button [ref=e112] [cursor=pointer]
+                  - cell "1" [ref=e113]
+                  - cell [ref=e143]:
+                    - textbox [ref=e144]
+                  - cell [ref=e114]:
+                    - textbox [ref=e115]
+                  - cell [ref=e116]:
+                    - textbox [ref=e117]
+                  - cell [ref=e118]:
+                    - textbox [ref=e119]
+                  - cell [ref=e145]:
+                    - textbox [ref=e146]
+                  - cell [ref=e147]:
+                    - textbox [ref=e148]
+                  - cell [ref=e149]:
+                    - textbox [ref=e150]
+                  - cell [ref=e124]:
+                    - textbox [ref=e125]
+                  - cell [ref=e126]:
+                    - textbox [ref=e127]
+                  - cell [ref=e128]:
+                    - textbox [ref=e129]
+            - generic [ref=e132]:
+              - button "Cancel" [ref=e133] [cursor=pointer]
+              - button "Delete Items" [disabled] [ref=e134]
+              - button "Save & Verify" [disabled] [ref=e135]
+  - alert [ref=e136]

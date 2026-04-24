@@ -1,0 +1,194 @@
+- generic [ref=e79]:
+  - generic [ref=e80]:
+    - img [ref=e83] [cursor=pointer]
+    - list [ref=e87]:
+      - listitem [ref=e88] [cursor=pointer]:
+        - link "Home" [ref=e89]:
+          - /url: /app/home/dashboard
+          - img [ref=e90]
+          - generic [ref=e92]: Home
+      - listitem [ref=e93] [cursor=pointer]:
+        - link "Data Entry" [ref=e94]:
+          - /url: /app/da/dashboard
+          - img [ref=e95]
+          - generic [ref=e98]: Data Entry
+      - listitem [ref=e99] [cursor=pointer]:
+        - link "GST" [ref=e100]:
+          - /url: /app/ga/dashboard
+          - img [ref=e101]
+          - generic [ref=e105]: GST
+        - generic [ref=e106]: Beta
+      - listitem [ref=e107] [cursor=pointer]:
+        - link "Chat" [ref=e108]:
+          - /url: /app/chat/get-started
+          - img [ref=e109]
+          - generic [ref=e113]: Chat
+        - generic [ref=e114]: Beta
+      - listitem [ref=e115] [cursor=pointer]:
+        - link "Task" [ref=e116]:
+          - /url: /app/pms/document-task
+          - img [ref=e117]
+          - generic [ref=e119]: Task
+        - generic [ref=e120]: Beta
+      - listitem [ref=e121] [cursor=pointer]:
+        - link "Drive" [ref=e122]:
+          - /url: /app/drive/all-documents
+          - img [ref=e123]
+          - generic [ref=e125]: Drive
+    - img [ref=e128] [cursor=pointer]
+    - generic [ref=e133] [cursor=pointer]: J
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - img [ref=e138]
+      - list [ref=e142]:
+        - listitem [ref=e143] [cursor=pointer]:
+          - link "Dashboard" [ref=e144]:
+            - /url: /app/da/dashboard
+            - img [ref=e146]
+            - generic [ref=e148]: Dashboard
+        - listitem [ref=e150] [cursor=pointer]:
+          - link "Bulk Upload" [ref=e151]:
+            - /url: /app/da/banking
+            - img [ref=e153]
+            - generic [ref=e155]: Bulk Upload
+        - listitem [ref=e157] [cursor=pointer]:
+          - link "Transactions" [ref=e158]:
+            - /url: /app/da/sales
+            - img [ref=e160]
+            - generic [ref=e163]: Transactions
+        - listitem [ref=e165] [cursor=pointer]:
+          - link "Master" [ref=e166]:
+            - /url: /app/da/ledger-master
+            - img [ref=e168]
+            - generic [ref=e170]: Master
+        - listitem [ref=e172] [cursor=pointer]:
+          - link "Learn Vyapar TaxOne" [ref=e173]:
+            - /url: /app/da/learn-suvit
+            - img [ref=e175]
+            - generic [ref=e177]: Learn Vyapar TaxOne
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e180]:
+          - generic [ref=e182]:
+            - img [ref=e183]
+            - heading "Item" [level=6] [ref=e690]
+            - superscript [ref=e187]:
+              - generic [ref=e191]: "2"
+          - generic [ref=e194]:
+            - textbox "Search by Name" [ref=e196]
+            - button "search" [ref=e197] [cursor=pointer]:
+              - img "search" [ref=e199]:
+                - img [ref=e200]
+        - generic [ref=e202]:
+          - img [ref=e205] [cursor=pointer]
+          - link [ref=e210] [cursor=pointer]:
+            - /url: https://app.suvit.io/suvit-x64/VyaparTaxOne-1.4.7.exe
+            - img [ref=e211]
+          - generic [ref=e214]:
+            - superscript [ref=e216]:
+              - generic [ref=e218]: "7"
+            - img [ref=e220] [cursor=pointer]
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e229]
+      - main [ref=e231]:
+        - generic [ref=e691]:
+          - tablist [ref=e692]:
+            - generic [ref=e694]:
+              - tab "Ledger" [ref=e696] [cursor=pointer]:
+                - generic [ref=e697]: Ledger
+              - tab "Item" [selected] [ref=e699] [cursor=pointer]:
+                - generic [ref=e700]: Item
+              - tab "Rule List" [ref=e702] [cursor=pointer]:
+                - generic [ref=e703]: Rule List
+            - generic [ref=e705]:
+              - img [ref=e708] [cursor=pointer]
+              - img [ref=e714] [cursor=pointer]
+              - link [ref=e717] [cursor=pointer]:
+                - /url: https://help.suvit.io/articles/create-bulk-stock-items-in-suvit
+                - img [ref=e718]
+          - generic:
+            - generic:
+              - tabpanel "Item"
+        - table [ref=e727]:
+          - rowgroup [ref=e740]:
+            - row "Select all Sr.No. Name Category Description Units Applicable Date Value Tax Rate HSN Status" [ref=e741]:
+              - columnheader "Select all" [ref=e742]:
+                - checkbox "Select all" [ref=e746] [cursor=pointer]
+              - columnheader "Sr.No." [ref=e748]
+              - columnheader "Name" [ref=e749]
+              - columnheader "Category" [ref=e750]
+              - columnheader "Description" [ref=e751]
+              - columnheader "Units" [ref=e752]
+              - columnheader "Applicable Date" [ref=e753]
+              - columnheader "Value" [ref=e754]
+              - columnheader "Tax Rate" [ref=e755]
+              - columnheader "HSN" [ref=e756]
+              - columnheader "Status" [ref=e757]
+              - columnheader [ref=e758]
+          - rowgroup [ref=e759]:
+            - row "1 Products Not Applicable - Nos 01/04/2025 - - - Saved" [ref=e760]:
+              - cell [ref=e761]:
+                - checkbox [ref=e764] [cursor=pointer]
+              - cell "1" [ref=e766]
+              - cell "Products" [ref=e767]:
+                - generic [ref=e768]: Products
+              - cell "Not Applicable" [ref=e769]:
+                - generic [ref=e770]: Not Applicable
+              - cell "-" [ref=e771]:
+                - generic [ref=e772]: "-"
+              - cell "Nos" [ref=e773]:
+                - generic [ref=e774]: Nos
+              - cell "01/04/2025" [ref=e775]:
+                - generic [ref=e776]: 01/04/2025
+              - cell "-" [ref=e777]:
+                - generic [ref=e778]: "-"
+              - cell "-" [ref=e779]:
+                - generic [ref=e780]: "-"
+              - cell "-" [ref=e781]:
+                - generic [ref=e782]: "-"
+              - cell "Saved" [ref=e783]:
+                - generic [ref=e784]: Saved
+              - cell [ref=e785]
+            - row "2 Purchase of Punch2.0 Smart Not Applicable - Not Applicable 01/04/2025 - - - Saved" [ref=e786]:
+              - cell [ref=e787]:
+                - checkbox [ref=e790] [cursor=pointer]
+              - cell "2" [ref=e792]
+              - cell "Purchase of Punch2.0 Smart" [ref=e793]:
+                - generic [ref=e794]: Purchase of Punch2.0 Smart
+              - cell "Not Applicable" [ref=e795]:
+                - generic [ref=e796]: Not Applicable
+              - cell "-" [ref=e797]:
+                - generic [ref=e798]: "-"
+              - cell "Not Applicable" [ref=e799]:
+                - generic [ref=e800]: Not Applicable
+              - cell "01/04/2025" [ref=e801]:
+                - generic [ref=e802]: 01/04/2025
+              - cell "-" [ref=e803]:
+                - generic [ref=e804]: "-"
+              - cell "-" [ref=e805]:
+                - generic [ref=e806]: "-"
+              - cell "-" [ref=e807]:
+                - generic [ref=e808]: "-"
+              - cell "Saved" [ref=e809]:
+                - generic [ref=e810]: Saved
+              - cell [ref=e811]
+        - list [ref=e813]:
+          - listitem "Previous Page" [ref=e814]:
+            - button "left" [disabled] [ref=e815]:
+              - img "left" [ref=e816]:
+                - img [ref=e817]
+          - listitem "1" [ref=e819] [cursor=pointer]:
+            - generic [ref=e820]: "1"
+          - listitem "Next Page" [ref=e821]:
+            - button "right" [disabled] [ref=e822]:
+              - img "right" [ref=e823]:
+                - img [ref=e824]
+          - listitem [ref=e826]:
+            - generic "Page Size" [ref=e827] [cursor=pointer]:
+              - generic [ref=e828]:
+                - combobox "Page Size" [ref=e830]
+                - generic "20 / page" [ref=e831]
+              - generic:
+                - img:
+                  - img

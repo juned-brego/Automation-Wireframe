@@ -1,0 +1,201 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e6723]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Try A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Try A/c. & Billing
+      - listitem [ref=e84]:
+        - link "7 days remaining on your free trial period Buy Now" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e87]:
+            - heading "7 days remaining on your free trial period" [level=5] [ref=e88]
+            - button "Buy Now" [ref=e90]
+      - listitem [ref=e91]:
+        - link "Live Chat" [ref=e92] [cursor=pointer]:
+          - /url: /
+          - img [ref=e93]
+          - generic [ref=e96]: Live Chat
+      - listitem [ref=e97]:
+        - link "Settings" [ref=e98] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e99]
+          - generic [ref=e103]: Settings
+  - navigation [ref=e104]:
+    - list [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button [ref=e113] [cursor=pointer]:
+            - img [ref=e116]
+          - generic [ref=e2605]:
+            - combobox "Select Year" [ref=e2606]: 2025-26
+            - button "Open" [ref=e2608] [cursor=pointer]
+            - group
+          - generic [ref=e2612]:
+            - combobox "Select Period" [ref=e2613]: Mar 2026 (Monthly)
+            - button "Open" [ref=e2615] [cursor=pointer]
+            - group
+        - heading "CLEAR WATER CRAFT (27CDRPS5642C2Z5)" [level=5] [ref=e136]:
+          - paragraph [ref=e137]: CLEAR WATER CRAFT (27CDRPS5642C2Z5)
+        - generic [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Need help?" [ref=e140] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Need help?
+                - img [ref=e147]
+          - listitem [ref=e149]:
+            - link "9821555450 Owner" [ref=e150] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: "9821555450"
+                - generic [ref=e153]: Owner
+              - img [ref=e156]
+  - generic [ref=e6728]:
+    - generic [ref=e6729]:
+      - heading "Add Invoice" [level=2] [ref=e6734]:
+        - button [ref=e6735] [cursor=pointer]:
+          - img [ref=e6736]
+        - heading "Add Invoice" [level=2] [ref=e6741]
+      - generic [ref=e6742]:
+        - generic [ref=e6743]: "Doc Type :"
+        - generic [ref=e6746]:
+          - combobox "Doc Type :" [active] [ref=e6747]: B2CS
+          - button "Open" [ref=e7227] [cursor=pointer]
+          - group
+        - button "Add Row" [ref=e6750] [cursor=pointer]:
+          - img [ref=e6751]
+          - text: Add Row
+    - generic [ref=e7230]:
+      - generic [ref=e7231]:
+        - generic [ref=e7232]:
+          - paragraph [ref=e7234]: "Count of Documents :"
+          - heading "5" [level=6] [ref=e7236]
+        - generic [ref=e7237]:
+          - paragraph [ref=e7239]: "Taxable Amount :"
+          - heading "₹0.00" [level=6] [ref=e7241]
+        - generic [ref=e7242]:
+          - paragraph [ref=e7244]: "Tax Amount :"
+          - heading "₹0.00" [level=6] [ref=e7246]
+      - table [ref=e7251]:
+        - rowgroup [ref=e7252]:
+          - row "Sr.No. Type Place Of Supply Applicable % of Tax Rate Rate (%) Total Taxable Value Cess Amount E-Commerce GSTIN" [ref=e7253]:
+            - columnheader [ref=e7254]:
+              - button [ref=e7256] [cursor=pointer]
+            - columnheader "Sr.No." [ref=e7257]
+            - columnheader "Type" [ref=e7258]
+            - columnheader "Place Of Supply" [ref=e7259]
+            - columnheader "Applicable % of Tax Rate" [ref=e7260]
+            - columnheader "Rate (%)" [ref=e7261]
+            - columnheader "Total Taxable Value" [ref=e7262]
+            - columnheader "Cess Amount" [ref=e7263]
+            - columnheader "E-Commerce GSTIN" [ref=e7264]
+        - rowgroup [ref=e7265]:
+          - row "1 None" [ref=e7266]:
+            - cell [ref=e7267]:
+              - button [ref=e7271] [cursor=pointer]
+            - cell "1" [ref=e7272]:
+              - generic "1" [ref=e7274]
+            - cell [ref=e7275]
+            - cell [ref=e7276]
+            - cell "None" [ref=e7277]:
+              - generic "None" [ref=e7279]
+            - cell [ref=e7280]
+            - cell [ref=e7281]
+            - cell [ref=e7282]
+            - cell [ref=e7283]
+          - row "2 None" [ref=e7284]:
+            - cell [ref=e7285]:
+              - button [ref=e7289] [cursor=pointer]
+            - cell "2" [ref=e7290]:
+              - generic "2" [ref=e7292]
+            - cell [ref=e7293]
+            - cell [ref=e7294]
+            - cell "None" [ref=e7295]:
+              - generic "None" [ref=e7297]
+            - cell [ref=e7298]
+            - cell [ref=e7299]
+            - cell [ref=e7300]
+            - cell [ref=e7301]
+          - row "3 None" [ref=e7302]:
+            - cell [ref=e7303]:
+              - button [ref=e7307] [cursor=pointer]
+            - cell "3" [ref=e7308]:
+              - generic "3" [ref=e7310]
+            - cell [ref=e7311]
+            - cell [ref=e7312]
+            - cell "None" [ref=e7313]:
+              - generic "None" [ref=e7315]
+            - cell [ref=e7316]
+            - cell [ref=e7317]
+            - cell [ref=e7318]
+            - cell [ref=e7319]
+          - row "4 None" [ref=e7320]:
+            - cell [ref=e7321]:
+              - button [ref=e7325] [cursor=pointer]
+            - cell "4" [ref=e7326]:
+              - generic "4" [ref=e7328]
+            - cell [ref=e7329]
+            - cell [ref=e7330]
+            - cell "None" [ref=e7331]:
+              - generic "None" [ref=e7333]
+            - cell [ref=e7334]
+            - cell [ref=e7335]
+            - cell [ref=e7336]
+            - cell [ref=e7337]
+          - row "5 None" [ref=e7338]:
+            - cell [ref=e7339]:
+              - button [ref=e7343] [cursor=pointer]
+            - cell "5" [ref=e7344]:
+              - generic "5" [ref=e7346]
+            - cell [ref=e7347]
+            - cell [ref=e7348]
+            - cell "None" [ref=e7349]:
+              - generic "None" [ref=e7351]
+            - cell [ref=e7352]
+            - cell [ref=e7353]
+            - cell [ref=e7354]
+            - cell [ref=e7355]
+      - generic [ref=e7356]:
+        - button "Cancel" [ref=e7358] [cursor=pointer]
+        - generic [ref=e7359]:
+          - button "Delete Items" [disabled]
+          - generic [ref=e7360]:
+            - button "Save & Verify" [disabled]

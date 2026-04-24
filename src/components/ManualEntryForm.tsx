@@ -72,6 +72,93 @@ const CONFIG_PARTY_DETAILS = [
   { label: 'Place of Supply', checked: true },
 ];
 
+type AdditionalDetailsTabKey = 'dispatch' | 'order' | 'export' | 'party';
+
+const ADDITIONAL_DETAILS_TABS: { key: AdditionalDetailsTabKey; label: string }[] = [
+  { key: 'dispatch', label: 'Dispatch Details' },
+  { key: 'order', label: 'Order Details' },
+  { key: 'export', label: 'Export Details' },
+  { key: 'party', label: 'Party Details' },
+];
+
+const PLACE_OF_SUPPLY_OPTIONS = [
+  'Andaman & Nicobar Islands',
+  'Andhra Pradesh',
+  'Arunachal Pradesh',
+  'Assam',
+  'Bihar',
+  'Chandigarh',
+  'Chhattisgarh',
+  'Dadra & Nagar Haveli and Daman & Diu',
+  'Delhi',
+  'Goa',
+  'Gujarat',
+  'Haryana',
+  'Himachal Pradesh',
+  'Jammu & Kashmir',
+  'Jharkhand',
+  'Karnataka',
+  'Kerala',
+  'Ladakh',
+  'Lakshadweep',
+  'Madhya Pradesh',
+  'Maharashtra',
+  'Manipur',
+  'Meghalaya',
+  'Mizoram',
+  'Nagaland',
+  'Odisha',
+  'Other Territory',
+  'Puducherry',
+  'Punjab',
+  'Rajasthan',
+  'Sikkim',
+  'Tamil Nadu',
+  'Telangana',
+  'Tripura',
+  'Uttar Pradesh',
+  'Uttarakhand',
+  'West Bengal',
+  'Foreign Country',
+];
+
+const ADDITIONAL_DETAILS_FIELDS: Record<
+  AdditionalDetailsTabKey,
+  { label: string; placeholder: string; kind?: 'date' | 'select' }[]
+> = {
+  dispatch: [
+    { label: 'Delivery Note No(s)', placeholder: 'Select Delivery Note No(s)' },
+    { label: 'Invoice date', placeholder: 'Select date', kind: 'date' },
+    { label: 'Dispatch Doc No.', placeholder: 'Select Dispatch Doc No.' },
+    { label: 'Dispatched through', placeholder: 'Select Dispatched through' },
+    { label: 'Destination', placeholder: 'Select Destination' },
+    { label: 'Carrier Name/Agent', placeholder: 'Select Carrier Name/Agent' },
+    { label: 'Bill of Lading/LR-RR No.', placeholder: 'Select Bill of Lading/LR-RR No.' },
+    { label: 'Bill of Lading date', placeholder: 'Select date', kind: 'date' },
+  ],
+  order: [
+    { label: 'Order No(s)', placeholder: 'Select Order No(s)' },
+    { label: 'Order date', placeholder: 'Select date', kind: 'date' },
+    { label: 'Mode/Terms of Payment', placeholder: 'Select Mode/Terms of Payment' },
+    { label: 'Other References', placeholder: 'Select Other References' },
+    { label: 'Terms of Delivery', placeholder: 'Select Terms of Delivery' },
+  ],
+  export: [
+    { label: 'Place of Receipt by Shipper', placeholder: 'Select Place of Receipt by Shipper' },
+    { label: 'Vessel/Flight/Motor-Vehicle No.', placeholder: 'Select Vessel/Flight/Motor-Vehicle No.' },
+    { label: 'Shipping bill date', placeholder: 'Select date', kind: 'date' },
+    { label: 'Port of Loading', placeholder: 'Select Port of Loading' },
+    { label: 'Port of Discharge', placeholder: 'Select Port of Discharge' },
+    { label: 'Shipping Bill No.', placeholder: 'Select Shipping Bill No.' },
+    { label: 'Tracking date', placeholder: 'Select date', kind: 'date' },
+    { label: 'Port Code', placeholder: 'Select Port Code' },
+  ],
+  party: [
+    { label: 'GSTIN/UIN', placeholder: 'Select GSTIN/UIN' },
+    { label: 'Place of Supply', placeholder: 'Select Place of Supply', kind: 'select' },
+  ],
+};
+
 interface ManualEntryFormProps {
   type: 'Sales' | 'Sales Return' | 'Purchase' | 'Purchase Return';
 }
@@ -96,6 +183,7 @@ export default function ManualEntryForm({ type }: ManualEntryFormProps) {
   const [meShowViewItems, setMeShowViewItems] = useState(false);
   const [meConfigPartyExpanded, setMeConfigPartyExpanded] = useState(false);
   const [meShowAdditionalDetails, setMeShowAdditionalDetails] = useState(false);
+  const [meAdditionalDetailsTab, setMeAdditionalDetailsTab] = useState<AdditionalDetailsTabKey>('dispatch');
 
   // Item Details rows
   const [meItemRows, setMeItemRows] = useState([{ id: 1, name: '', qty: '', rate: '', amount: '0' }]);
@@ -336,7 +424,10 @@ export default function ManualEntryForm({ type }: ManualEntryFormProps) {
                     className="flex-1 px-3 py-2 text-[12px] border border-gray-300 rounded focus:outline-none focus:border-blue-400"
                   />
                   <button
-                    onClick={() => setMeShowAdditionalDetails(true)}
+                    onClick={() => {
+                      setMeAdditionalDetailsTab('dispatch');
+                      setMeShowAdditionalDetails(true);
+                    }}
                     className="px-3 py-1.5 text-[11px] text-gray-600 border border-gray-300 rounded hover:bg-gray-50 whitespace-nowrap"
                   >
                     Details
@@ -1157,9 +1248,75 @@ export default function ManualEntryForm({ type }: ManualEntryFormProps) {
               </div>
 
               {/* Body */}
-              <div className="flex-1 overflow-auto px-6 py-5 space-y-5">
-                {/* Placeholder content - Additional details modal content */}
-                <p className="text-[12px] text-gray-600">Additional details modal content goes here</p>
+              <div className="flex-1 overflow-auto px-6 py-5">
+                <div className="border-b border-gray-200 mb-5">
+                  <div className="flex flex-wrap gap-6 text-[12px] font-semibold">
+                    {ADDITIONAL_DETAILS_TABS.map((tab) => (
+                      <button
+                        key={tab.key}
+                        onClick={() => setMeAdditionalDetailsTab(tab.key)}
+                        className={`border-b-2 pb-2 transition-colors ${
+                          meAdditionalDetailsTab === tab.key
+                            ? 'border-blue-500 text-blue-600'
+                            : 'border-transparent text-gray-500 hover:text-blue-600'
+                        }`}
+                      >
+                        {tab.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+                  {ADDITIONAL_DETAILS_FIELDS[meAdditionalDetailsTab].map((field) => (
+                    <div key={`${meAdditionalDetailsTab}-${field.label}`}>
+                      <label className="text-[11px] font-medium text-gray-600 mb-1 block">{field.label}</label>
+                      {field.kind === 'date' ? (
+                        <div className="relative">
+                          <input
+                            type="date"
+                            className="w-full px-3 py-2 text-[12px] border border-gray-300 rounded focus:outline-none focus:border-blue-400 pr-8"
+                          />
+                          <Calendar size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+                        </div>
+                      ) : field.kind === 'select' ? (
+                        <div className="relative">
+                          <select
+                            defaultValue=""
+                            className="w-full appearance-none px-3 py-2 text-[12px] border border-gray-300 rounded bg-white focus:outline-none focus:border-blue-400 pr-8 text-gray-600"
+                          >
+                            <option value="" disabled>{field.placeholder}</option>
+                            {PLACE_OF_SUPPLY_OPTIONS.map((option) => (
+                              <option key={option} value={option}>{option}</option>
+                            ))}
+                          </select>
+                          <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none" />
+                        </div>
+                      ) : (
+                        <input
+                          type="text"
+                          placeholder={field.placeholder}
+                          className="w-full px-3 py-2 text-[12px] border border-gray-300 rounded focus:outline-none focus:border-blue-400"
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="px-6 py-4 border-t border-gray-200 flex items-center justify-end gap-2">
+                <button
+                  onClick={() => setMeShowAdditionalDetails(false)}
+                  className="px-4 py-2 border border-gray-300 text-gray-600 text-[12px] font-medium rounded hover:bg-gray-50"
+                >
+                  Cancel
+                </button>
+                <button
+                  onClick={() => setMeShowAdditionalDetails(false)}
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-[12px] font-medium rounded"
+                >
+                  OK
+                </button>
               </div>
             </div>
           </div>

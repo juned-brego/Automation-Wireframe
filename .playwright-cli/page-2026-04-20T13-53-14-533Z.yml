@@ -1,0 +1,202 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - heading "GSTR-3B - Data Preparation for Mar 2026 (Monthly)" [level=2] [ref=e72]
+            - paragraph [ref=e73]: The live Munim flow starts with section-wise summary tiles. Each return part acts as the entry point into the prepare screen before filing can continue.
+          - generic [ref=e74]:
+            - button "File Nil GSTR3B" [ref=e75] [cursor=pointer]:
+              - img [ref=e76]
+              - text: File Nil GSTR3B
+            - button "Download From GST Portal" [ref=e79] [cursor=pointer]:
+              - text: Download From GST Portal
+              - img [ref=e80]
+        - generic [ref=e84]:
+          - button "1 Summary Data" [ref=e85] [cursor=pointer]:
+            - generic [ref=e86]: "1"
+            - generic [ref=e87]: Summary Data
+          - img [ref=e88]
+          - button "2 Prepare & File" [ref=e90] [cursor=pointer]:
+            - generic [ref=e91]: "2"
+            - generic [ref=e92]: Prepare & File
+          - img [ref=e93]
+          - button "3 Push to GSTN" [ref=e95] [cursor=pointer]:
+            - generic [ref=e96]: "3"
+            - generic [ref=e97]: Push to GSTN
+          - img [ref=e98]
+          - button "4 File GSTR-3B" [ref=e100] [cursor=pointer]:
+            - generic [ref=e101]: "4"
+            - generic [ref=e102]: File GSTR-3B
+        - generic [ref=e103]:
+          - button "3.1 Tax on outward and reverse charge inward supplies 3.1 IGST 4,18,220.00 CGST 2,06,118.00 SGST 2,06,118.00 CESS 0.00" [ref=e104] [cursor=pointer]:
+            - generic [ref=e105]:
+              - heading "3.1 Tax on outward and reverse charge inward supplies" [level=3] [ref=e106]
+              - generic [ref=e107]: "3.1"
+            - generic [ref=e108]:
+              - generic [ref=e109]:
+                - generic [ref=e110]: IGST
+                - generic [ref=e111]: 4,18,220.00
+              - generic [ref=e112]:
+                - generic [ref=e113]: CGST
+                - generic [ref=e114]: 2,06,118.00
+              - generic [ref=e115]:
+                - generic [ref=e116]: SGST
+                - generic [ref=e117]: 2,06,118.00
+              - generic [ref=e118]:
+                - generic [ref=e119]: CESS
+                - generic [ref=e120]: "0.00"
+          - button "3.1.1 Supplies notified under section 9(5) of the CGST Act, 2017 3.1.1 IGST 0.00 CGST 0.00 SGST 0.00 CESS 0.00" [ref=e121] [cursor=pointer]:
+            - generic [ref=e122]:
+              - heading "3.1.1 Supplies notified under section 9(5) of the CGST Act, 2017" [level=3] [ref=e123]
+              - generic [ref=e124]: 3.1.1
+            - generic [ref=e125]:
+              - generic [ref=e126]:
+                - generic [ref=e127]: IGST
+                - generic [ref=e128]: "0.00"
+              - generic [ref=e129]:
+                - generic [ref=e130]: CGST
+                - generic [ref=e131]: "0.00"
+              - generic [ref=e132]:
+                - generic [ref=e133]: SGST
+                - generic [ref=e134]: "0.00"
+              - generic [ref=e135]:
+                - generic [ref=e136]: CESS
+                - generic [ref=e137]: "0.00"
+          - button "3.2 Inter-state supplies 3.2 Taxable Value 12,48,750.00 Integrated Tax 2,24,775.00" [ref=e138] [cursor=pointer]:
+            - generic [ref=e139]:
+              - heading "3.2 Inter-state supplies" [level=3] [ref=e140]
+              - generic [ref=e141]: "3.2"
+            - generic [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144]: Taxable Value
+                - generic [ref=e145]: 12,48,750.00
+              - generic [ref=e146]:
+                - generic [ref=e147]: Integrated Tax
+                - generic [ref=e148]: 2,24,775.00
+          - button "4 Eligible ITC 4 IGST 3,08,420.00 CGST 1,86,220.00 SGST 1,86,220.00 CESS 0.00" [ref=e149] [cursor=pointer]:
+            - generic [ref=e150]:
+              - heading "4 Eligible ITC" [level=3] [ref=e151]
+              - generic [ref=e152]: "4"
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]: IGST
+                - generic [ref=e156]: 3,08,420.00
+              - generic [ref=e157]:
+                - generic [ref=e158]: CGST
+                - generic [ref=e159]: 1,86,220.00
+              - generic [ref=e160]:
+                - generic [ref=e161]: SGST
+                - generic [ref=e162]: 1,86,220.00
+              - generic [ref=e163]:
+                - generic [ref=e164]: CESS
+                - generic [ref=e165]: "0.00"
+          - button "5 Exempt, nil and Non GST inward supplies 5 Inter-state supplies 84,500.00 Intra-state supplies 1,12,400.00" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]:
+              - heading "5 Exempt, nil and Non GST inward supplies" [level=3] [ref=e168]
+              - generic [ref=e169]: "5"
+            - generic [ref=e170]:
+              - generic [ref=e171]:
+                - generic [ref=e172]: Inter-state supplies
+                - generic [ref=e173]: 84,500.00
+              - generic [ref=e174]:
+                - generic [ref=e175]: Intra-state supplies
+                - generic [ref=e176]: 1,12,400.00
+          - button "5.1 Interest and Late fee for previous tax period 5.1 IGST 0.00 CGST 0.00 SGST 0.00 CESS 0.00" [ref=e177] [cursor=pointer]:
+            - generic [ref=e178]:
+              - heading "5.1 Interest and Late fee for previous tax period" [level=3] [ref=e179]
+              - generic [ref=e180]: "5.1"
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - generic [ref=e183]: IGST
+                - generic [ref=e184]: "0.00"
+              - generic [ref=e185]:
+                - generic [ref=e186]: CGST
+                - generic [ref=e187]: "0.00"
+              - generic [ref=e188]:
+                - generic [ref=e189]: SGST
+                - generic [ref=e190]: "0.00"
+              - generic [ref=e191]:
+                - generic [ref=e192]: CESS
+                - generic [ref=e193]: "0.00"
+          - button "6.1 Payment of Tax 6.1 Balance Liability 3,49,596.00 Paid through Cash 1,58,940.00 Paid through Credit 1,90,656.00" [ref=e194] [cursor=pointer]:
+            - generic [ref=e195]:
+              - heading "6.1 Payment of Tax" [level=3] [ref=e196]
+              - generic [ref=e197]: "6.1"
+            - generic [ref=e198]:
+              - generic [ref=e199]:
+                - generic [ref=e200]: Balance Liability
+                - generic [ref=e201]: 3,49,596.00
+              - generic [ref=e202]:
+                - generic [ref=e203]: Paid through Cash
+                - generic [ref=e204]: 1,58,940.00
+              - generic [ref=e205]:
+                - generic [ref=e206]: Paid through Credit
+                - generic [ref=e207]: 1,90,656.00
+        - generic [ref=e208]:
+          - generic [ref=e209]: Portal data not downloaded yet.
+          - button "Next" [ref=e210] [cursor=pointer]
+  - alert [ref=e211]

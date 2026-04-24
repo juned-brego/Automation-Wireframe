@@ -1,0 +1,151 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2A" [ref=e55] [cursor=pointer]
+          - button "GSTR2B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e449]:
+            - generic [ref=e450]: "Financial Year:"
+            - generic [ref=e451]:
+              - combobox [ref=e452]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24" [selected]
+              - img
+          - button "Get Gst Data" [ref=e453] [cursor=pointer]
+          - button "Upload" [ref=e454] [cursor=pointer]:
+            - img [ref=e455]
+            - text: Upload
+      - generic [ref=e458]:
+        - table [ref=e460]:
+          - rowgroup [ref=e461]:
+            - row "Sr.No. Month Last Sync Date Total Invoice Reconciled Status Action" [ref=e462]:
+              - columnheader "Sr.No." [ref=e463]
+              - columnheader "Month" [ref=e464]
+              - columnheader "Last Sync Date" [ref=e465]
+              - columnheader "Total Invoice" [ref=e466]
+              - columnheader "Reconciled" [ref=e467]
+              - columnheader "Status" [ref=e468]
+              - columnheader "Action" [ref=e469]
+          - rowgroup [ref=e470]:
+            - row "1 May 2023 28-02-2024 297 Pending Complete" [ref=e471]:
+              - cell "1" [ref=e472]
+              - cell "May 2023" [ref=e473]:
+                - button "May 2023" [ref=e474] [cursor=pointer]
+              - cell "28-02-2024" [ref=e475]
+              - cell "297" [ref=e476]
+              - cell "Pending" [ref=e477]:
+                - generic [ref=e478]: Pending
+              - cell "Complete" [ref=e479]:
+                - generic [ref=e480]: Complete
+              - cell [ref=e481]:
+                - generic [ref=e482]:
+                  - button [ref=e483] [cursor=pointer]:
+                    - img [ref=e484]
+                  - button [ref=e489] [cursor=pointer]:
+                    - img [ref=e490]
+                  - button [ref=e493] [cursor=pointer]:
+                    - img [ref=e494]
+                  - button [ref=e498] [cursor=pointer]:
+                    - img [ref=e499]
+            - row "2 Apr 2023 28-02-2024 208 Pending Complete" [ref=e503]:
+              - cell "2" [ref=e504]
+              - cell "Apr 2023" [ref=e505]:
+                - button "Apr 2023" [ref=e506] [cursor=pointer]
+              - cell "28-02-2024" [ref=e507]
+              - cell "208" [ref=e508]
+              - cell "Pending" [ref=e509]:
+                - generic [ref=e510]: Pending
+              - cell "Complete" [ref=e511]:
+                - generic [ref=e512]: Complete
+              - cell [ref=e513]:
+                - generic [ref=e514]:
+                  - button [ref=e515] [cursor=pointer]:
+                    - img [ref=e516]
+                  - button [ref=e521] [cursor=pointer]:
+                    - img [ref=e522]
+                  - button [ref=e525] [cursor=pointer]:
+                    - img [ref=e526]
+                  - button [ref=e530] [cursor=pointer]:
+                    - img [ref=e531]
+        - generic [ref=e535]:
+          - button [ref=e536] [cursor=pointer]:
+            - img [ref=e537]
+          - generic [ref=e539]: "1"
+          - button "2" [ref=e540] [cursor=pointer]
+      - generic [ref=e542]:
+        - generic [ref=e543]:
+          - heading "Get GST Data" [level=2] [ref=e544]
+          - button [ref=e545] [cursor=pointer]:
+            - img [ref=e546]
+        - generic [ref=e550]:
+          - generic [ref=e551]: Time Duration
+          - generic [ref=e552]:
+            - button "Select month" [active] [ref=e553] [cursor=pointer]:
+              - generic [ref=e554]: Select month
+              - img [ref=e555]
+            - generic [ref=e560]:
+              - generic [ref=e561]:
+                - button [ref=e562] [cursor=pointer]:
+                  - img [ref=e563]
+                - generic [ref=e565]: "2024"
+                - button [ref=e566] [cursor=pointer]:
+                  - img [ref=e567]
+              - generic [ref=e569]:
+                - button "Jan" [ref=e570] [cursor=pointer]
+                - button "Feb" [ref=e571] [cursor=pointer]
+                - button "Mar" [ref=e572] [cursor=pointer]
+                - button "Apr" [ref=e573] [cursor=pointer]
+                - button "May" [ref=e574] [cursor=pointer]
+                - button "Jun" [ref=e575] [cursor=pointer]
+                - button "Jul" [ref=e576] [cursor=pointer]
+                - button "Aug" [ref=e577] [cursor=pointer]
+                - button "Sep" [ref=e578] [cursor=pointer]
+                - button "Oct" [ref=e579] [cursor=pointer]
+                - button "Nov" [ref=e580] [cursor=pointer]
+                - button "Dec" [ref=e581] [cursor=pointer]
+        - generic [ref=e557]:
+          - button "Cancel" [ref=e558] [cursor=pointer]
+          - button "Get Data" [ref=e559] [cursor=pointer]
+  - alert [ref=e448]

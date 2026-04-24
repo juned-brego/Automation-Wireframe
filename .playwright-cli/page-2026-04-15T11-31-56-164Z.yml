@@ -1,0 +1,143 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e2494]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Try A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Try A/c. & Billing
+      - listitem [ref=e84]:
+        - link "7 days remaining on your free trial period Buy Now" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e87]:
+            - heading "7 days remaining on your free trial period" [level=5] [ref=e88]
+            - button "Buy Now" [ref=e90]
+      - listitem [ref=e91]:
+        - link "Live Chat" [ref=e92] [cursor=pointer]:
+          - /url: /
+          - img [ref=e93]
+          - generic [ref=e96]: Live Chat
+      - listitem [ref=e97]:
+        - link "Settings" [ref=e98] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e99]
+          - generic [ref=e103]: Settings
+  - navigation [ref=e104]:
+    - list [ref=e109]:
+      - generic [ref=e110]:
+        - button [ref=e113] [cursor=pointer]:
+          - img [ref=e116]
+        - heading "CLEAR WATER CRAFT (27CDRPS5642C2Z5)" [level=5] [ref=e136]:
+          - paragraph [ref=e137]: CLEAR WATER CRAFT (27CDRPS5642C2Z5)
+        - generic [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Need help?" [ref=e140] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Need help?
+                - img [ref=e147]
+          - listitem [ref=e149]:
+            - link "9821555450 Owner" [ref=e150] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: "9821555450"
+                - generic [ref=e153]: Owner
+              - img [ref=e156]
+  - generic [ref=e2499]:
+    - generic [ref=e2500]:
+      - heading "Import Data | Mar 2026 (Monthly)" [level=2] [ref=e2506]:
+        - button [ref=e2507] [cursor=pointer]:
+          - img [ref=e2508]
+        - heading "Import Data | Mar 2026 (Monthly)" [level=2] [ref=e2513]
+      - generic [ref=e2515] [cursor=pointer]: Help for template Selection
+    - generic [ref=e2516]:
+      - generic [ref=e2519]:
+        - heading "Import Sales Data" [level=3] [ref=e2520]
+        - heading "You can choose any option for import your data" [level=6] [ref=e2522]
+      - generic [ref=e2523]:
+        - generic [ref=e2524]:
+          - generic [ref=e2527] [cursor=pointer]:
+            - img [ref=e2529]
+            - generic [ref=e2531]:
+              - heading "Government Excel / CSV" [level=3] [ref=e2532]
+              - heading "Import data which was prepared using a govt. Excel template." [level=5] [ref=e2533]
+          - generic [ref=e2536] [cursor=pointer]:
+            - img [ref=e2538]
+            - generic [ref=e2540]:
+              - heading "Munim Connector" [level=3] [ref=e2542]
+              - heading "Connect Munim for direct import data for return filing." [level=5] [ref=e2543]
+          - generic [ref=e2546] [cursor=pointer]:
+            - img [ref=e2548]
+            - generic [ref=e2550]:
+              - generic [ref=e2551]:
+                - heading "Tally Connector" [level=3] [ref=e2552]
+                - generic [ref=e2554]: "[BETA]"
+              - heading "Connect to Tally software and Import data for easy Return filing." [level=5] [ref=e2555]
+          - generic [ref=e2558] [cursor=pointer]:
+            - img [ref=e2560]
+            - generic [ref=e2562]:
+              - heading "JSON File" [level=3] [ref=e2563]
+              - heading "Import data prepared as JSON using Govt utility/Tally" [level=5] [ref=e2564]
+          - generic [ref=e2567] [cursor=pointer]:
+            - img [ref=e2569]
+            - generic [ref=e2571]:
+              - heading "Copy/Paste/Write" [level=3] [ref=e2572]
+              - heading "Directly copy paste or write your B2B/B2C invoices data." [level=5] [ref=e2573]
+          - generic [ref=e2576] [cursor=pointer]:
+            - img [ref=e2578]
+            - generic [ref=e2580]:
+              - heading "Munim Excel Template" [level=3] [ref=e2581]
+              - heading "Fastest way to prepare & import data direct from Munim" [level=5] [ref=e2582]
+          - generic [ref=e2585] [cursor=pointer]:
+            - img [ref=e2587]
+            - generic [ref=e2589]:
+              - heading "E-Commerce Excel Template [BETA]" [level=3] [ref=e2591]
+              - heading "Import data from your E-Commerce seller template" [level=5] [ref=e2592]
+        - generic [ref=e2593]:
+          - generic [ref=e2597] [cursor=pointer]: COMING SOON
+          - generic [ref=e2598]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - img
+                  - generic:
+                    - generic:
+                      - heading "Custom Excel Template" [level=3]
+                      - heading "Import data prepared on your own Excel template" [level=5]

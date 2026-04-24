@@ -1,0 +1,253 @@
+- generic [ref=e1]:
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - img [ref=e78] [cursor=pointer]
+      - list [ref=e82]:
+        - listitem [ref=e83] [cursor=pointer]:
+          - link "Home" [ref=e84]:
+            - /url: /app/home/dashboard
+            - img [ref=e85]
+            - generic [ref=e87]: Home
+        - listitem [ref=e88] [cursor=pointer]:
+          - link "Data Entry" [active] [ref=e89]:
+            - /url: /app/da/dashboard
+            - img [ref=e90]
+            - generic [ref=e93]: Data Entry
+        - listitem [ref=e94] [cursor=pointer]:
+          - link "GST" [ref=e95]:
+            - /url: /app/ga/dashboard
+            - img [ref=e96]
+            - generic [ref=e100]: GST
+          - generic [ref=e101]: Beta
+        - listitem [ref=e102] [cursor=pointer]:
+          - link "Chat" [ref=e103]:
+            - /url: /app/chat/get-started
+            - img [ref=e104]
+            - generic [ref=e108]: Chat
+          - generic [ref=e109]: Beta
+        - listitem [ref=e110] [cursor=pointer]:
+          - link "Task" [ref=e111]:
+            - /url: /app/pms/document-task
+            - img [ref=e112]
+            - generic [ref=e114]: Task
+          - generic [ref=e115]: Beta
+        - listitem [ref=e116] [cursor=pointer]:
+          - link "Drive" [ref=e117]:
+            - /url: /app/drive/all-documents
+            - img [ref=e118]
+            - generic [ref=e120]: Drive
+      - img [ref=e123] [cursor=pointer]
+      - generic [ref=e128] [cursor=pointer]: J
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - img [ref=e133]
+        - list [ref=e137]:
+          - listitem [ref=e138] [cursor=pointer]:
+            - link "Dashboard" [ref=e139]:
+              - /url: /app/da/dashboard
+              - img [ref=e141]
+              - generic [ref=e143]: Dashboard
+          - listitem [ref=e620] [cursor=pointer]:
+            - link "Bulk Upload" [ref=e621]:
+              - /url: /app/da/banking
+              - img [ref=e623]
+              - generic [ref=e625]: Bulk Upload
+          - listitem [ref=e627] [cursor=pointer]:
+            - link "Transactions" [ref=e628]:
+              - /url: /app/da/sales
+              - img [ref=e630]
+              - generic [ref=e633]: Transactions
+          - listitem [ref=e635] [cursor=pointer]:
+            - link "Master" [ref=e636]:
+              - /url: /app/da/ledger-master
+              - img [ref=e638]
+              - generic [ref=e640]: Master
+          - listitem [ref=e642] [cursor=pointer]:
+            - link "Learn Vyapar TaxOne" [ref=e643]:
+              - /url: /app/da/learn-suvit
+              - img [ref=e645]
+              - generic [ref=e647]: Learn Vyapar TaxOne
+      - generic [ref=e162]:
+        - generic [ref=e170]:
+          - generic [ref=e171]:
+            - img [ref=e172]
+            - text: Suvit Is Now
+            - generic [ref=e177]: Vyapar TaxOne
+            - generic [ref=e178] [cursor=pointer]: Know more
+          - img [ref=e650] [cursor=pointer]
+          - link [ref=e187] [cursor=pointer]:
+            - /url: https://app.suvit.io/suvit-x64/VyaparTaxOne-1.4.7.exe
+            - img [ref=e188]
+          - generic [ref=e191]:
+            - superscript [ref=e193]:
+              - generic [ref=e195]: "7"
+            - img [ref=e197] [cursor=pointer]
+          - generic [ref=e657] [cursor=pointer]:
+            - generic [ref=e658]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e660]
+        - main [ref=e199]:
+          - generic [ref=e664]:
+            - generic [ref=e666]:
+              - generic [ref=e667]:
+                - heading "PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)" [level=5] [ref=e668]:
+                  - generic [ref=e669]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)
+                - heading "01/04/2026 - 31/03/2027" [level=4] [ref=e671]:
+                  - generic [ref=e672]: 01/04/2026 - 31/03/2027
+                  - img [ref=e673] [cursor=pointer]
+              - generic [ref=e677]:
+                - heading "Quick Create" [level=6] [ref=e678]
+                - generic [ref=e679]:
+                  - button "Banking" [ref=e680] [cursor=pointer]:
+                    - img [ref=e681]
+                    - generic [ref=e683]: Banking
+                  - button "Sales" [ref=e684] [cursor=pointer]:
+                    - img [ref=e685]
+                    - generic [ref=e687]: Sales
+                  - button "Sales Return" [ref=e688] [cursor=pointer]:
+                    - img [ref=e689]
+                    - generic [ref=e691]: Sales Return
+                  - button "Purchase" [ref=e692] [cursor=pointer]:
+                    - img [ref=e693]
+                    - generic [ref=e695]: Purchase
+                  - button "Purchase Return" [ref=e696] [cursor=pointer]:
+                    - img [ref=e697]
+                    - generic [ref=e699]: Purchase Return
+                  - button "Journal" [ref=e700] [cursor=pointer]:
+                    - img [ref=e701]
+                    - generic [ref=e703]: Journal
+                  - button "Ledger" [ref=e704] [cursor=pointer]:
+                    - img [ref=e705]
+                    - generic [ref=e707]: Ledger
+                  - button "Item" [ref=e708] [cursor=pointer]:
+                    - img [ref=e709]
+                    - generic [ref=e711]: Item
+            - generic [ref=e713]:
+              - generic [ref=e714]:
+                - heading "Transactions sent to Tally" [level=4] [ref=e716]
+                - generic [ref=e719] [cursor=pointer]:
+                  - generic [ref=e720]:
+                    - combobox [ref=e722]
+                    - generic "Today" [ref=e723]
+                  - generic:
+                    - img:
+                      - img
+              - generic [ref=e724]:
+                - generic [ref=e725]:
+                  - heading "Total" [level=5] [ref=e726]
+                  - paragraph [ref=e727]: "0"
+                - generic [ref=e728]:
+                  - heading "Banking" [level=5] [ref=e729]
+                  - paragraph [ref=e730]: "0"
+                - generic [ref=e731]:
+                  - heading "Sales" [level=5] [ref=e732]
+                  - paragraph [ref=e733]: "0"
+                - generic [ref=e734]:
+                  - heading "Purchase" [level=5] [ref=e735]
+                  - paragraph [ref=e736]: "0"
+                - generic [ref=e737]:
+                  - heading "Journal" [level=5] [ref=e738]
+                  - paragraph [ref=e739]: "0"
+            - generic [ref=e741]:
+              - generic [ref=e742]:
+                - heading "Top 5 Customer" [level=4] [ref=e744]
+                - generic [ref=e746] [cursor=pointer]:
+                  - generic [ref=e747]:
+                    - combobox [ref=e749]
+                    - generic "Top 5" [ref=e750]
+                  - generic:
+                    - img:
+                      - img
+              - table [ref=e758]:
+                - rowgroup [ref=e761]:
+                  - row "Sr. No. Customer Name Total Amount" [ref=e762]:
+                    - columnheader "Sr. No." [ref=e763]
+                    - columnheader "Customer Name" [ref=e764]
+                    - columnheader "Total Amount" [ref=e765]
+                - rowgroup [ref=e766]:
+                  - row "No data" [ref=e767]:
+                    - cell "No data" [ref=e768]:
+                      - generic [ref=e769]:
+                        - img [ref=e771]
+                        - generic [ref=e777]: No data
+            - generic [ref=e779]:
+              - generic [ref=e780]:
+                - heading "Top 5 Supplier" [level=4] [ref=e782]
+                - generic [ref=e784] [cursor=pointer]:
+                  - generic [ref=e785]:
+                    - combobox [ref=e787]
+                    - generic "Top 5" [ref=e788]
+                  - generic:
+                    - img:
+                      - img
+              - table [ref=e796]:
+                - rowgroup [ref=e799]:
+                  - row "Sr. No. Supplier Name Total Amount" [ref=e800]:
+                    - columnheader "Sr. No." [ref=e801]
+                    - columnheader "Supplier Name" [ref=e802]
+                    - columnheader "Total Amount" [ref=e803]
+                - rowgroup [ref=e804]:
+                  - row "No data" [ref=e805]:
+                    - cell "No data" [ref=e806]:
+                      - generic [ref=e807]:
+                        - img [ref=e809]
+                        - generic [ref=e815]: No data
+            - generic [ref=e817]:
+              - heading "Payment vs Receipt" [level=4] [ref=e819]
+              - generic [ref=e821]:
+                - generic [ref=e823]:
+                  - generic [ref=e824]: Payment
+                  - generic [ref=e825]: Receipt
+                - img [ref=e827]
+            - generic [ref=e842]:
+              - generic [ref=e843]:
+                - heading "Activity On Vyapar TaxOne" [level=4] [ref=e844]
+                - generic [ref=e847] [cursor=pointer]:
+                  - generic [ref=e848]:
+                    - combobox [ref=e850]
+                    - generic "Today" [ref=e851]
+                  - generic:
+                    - img:
+                      - img
+              - table [ref=e853]:
+                - rowgroup [ref=e854]:
+                  - row "Features Total Upload Saved Synced with Tally" [ref=e855]:
+                    - columnheader "Features" [ref=e856]
+                    - columnheader "Total Upload" [ref=e857]
+                    - columnheader "Saved" [ref=e858]
+                    - columnheader "Synced with Tally" [ref=e859]
+                - rowgroup [ref=e860]:
+                  - row "Banking Excel/PDF 0 0 0" [ref=e861]:
+                    - cell "Banking" [ref=e862]
+                    - cell "Excel/PDF" [ref=e863]
+                    - cell "0" [ref=e864]
+                    - cell "0" [ref=e865]
+                    - cell "0" [ref=e866]
+                  - row "Sales Excel 0 0 0" [ref=e867]:
+                    - cell "Sales" [ref=e868]
+                    - cell "Excel" [ref=e869]
+                    - cell "0" [ref=e870]
+                    - cell "0" [ref=e871]
+                    - cell "0" [ref=e872]
+                  - row "Image/PDF 0 0 0" [ref=e873]:
+                    - cell "Image/PDF" [ref=e874]
+                    - cell "0" [ref=e875]
+                    - cell "0" [ref=e876]
+                    - cell "0" [ref=e877]
+                  - row "Purchase Excel 0 0 0" [ref=e878]:
+                    - cell "Purchase" [ref=e879]
+                    - cell "Excel" [ref=e880]
+                    - cell "0" [ref=e881]
+                    - cell "0" [ref=e882]
+                    - cell "0" [ref=e883]
+                  - row "Image/PDF 0 0 0" [ref=e884]:
+                    - cell "Image/PDF" [ref=e885]
+                    - cell "0" [ref=e886]
+                    - cell "0" [ref=e887]
+                    - cell "0" [ref=e888]
+            - generic [ref=e890]:
+              - generic [ref=e891]:
+                - heading "Latest Updates" [level=4] [ref=e893]
+                - link "View All" [ref=e894] [cursor=pointer]:
+                  - /url: /app/da/whats-new
+              - list [ref=e895]
+  - tooltip "Data Entry Automation" [ref=e898]

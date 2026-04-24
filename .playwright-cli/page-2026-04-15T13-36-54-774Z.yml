@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e67]:
+        - generic [ref=e358]: 1 selected invoice row was opened in Edit Invoice.
+        - generic [ref=e68]:
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: GSTR-1 Workflow
+              - heading "Edit Invoice" [level=2] [ref=e359]
+            - generic [ref=e74]:
+              - generic [ref=e360]:
+                - generic [ref=e361]: "Doc Type :"
+                - combobox [ref=e362]:
+                  - option "B2B" [selected]
+                  - option "B2CL"
+                  - option "B2CS"
+                  - option "Export Invoices"
+                  - option "Credit / Debit Notes"
+              - button "Add Row" [ref=e363] [cursor=pointer]
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - generic [ref=e366]:
+                - paragraph [ref=e367]: Count of Documents
+                - paragraph [ref=e368]: "1"
+              - generic [ref=e369]:
+                - paragraph [ref=e370]: Taxable Amount
+                - paragraph [ref=e371]: ₹35,600.00
+              - generic [ref=e372]:
+                - paragraph [ref=e373]: Tax Amount
+                - paragraph [ref=e374]: ₹1,780.00
+              - generic [ref=e375]:
+                - paragraph [ref=e376]: Invoice Value
+                - paragraph [ref=e377]: ₹37,380.00
+            - table [ref=e379]:
+              - rowgroup [ref=e380]:
+                - row "Sr.No. GSTIN/UIN Of Recipient Receiver Name Invoice Number Invoice Date Invoice Value Place Of Supply Reverse Charge Applicable % of Tax Rate Invoice Type E-Commerce GSTIN Rate (%) Total Taxable Value Cess Amount" [ref=e381]:
+                  - columnheader [ref=e382]
+                  - columnheader "Sr.No." [ref=e383]
+                  - columnheader "GSTIN/UIN Of Recipient" [ref=e384]
+                  - columnheader "Receiver Name" [ref=e385]
+                  - columnheader "Invoice Number" [ref=e386]
+                  - columnheader "Invoice Date" [ref=e387]
+                  - columnheader "Invoice Value" [ref=e388]
+                  - columnheader "Place Of Supply" [ref=e389]
+                  - columnheader "Reverse Charge" [ref=e390]
+                  - columnheader "Applicable % of Tax Rate" [ref=e391]
+                  - columnheader "Invoice Type" [ref=e392]
+                  - columnheader "E-Commerce GSTIN" [ref=e393]
+                  - columnheader "Rate (%)" [ref=e394]
+                  - columnheader "Total Taxable Value" [ref=e395]
+                  - columnheader "Cess Amount" [ref=e396]
+              - rowgroup [ref=e397]:
+                - row "1 36AACCR2213F2ZU VIJAY TEX 2025-26/117 21-03-2026 37380.00 N None Regular B2B 5.00 35600.00" [ref=e398]:
+                  - cell [ref=e399]:
+                    - button [ref=e400] [cursor=pointer]
+                  - cell "1" [ref=e401]
+                  - cell "36AACCR2213F2ZU" [ref=e402]:
+                    - textbox [ref=e403]: 36AACCR2213F2ZU
+                  - cell "VIJAY TEX" [ref=e404]:
+                    - textbox [ref=e405]: VIJAY TEX
+                  - cell "2025-26/117" [ref=e406]:
+                    - textbox [ref=e407]: 2025-26/117
+                  - cell "21-03-2026" [ref=e408]:
+                    - textbox [ref=e409]: 21-03-2026
+                  - cell "37380.00" [ref=e410]:
+                    - textbox [ref=e411]: "37380.00"
+                  - cell [ref=e412]:
+                    - textbox [ref=e413]
+                  - cell "N" [ref=e414]:
+                    - textbox [ref=e415]: "N"
+                  - cell "None" [ref=e416]:
+                    - textbox [ref=e417]: None
+                  - cell "Regular B2B" [ref=e418]:
+                    - textbox [ref=e419]: Regular B2B
+                  - cell [ref=e420]:
+                    - textbox [ref=e421]
+                  - cell "5.00" [ref=e422]:
+                    - textbox [ref=e423]: "5.00"
+                  - cell "35600.00" [ref=e424]:
+                    - textbox [ref=e425]: "35600.00"
+                  - cell [ref=e426]:
+                    - textbox [ref=e427]
+            - generic [ref=e428]:
+              - button "Cancel" [ref=e429] [cursor=pointer]
+              - button "Delete Items" [disabled] [ref=e430]
+              - button "Save & Verify" [ref=e431] [cursor=pointer]
+  - alert [ref=e357]

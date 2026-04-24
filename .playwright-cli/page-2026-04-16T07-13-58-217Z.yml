@@ -1,0 +1,295 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: GSTR-1 Workflow
+            - heading "Add Amendment Invoice" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: "Doc Type :"
+              - combobox [ref=e77]:
+                - option "B2B Amendment" [selected]
+                - option "B2C Large Amendment"
+                - option "Credit / Debit Note (Registered) Amendment"
+                - option "Credit / Debit Note (Unregistered) Amendment"
+                - option "Export Amendment"
+                - option "B2C Others Amendment"
+                - option "Advances Received Amendment"
+                - option "Adjustment of Advances Amendment"
+                - option "Supplies through E-Commerce Amendment"
+                - option "Supplies U/s 9(5) Amendment"
+            - button "Add Row" [ref=e78] [cursor=pointer]
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Count of Documents
+              - paragraph [ref=e83]: "5"
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: Taxable Amount
+              - paragraph [ref=e86]: ₹0.00
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: Tax Amount
+              - paragraph [ref=e89]: ₹0.00
+            - generic [ref=e90]:
+              - paragraph [ref=e91]: Invoice Value
+              - paragraph [ref=e92]: ₹0.00
+          - table [ref=e94]:
+            - rowgroup [ref=e95]:
+              - row "Sr.No. GSTIN/UIN Of Recipient Receiver Name Original Invoice Number Original Invoice Date Revised Invoice Number Revised Invoice Date Invoice Value Place Of Supply Reverse Charge Applicable % of Tax Rate Invoice Type E-Commerce GSTIN Rate (%) Total Taxable Value Cess Amount" [ref=e96]:
+                - columnheader [ref=e97]
+                - columnheader "Sr.No." [ref=e98]
+                - columnheader "GSTIN/UIN Of Recipient" [ref=e99]
+                - columnheader "Receiver Name" [ref=e100]
+                - columnheader "Original Invoice Number" [ref=e101]
+                - columnheader "Original Invoice Date" [ref=e102]
+                - columnheader "Revised Invoice Number" [ref=e103]
+                - columnheader "Revised Invoice Date" [ref=e104]
+                - columnheader "Invoice Value" [ref=e105]
+                - columnheader "Place Of Supply" [ref=e106]
+                - columnheader "Reverse Charge" [ref=e107]
+                - columnheader "Applicable % of Tax Rate" [ref=e108]
+                - columnheader "Invoice Type" [ref=e109]
+                - columnheader "E-Commerce GSTIN" [ref=e110]
+                - columnheader "Rate (%)" [ref=e111]
+                - columnheader "Total Taxable Value" [ref=e112]
+                - columnheader "Cess Amount" [ref=e113]
+            - rowgroup [ref=e114]:
+              - row "1 No" [ref=e115]:
+                - cell [ref=e116]:
+                  - button [ref=e117] [cursor=pointer]
+                - cell "1" [ref=e118]
+                - cell [ref=e119]:
+                  - textbox [ref=e120]
+                - cell [ref=e121]:
+                  - textbox [ref=e122]
+                - cell [ref=e123]:
+                  - textbox [ref=e124]
+                - cell [ref=e125]:
+                  - textbox [ref=e126]
+                - cell [ref=e127]:
+                  - textbox [ref=e128]
+                - cell [ref=e129]:
+                  - textbox [ref=e130]
+                - cell [ref=e131]:
+                  - textbox [ref=e132]
+                - cell [ref=e133]:
+                  - textbox [ref=e134]
+                - cell [ref=e135]:
+                  - textbox [ref=e136]
+                - cell "No" [ref=e137]:
+                  - textbox [ref=e138]: "No"
+                - cell [ref=e139]:
+                  - textbox [ref=e140]
+                - cell [ref=e141]:
+                  - textbox [ref=e142]
+                - cell [ref=e143]:
+                  - textbox [ref=e144]
+                - cell [ref=e145]:
+                  - textbox [ref=e146]
+                - cell [ref=e147]:
+                  - textbox [ref=e148]
+              - row "2 No" [ref=e149]:
+                - cell [ref=e150]:
+                  - button [ref=e151] [cursor=pointer]
+                - cell "2" [ref=e152]
+                - cell [ref=e153]:
+                  - textbox [ref=e154]
+                - cell [ref=e155]:
+                  - textbox [ref=e156]
+                - cell [ref=e157]:
+                  - textbox [ref=e158]
+                - cell [ref=e159]:
+                  - textbox [ref=e160]
+                - cell [ref=e161]:
+                  - textbox [ref=e162]
+                - cell [ref=e163]:
+                  - textbox [ref=e164]
+                - cell [ref=e165]:
+                  - textbox [ref=e166]
+                - cell [ref=e167]:
+                  - textbox [ref=e168]
+                - cell [ref=e169]:
+                  - textbox [ref=e170]
+                - cell "No" [ref=e171]:
+                  - textbox [ref=e172]: "No"
+                - cell [ref=e173]:
+                  - textbox [ref=e174]
+                - cell [ref=e175]:
+                  - textbox [ref=e176]
+                - cell [ref=e177]:
+                  - textbox [ref=e178]
+                - cell [ref=e179]:
+                  - textbox [ref=e180]
+                - cell [ref=e181]:
+                  - textbox [ref=e182]
+              - row "3 No" [ref=e183]:
+                - cell [ref=e184]:
+                  - button [ref=e185] [cursor=pointer]
+                - cell "3" [ref=e186]
+                - cell [ref=e187]:
+                  - textbox [ref=e188]
+                - cell [ref=e189]:
+                  - textbox [ref=e190]
+                - cell [ref=e191]:
+                  - textbox [ref=e192]
+                - cell [ref=e193]:
+                  - textbox [ref=e194]
+                - cell [ref=e195]:
+                  - textbox [ref=e196]
+                - cell [ref=e197]:
+                  - textbox [ref=e198]
+                - cell [ref=e199]:
+                  - textbox [ref=e200]
+                - cell [ref=e201]:
+                  - textbox [ref=e202]
+                - cell [ref=e203]:
+                  - textbox [ref=e204]
+                - cell "No" [ref=e205]:
+                  - textbox [ref=e206]: "No"
+                - cell [ref=e207]:
+                  - textbox [ref=e208]
+                - cell [ref=e209]:
+                  - textbox [ref=e210]
+                - cell [ref=e211]:
+                  - textbox [ref=e212]
+                - cell [ref=e213]:
+                  - textbox [ref=e214]
+                - cell [ref=e215]:
+                  - textbox [ref=e216]
+              - row "4 No" [ref=e217]:
+                - cell [ref=e218]:
+                  - button [ref=e219] [cursor=pointer]
+                - cell "4" [ref=e220]
+                - cell [ref=e221]:
+                  - textbox [ref=e222]
+                - cell [ref=e223]:
+                  - textbox [ref=e224]
+                - cell [ref=e225]:
+                  - textbox [ref=e226]
+                - cell [ref=e227]:
+                  - textbox [ref=e228]
+                - cell [ref=e229]:
+                  - textbox [ref=e230]
+                - cell [ref=e231]:
+                  - textbox [ref=e232]
+                - cell [ref=e233]:
+                  - textbox [ref=e234]
+                - cell [ref=e235]:
+                  - textbox [ref=e236]
+                - cell [ref=e237]:
+                  - textbox [ref=e238]
+                - cell "No" [ref=e239]:
+                  - textbox [ref=e240]: "No"
+                - cell [ref=e241]:
+                  - textbox [ref=e242]
+                - cell [ref=e243]:
+                  - textbox [ref=e244]
+                - cell [ref=e245]:
+                  - textbox [ref=e246]
+                - cell [ref=e247]:
+                  - textbox [ref=e248]
+                - cell [ref=e249]:
+                  - textbox [ref=e250]
+              - row "5 No" [ref=e251]:
+                - cell [ref=e252]:
+                  - button [ref=e253] [cursor=pointer]
+                - cell "5" [ref=e254]
+                - cell [ref=e255]:
+                  - textbox [ref=e256]
+                - cell [ref=e257]:
+                  - textbox [ref=e258]
+                - cell [ref=e259]:
+                  - textbox [ref=e260]
+                - cell [ref=e261]:
+                  - textbox [ref=e262]
+                - cell [ref=e263]:
+                  - textbox [ref=e264]
+                - cell [ref=e265]:
+                  - textbox [ref=e266]
+                - cell [ref=e267]:
+                  - textbox [ref=e268]
+                - cell [ref=e269]:
+                  - textbox [ref=e270]
+                - cell [ref=e271]:
+                  - textbox [ref=e272]
+                - cell "No" [ref=e273]:
+                  - textbox [ref=e274]: "No"
+                - cell [ref=e275]:
+                  - textbox [ref=e276]
+                - cell [ref=e277]:
+                  - textbox [ref=e278]
+                - cell [ref=e279]:
+                  - textbox [ref=e280]
+                - cell [ref=e281]:
+                  - textbox [ref=e282]
+                - cell [ref=e283]:
+                  - textbox [ref=e284]
+          - generic [ref=e285]:
+            - button "Cancel" [ref=e286] [cursor=pointer]
+            - button "Delete Items" [disabled] [ref=e287]
+            - button "Save & Verify" [disabled] [ref=e288]
+  - alert [ref=e289]

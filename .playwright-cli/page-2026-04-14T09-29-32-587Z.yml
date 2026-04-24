@@ -1,0 +1,378 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2A" [ref=e55] [cursor=pointer]
+          - button "GSTR2B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - button [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+          - generic [ref=e63]: "Last Sync Date : 28-02-2024"
+          - generic [ref=e64]:
+            - generic [ref=e65]: "Financial Year:"
+            - generic [ref=e66]:
+              - combobox [ref=e67]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24" [selected]
+              - img
+          - button "Sync" [ref=e68] [cursor=pointer]:
+            - img [ref=e69]
+            - text: Sync
+          - button [ref=e74] [cursor=pointer]:
+            - img [ref=e75]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Return Filing Tracker" [level=2] [ref=e82]
+          - generic [ref=e85]:
+            - generic [ref=e86]: Return Type
+            - generic [ref=e87]: Apr 23
+            - generic [ref=e88]: May 23
+            - generic [ref=e89]: Jun 23
+            - generic [ref=e90]: Jul 23
+            - generic [ref=e91]: Aug 23
+            - generic [ref=e92]: Sep 23
+            - generic [ref=e93]: Oct 23
+            - generic [ref=e94]: Nov 23
+            - generic [ref=e95]: Dec 23
+            - generic [ref=e96]: Jan 24
+            - generic [ref=e97]: Feb 24
+            - generic [ref=e98]: Mar 24
+            - generic [ref=e99]: GSTR 1
+            - generic [ref=e101]:
+              - img [ref=e103]
+              - generic:
+                - paragraph: "ARN: AA070523Apr23XZ21"
+                - paragraph: "Date of Filing: 08-05-2023"
+                - paragraph: "Amendment Date: 30-05-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e107]:
+              - img [ref=e109]
+              - generic:
+                - paragraph: "ARN: AA070523May23XZ21"
+                - paragraph: "Date of Filing: 08-06-2023"
+                - paragraph: "Amendment Date: 30-06-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e113]:
+              - img [ref=e115]
+              - generic:
+                - paragraph: "ARN: AA070523Jun23XZ21"
+                - paragraph: "Date of Filing: 08-07-2023"
+                - paragraph: "Amendment Date: 30-07-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e119]:
+              - img [ref=e121]
+              - generic:
+                - paragraph: "ARN: AA070523Jul23XZ21"
+                - paragraph: "Date of Filing: 08-08-2023"
+                - paragraph: "Amendment Date: 29-08-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e125]:
+              - img [ref=e127]
+              - generic:
+                - paragraph: "ARN: AA070523Aug23XZ21"
+                - paragraph: "Date of Filing: 08-09-2023"
+                - paragraph: "Amendment Date: 29-09-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e131]:
+              - img [ref=e133]
+              - generic:
+                - paragraph: "ARN: AA070523Sep23XZ21"
+                - paragraph: "Date of Filing: 08-10-2023"
+                - paragraph: "Amendment Date: 30-10-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e137]:
+              - img [ref=e139]
+              - generic:
+                - paragraph: "ARN: AA070523Oct23XZ21"
+                - paragraph: "Date of Filing: 08-11-2023"
+                - paragraph: "Amendment Date: 29-11-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e143]:
+              - img [ref=e145]
+              - generic:
+                - paragraph: "ARN: AA070523Nov23XZ21"
+                - paragraph: "Date of Filing: 08-12-2023"
+                - paragraph: "Amendment Date: 29-12-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e149]:
+              - img [ref=e151]
+              - generic:
+                - paragraph: "ARN: AA070523Dec23XZ21"
+                - paragraph: "Date of Filing: 08-01-2024"
+                - paragraph: "Amendment Date: 29-01-2024"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e155]:
+              - img [ref=e157]
+              - generic:
+                - paragraph: "ARN: AA070523Jan24XZ21"
+                - paragraph: "Date of Filing: 08-02-2024"
+                - paragraph: "Amendment Date: 28-02-2024"
+                - paragraph: "Original Date: 12-05-2017"
+            - img [ref=e163]
+            - img [ref=e169]
+            - generic [ref=e172]: GSTR 3B
+            - generic [ref=e174]:
+              - img [ref=e176]
+              - generic:
+                - paragraph: "ARN: AA070523Apr23XZ21"
+                - paragraph: "Date of Filing: 20-05-2023"
+                - paragraph: "Amendment Date: 30-05-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e180]:
+              - img [ref=e182]
+              - generic:
+                - paragraph: "ARN: AA070523May23XZ21"
+                - paragraph: "Date of Filing: 20-06-2023"
+                - paragraph: "Amendment Date: 30-06-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e186]:
+              - img [ref=e188]
+              - generic:
+                - paragraph: "ARN: AA070523Jun23XZ21"
+                - paragraph: "Date of Filing: 20-07-2023"
+                - paragraph: "Amendment Date: 30-07-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e192]:
+              - img [ref=e194]
+              - generic:
+                - paragraph: "ARN: AA070523Jul23XZ21"
+                - paragraph: "Date of Filing: 20-08-2023"
+                - paragraph: "Amendment Date: 29-08-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e198]:
+              - img [ref=e200]
+              - generic:
+                - paragraph: "ARN: AA070523Aug23XZ21"
+                - paragraph: "Date of Filing: 20-09-2023"
+                - paragraph: "Amendment Date: 29-09-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e204]:
+              - img [ref=e206]
+              - generic:
+                - paragraph: "ARN: AA070523Sep23XZ21"
+                - paragraph: "Date of Filing: 20-10-2023"
+                - paragraph: "Amendment Date: 30-10-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e210]:
+              - img [ref=e212]
+              - generic:
+                - paragraph: "ARN: AA070523Oct23XZ21"
+                - paragraph: "Date of Filing: 20-11-2023"
+                - paragraph: "Amendment Date: 29-11-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e216]:
+              - img [ref=e218]
+              - generic:
+                - paragraph: "ARN: AA070523Nov23XZ21"
+                - paragraph: "Date of Filing: 20-12-2023"
+                - paragraph: "Amendment Date: 29-12-2023"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e222]:
+              - img [ref=e224]
+              - generic:
+                - paragraph: "ARN: AA070523Dec23XZ21"
+                - paragraph: "Date of Filing: 20-01-2024"
+                - paragraph: "Amendment Date: 29-01-2024"
+                - paragraph: "Original Date: 12-05-2017"
+            - generic [ref=e228]:
+              - img [ref=e230]
+              - generic:
+                - paragraph: "ARN: AA070523Jan24XZ21"
+                - paragraph: "Date of Filing: 20-02-2024"
+                - paragraph: "Amendment Date: 28-02-2024"
+                - paragraph: "Original Date: 12-05-2017"
+            - img [ref=e236]
+            - img [ref=e242]
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - heading "Reconciliation Status" [level=2] [ref=e248]
+            - table [ref=e250]:
+              - rowgroup [ref=e251]:
+                - row "Month GSTR vs Books 2A vs Books 2B vs Books" [ref=e252]:
+                  - columnheader "Month" [ref=e253]
+                  - columnheader "GSTR vs Books" [ref=e254]
+                  - columnheader "2A vs Books" [ref=e255]
+                  - columnheader "2B vs Books" [ref=e256]
+              - rowgroup [ref=e257]:
+                - row "Apr 2023 Processing Pending Pending" [ref=e258]:
+                  - cell "Apr 2023" [ref=e259]
+                  - cell "Processing" [ref=e260]:
+                    - generic [ref=e261]: Processing
+                  - cell "Pending" [ref=e262]:
+                    - generic [ref=e263]: Pending
+                  - cell "Pending" [ref=e264]:
+                    - generic [ref=e265]: Pending
+                - row "May 2023 Pending Pending Pending" [ref=e266]:
+                  - cell "May 2023" [ref=e267]
+                  - cell "Pending" [ref=e268]:
+                    - generic [ref=e269]: Pending
+                  - cell "Pending" [ref=e270]:
+                    - generic [ref=e271]: Pending
+                  - cell "Pending" [ref=e272]:
+                    - generic [ref=e273]: Pending
+                - row "Jun 2023 Pending Pending Pending" [ref=e274]:
+                  - cell "Jun 2023" [ref=e275]
+                  - cell "Pending" [ref=e276]:
+                    - generic [ref=e277]: Pending
+                  - cell "Pending" [ref=e278]:
+                    - generic [ref=e279]: Pending
+                  - cell "Pending" [ref=e280]:
+                    - generic [ref=e281]: Pending
+                - row "Jul 2023 Pending Pending Pending" [ref=e282]:
+                  - cell "Jul 2023" [ref=e283]
+                  - cell "Pending" [ref=e284]:
+                    - generic [ref=e285]: Pending
+                  - cell "Pending" [ref=e286]:
+                    - generic [ref=e287]: Pending
+                  - cell "Pending" [ref=e288]:
+                    - generic [ref=e289]: Pending
+                - row "Aug 2023 Pending Pending Pending" [ref=e290]:
+                  - cell "Aug 2023" [ref=e291]
+                  - cell "Pending" [ref=e292]:
+                    - generic [ref=e293]: Pending
+                  - cell "Pending" [ref=e294]:
+                    - generic [ref=e295]: Pending
+                  - cell "Pending" [ref=e296]:
+                    - generic [ref=e297]: Pending
+                - row "Sep 2023 Pending Pending Pending" [ref=e298]:
+                  - cell "Sep 2023" [ref=e299]
+                  - cell "Pending" [ref=e300]:
+                    - generic [ref=e301]: Pending
+                  - cell "Pending" [ref=e302]:
+                    - generic [ref=e303]: Pending
+                  - cell "Pending" [ref=e304]:
+                    - generic [ref=e305]: Pending
+                - row "Oct 2023 Pending Pending Pending" [ref=e306]:
+                  - cell "Oct 2023" [ref=e307]
+                  - cell "Pending" [ref=e308]:
+                    - generic [ref=e309]: Pending
+                  - cell "Pending" [ref=e310]:
+                    - generic [ref=e311]: Pending
+                  - cell "Pending" [ref=e312]:
+                    - generic [ref=e313]: Pending
+                - row "Nov 2023 Pending Pending Pending" [ref=e314]:
+                  - cell "Nov 2023" [ref=e315]
+                  - cell "Pending" [ref=e316]:
+                    - generic [ref=e317]: Pending
+                  - cell "Pending" [ref=e318]:
+                    - generic [ref=e319]: Pending
+                  - cell "Pending" [ref=e320]:
+                    - generic [ref=e321]: Pending
+          - generic [ref=e322]:
+            - heading "Announcements" [level=2] [ref=e324]
+            - generic [ref=e325]:
+              - article [ref=e326]:
+                - generic [ref=e327]:
+                  - generic [ref=e328]:
+                    - img [ref=e330]
+                    - generic [ref=e333]:
+                      - paragraph [ref=e334]: 29/12/2023
+                      - paragraph [ref=e335]: "Advisory: Date extension for reporting opening balance for ITC reversal"
+                      - paragraph [ref=e336]: Opening balance changes can still be reported without impacting already synced returns.
+                  - generic [ref=e337]:
+                    - generic [ref=e338]: Circular
+                    - img [ref=e339]
+              - article [ref=e343]:
+                - generic [ref=e344]:
+                  - generic [ref=e345]:
+                    - img [ref=e347]
+                    - generic [ref=e350]:
+                      - paragraph [ref=e351]: 01/01/2024
+                      - paragraph [ref=e352]: Advisory on the functionalities available on the portal for the GTA taxpayers
+                      - paragraph [ref=e353]: Portal capabilities for GTA taxpayers have been refreshed for the new filing period.
+                  - generic [ref=e354]:
+                    - generic [ref=e355]: Notification
+                    - img [ref=e356]
+              - article [ref=e360]:
+                - generic [ref=e361]:
+                  - generic [ref=e362]:
+                    - img [ref=e364]
+                    - generic [ref=e367]:
+                      - paragraph [ref=e368]: 15/01/2024
+                      - paragraph [ref=e369]: Advisory on introduction of new Tables 14 & 15 in GSTR-1
+                      - paragraph [ref=e370]: New tables are now available for outbound invoice declarations in the active return cycle.
+                  - generic [ref=e371]:
+                    - generic [ref=e372]: Gf
+                    - img [ref=e373]
+        - generic [ref=e377]:
+          - generic [ref=e378]:
+            - generic [ref=e379]:
+              - heading "Sales R1 vs Purchase 2A" [level=2] [ref=e380]
+              - img [ref=e382]
+            - generic [ref=e384]:
+              - generic [ref=e385]:
+                - generic [ref=e386]: Apr 23
+                - generic [ref=e391]: 6.4L
+                - generic [ref=e392]: 5.9L
+              - generic [ref=e393]:
+                - generic [ref=e394]: May 23
+                - generic [ref=e399]: 7.2L
+                - generic [ref=e400]: 6.1L
+              - generic [ref=e401]:
+                - generic [ref=e402]: Jun 23
+                - generic [ref=e407]: 7.8L
+                - generic [ref=e408]: 6.7L
+              - generic [ref=e409]:
+                - generic [ref=e410]: Jul 23
+                - generic [ref=e415]: 6.9L
+                - generic [ref=e416]: 6.5L
+              - generic [ref=e417]:
+                - generic [ref=e418]: Aug 23
+                - generic [ref=e423]: 8.1L
+                - generic [ref=e424]: 7.2L
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - heading "Net Tax Liability" [level=2] [ref=e427]
+              - generic [ref=e428]: (Output- Input)
+            - generic [ref=e429]:
+              - generic [ref=e431]:
+                - generic [ref=e432]: Output Tax
+                - generic [ref=e433]: Rs 12.84L
+              - generic [ref=e437]:
+                - generic [ref=e438]: Input Credit
+                - generic [ref=e439]: Rs 8.42L
+              - generic [ref=e443]:
+                - generic [ref=e444]: Net Liability
+                - generic [ref=e445]: Rs 4.42L
+  - alert [ref=e448]

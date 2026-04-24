@@ -1,0 +1,132 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2A" [ref=e55] [cursor=pointer]
+          - button "GSTR2B" [active] [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e449]:
+            - generic [ref=e450]: "Financial Year:"
+            - generic [ref=e451]:
+              - combobox [ref=e452]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24" [selected]
+              - img
+          - button "Sync" [ref=e453] [cursor=pointer]:
+            - img [ref=e454]
+            - text: Sync
+      - generic [ref=e79]:
+        - generic [ref=e81]:
+          - generic [ref=e459]:
+            - paragraph [ref=e460]: GSTR2B Workflow
+            - heading "Portal + Tally Reconciliation" [level=2] [ref=e461]
+            - paragraph [ref=e462]: "`GSTR2B` should start by fetching GST data from the portal after login, then bringing in Tally purchase data for the same period. Once both sources are ready, the system runs matching and shows the exception table with the exact highlighted output fields."
+          - generic [ref=e463]: "Active period: May 2023"
+        - generic [ref=e245]:
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - generic [ref=e464]:
+                - paragraph [ref=e465]: Step 1
+                - heading "GST Portal Data" [level=3] [ref=e466]
+              - generic [ref=e467]: Pending
+            - paragraph [ref=e468]: Login with GST portal credentials, fetch GSTR2B purchase data for the selected month, and keep the fetched dataset ready for matching.
+            - button "Login & Fetch GST Data" [ref=e469] [cursor=pointer]
+          - generic [ref=e322]:
+            - generic [ref=e323]:
+              - generic [ref=e470]:
+                - paragraph [ref=e471]: Step 2
+                - heading "Tally Purchase Data" [level=3] [ref=e472]
+              - generic [ref=e473]: Pending
+            - paragraph [ref=e474]: Bring purchase vouchers from Tally for the same period so invoice presence, amount, and party can be compared against GST portal data.
+            - button "Fetch Tally Purchase Data" [ref=e475] [cursor=pointer]
+          - generic [ref=e476]:
+            - generic [ref=e477]:
+              - generic [ref=e478]:
+                - paragraph [ref=e479]: Step 3
+                - heading "Run Process" [level=3] [ref=e480]
+              - generic [ref=e481]: Waiting
+            - generic [ref=e482]:
+              - paragraph [ref=e483]: 1. Check whether every GST 2B invoice is present in Tally purchases.
+              - paragraph [ref=e484]: 2. Match GST 2B invoice amount against purchase amount.
+              - paragraph [ref=e485]: 3. Highlight party differences for GST filing review.
+            - button "Run Reconciliation" [disabled] [ref=e486]
+        - generic [ref=e377]:
+          - generic [ref=e378]:
+            - heading "Matching Rules" [level=3] [ref=e487]
+            - generic [ref=e384]:
+              - generic [ref=e488]:
+                - generic [ref=e489]: "1"
+                - paragraph [ref=e490]: Fetch GST purchase data only after portal login succeeds.
+              - generic [ref=e491]:
+                - generic [ref=e492]: "2"
+                - paragraph [ref=e493]: Use Tally purchase data from the same period for comparison.
+              - generic [ref=e494]:
+                - generic [ref=e495]: "3"
+                - paragraph [ref=e496]: Run invoice presence check first, then amount match, then party match.
+              - generic [ref=e497]:
+                - generic [ref=e498]: "4"
+                - paragraph [ref=e499]: Show the output in a review table with highlighted exception cells.
+          - generic [ref=e425]:
+            - heading "Output Highlights" [level=3] [ref=e500]
+            - generic [ref=e429]:
+              - generic [ref=e501]:
+                - paragraph [ref=e502]: Missing In Tally
+                - paragraph [ref=e503]: "1"
+              - generic [ref=e504]:
+                - paragraph [ref=e505]: Amount Mismatch
+                - paragraph [ref=e506]: "1"
+              - generic [ref=e507]:
+                - paragraph [ref=e508]: Party Mismatch
+                - paragraph [ref=e509]: "1"
+            - paragraph [ref=e511]: The output table below only makes sense after both sources are fetched and the reconciliation process has been run. The highlighted cells show exactly where the exception exists.
+        - generic [ref=e512]:
+          - generic [ref=e513]:
+            - generic [ref=e514]:
+              - heading "Reconciliation Output" [level=3] [ref=e515]
+              - paragraph [ref=e516]: Missing invoice, amount mismatch, and party mismatch are highlighted in the table.
+            - generic [ref=e517]: Waiting for process
+          - generic [ref=e518]:
+            - paragraph [ref=e519]: Fetch both data sources and run the reconciliation process.
+            - paragraph [ref=e520]: After that, the output table will show the highlighted missing invoices in Tally, amount mismatches, and party mismatches.
+  - alert [ref=e448]

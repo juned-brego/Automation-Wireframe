@@ -1,0 +1,200 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e4108]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Try A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Try A/c. & Billing
+      - listitem [ref=e84]:
+        - link "7 days remaining on your free trial period Buy Now" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e87]:
+            - heading "7 days remaining on your free trial period" [level=5] [ref=e88]
+            - button "Buy Now" [ref=e90]
+      - listitem [ref=e91]:
+        - link "Live Chat" [ref=e92] [cursor=pointer]:
+          - /url: /
+          - img [ref=e93]
+          - generic [ref=e96]: Live Chat
+      - listitem [ref=e97]:
+        - link "Settings" [ref=e98] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e99]
+          - generic [ref=e103]: Settings
+  - navigation [ref=e104]:
+    - list [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button [ref=e113] [cursor=pointer]:
+            - img [ref=e116]
+          - generic [ref=e2605]:
+            - combobox "Select Year" [ref=e2606]: 2025-26
+            - button "Open" [ref=e2608] [cursor=pointer]
+            - group
+          - generic [ref=e2612]:
+            - combobox "Select Period" [ref=e2613]: Mar 2026 (Monthly)
+            - button "Open" [ref=e2615] [cursor=pointer]
+            - group
+        - heading "CLEAR WATER CRAFT (27CDRPS5642C2Z5)" [level=5] [ref=e136]:
+          - paragraph [ref=e137]: CLEAR WATER CRAFT (27CDRPS5642C2Z5)
+        - generic [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Need help?" [ref=e140] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Need help?
+                - img [ref=e147]
+          - listitem [ref=e149]:
+            - link "9821555450 Owner" [ref=e150] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: "9821555450"
+                - generic [ref=e153]: Owner
+              - img [ref=e156]
+  - generic [ref=e4113]:
+    - generic [ref=e4114]:
+      - heading "GSTR-1 Push to GSTN | Mar 2026 (Monthly)" [level=2] [ref=e4120]:
+        - button [ref=e4121] [cursor=pointer]:
+          - img [ref=e4122]
+        - heading "GSTR-1 Push to GSTN | Mar 2026 (Monthly)" [level=2] [ref=e4127]
+      - generic [ref=e4132]:
+        - combobox "More Option" [ref=e4133]
+        - button "Open" [ref=e4135] [cursor=pointer]
+        - group
+    - generic [ref=e4138]:
+      - generic [ref=e4141]:
+        - button "Data Prepare" [ref=e4143] [cursor=pointer]:
+          - generic [ref=e4144]:
+            - img [ref=e4146]:
+              - generic [ref=e4148]: "1"
+            - generic [ref=e4150]: Data Prepare
+        - button "Check Invoices" [ref=e4153] [cursor=pointer]:
+          - generic [ref=e4154]:
+            - img [ref=e4156]:
+              - generic [ref=e4158]: "2"
+            - generic [ref=e4160]: Check Invoices
+        - button "Push to GSTN" [ref=e4163] [cursor=pointer]:
+          - generic [ref=e4164]:
+            - img [ref=e4166]:
+              - generic [ref=e4168]: "3"
+            - generic [ref=e4170]: Push to GSTN
+        - button "File GSTR-1" [ref=e4173] [cursor=pointer]:
+          - generic [ref=e4174]:
+            - img [ref=e4176]:
+              - generic [ref=e4178]: "4"
+            - generic [ref=e4180]: File GSTR-1
+      - generic [ref=e4181]:
+        - generic [ref=e4182]:
+          - generic [ref=e4183]:
+            - generic [ref=e4185]:
+              - generic [ref=e4186]:
+                - radio "Upload without OTP" [checked] [ref=e4187] [cursor=pointer]
+                - generic [ref=e4188] [cursor=pointer]: Upload without OTP
+              - generic [ref=e4189]:
+                - radio "Upload via OTP" [ref=e4190] [cursor=pointer]
+                - generic [ref=e4191] [cursor=pointer]: Upload via OTP
+            - button "Upload Data to GSTN" [ref=e4194] [cursor=pointer]:
+              - img [ref=e4196]
+              - paragraph [ref=e4202]: Upload Data to GSTN
+          - generic [ref=e4203]:
+            - generic [ref=e4205]:
+              - generic [ref=e4206]:
+                - generic [ref=e4207]:
+                  - generic [ref=e4210]:
+                    - img [ref=e4211]:
+                      - generic [ref=e4214]: 0%
+                    - img [ref=e4217]
+                  - list [ref=e4247]:
+                    - listitem [ref=e4248]: Connect to GSTN
+                    - listitem [ref=e4249]: Save Data on GSTN
+                    - listitem [ref=e4250]: Upload Processed Successfully
+                    - listitem [ref=e4251]: Summary Generated
+                - button "Preview Govt Summary" [disabled]
+              - generic [ref=e4252]:
+                - generic [ref=e4253]:
+                  - heading "Want to delete existing data from GSTN?" [level=5] [ref=e4255]
+                  - generic [ref=e4256]:
+                    - button "Reset GSTN data" [disabled]
+                - generic [ref=e4258]:
+                  - button "Re-Generate Summary" [disabled]
+                  - button "Proceed to File" [disabled]
+            - generic [ref=e4261]:
+              - img [ref=e4263]
+              - paragraph [ref=e4267]: Important Advisory Changes to GSTR-1/ IFF filing process by the Govt. Portal.
+            - generic [ref=e4268]:
+              - generic [ref=e4269]:
+                - heading "Document level details that would be uploaded to GSTN:" [level=2] [ref=e4272]:
+                  - button "Document level details that would be uploaded to GSTN:" [ref=e4273] [cursor=pointer]:
+                    - heading "Document level details that would be uploaded to GSTN:" [level=4] [ref=e4274]
+                - heading "Summary level details that would be uploaded to GSTN:" [level=2] [ref=e4277]:
+                  - button "Summary level details that would be uploaded to GSTN:" [ref=e4278] [cursor=pointer]:
+                    - heading "Summary level details that would be uploaded to GSTN:" [level=4] [ref=e4279]
+              - generic [ref=e4280]:
+                - heading "Upload History" [level=2] [ref=e4281]:
+                  - button "Upload History" [ref=e4282] [cursor=pointer]:
+                    - heading "Upload History" [level=4] [ref=e4283]
+                - table [ref=e4291]:
+                  - rowgroup [ref=e4292]:
+                    - row "Requested Date Status Actions Details Upload Type" [ref=e4293]:
+                      - columnheader "Requested Date" [ref=e4294]:
+                        - generic [ref=e4295]:
+                          - generic "Requested Date" [ref=e4297]
+                          - separator [ref=e4299]
+                      - columnheader "Status" [ref=e4300]:
+                        - generic [ref=e4301]:
+                          - generic "Status" [ref=e4303]
+                          - separator [ref=e4305]
+                      - columnheader "Actions" [ref=e4306]:
+                        - generic [ref=e4307]:
+                          - generic "Actions" [ref=e4309]
+                          - separator [ref=e4311]
+                      - columnheader "Details" [ref=e4312]:
+                        - generic [ref=e4313]:
+                          - generic "Details" [ref=e4315]
+                          - separator [ref=e4317]
+                      - columnheader "Upload Type" [ref=e4318]:
+                        - generic [ref=e4319]:
+                          - generic "Upload Type" [ref=e4321]
+                          - separator [ref=e4323]
+                  - rowgroup [ref=e4324]:
+                    - row "There are no records to display" [ref=e4325]:
+                      - cell "There are no records to display" [ref=e4326]:
+                        - paragraph [ref=e4328]: There are no records to display
+        - button "Previous" [ref=e4330] [cursor=pointer]

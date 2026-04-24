@@ -1,0 +1,432 @@
+[     243ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=common_data:0
+[     256ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=m_d_c:0
+[     342ms] Unexpected token '<'
+[     384ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=common_data:0
+[   60690ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=m_d_c:0
+[   60831ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-organization-list:0
+[   61034ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/dashboard:0
+[   61034ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/dashboard:0
+[   61034ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/dashboard:0
+[   61034ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/dashboard:0
+[   61079ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/dashboard:0
+[   61079ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/dashboard:0
+[   61079ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/dashboard:0
+[   61079ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/dashboard:0
+[   63177ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   63177ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   63177ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   63177ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   63230ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63230ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63230ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63230ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63291ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63291ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63291ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   63291ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/146.bundle.1776164415305.js:0
+[   65339ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[   65340ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[   65340ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[   65340ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[   65422ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-prepare:0
+[   65422ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-prepare:0
+[   65422ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-prepare:0
+[   65422ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-prepare:0
+[   65442ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[   65442ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[   65443ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[   65443ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[   65469ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   65469ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   65470ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   65470ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[   66291ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  324638ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  324638ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  324638ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  324638ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  380982ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  380982ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  380982ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  380982ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  426635ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  426635ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  426635ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  426635ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  565652ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  565652ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  565652ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  565653ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  613749ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[  613749ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[  613749ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[  613749ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[  613810ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[  613810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[  613810ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[  613810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[  698132ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  698132ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  698132ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  698132ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  698146ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  698146ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  698146ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  698146ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  699726ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  699726ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  699726ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  699726ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  699729ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-uploaded-history?filing_id=ZkxtUWYvalhZMzNJcU1xd1ZxN3lheWIvaDhmazBMU2hkOFhPdmdDNEFPMEZTQ3hiWlJlR3FvMXQ4cnBHQ1NudnpJU2lLUVNWaDRmY1BCZ3FMZ25UOHc9PQ==&filing_type=0&is_gstr1a_data=0:0
+[  749777ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  749777ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  749777ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-upload:0
+[  749777ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-upload:0
+[  749783ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  749783ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  749783ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  749783ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  749810ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  749810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  749810ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  749810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[  796799ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  796799ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  796799ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  796799ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  842164ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  842164ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  842164ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  842164ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[  887351ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  887351ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  887351ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[  887351ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1185456ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[ 1185456ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[ 1185456ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[ 1185456ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[ 1185533ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-uploaded-history?filing_id=ZkxtUWYvalhZMzNJcU1xd1ZxN3lheWIvaDhmazBMU2hkOFhPdmdDNEFPMEZTQ3hiWlJlR3FvMXQ4cnBHQ1NudnpJU2lLUVNWaDRmY1BCZ3FMZ25UOHc9PQ==&filing_type=0&is_gstr1a_data=0:0
+[ 1186281ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1186281ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1186281ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1186281ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1186318ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[ 1186318ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[ 1186318ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[ 1186318ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[ 1187346ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1187346ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1187346ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1187346ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 1320619ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://y.clarity.ms/collect:0
+[ 5680725ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[ 7214533ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 7214533ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 7214533ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[ 7214533ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[61432359ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61554797ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61554797ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61554797ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61554797ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61559345ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[61559345ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[61559345ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[61559345ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[61560635ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61560635ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61560635ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61560635ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[61566028ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-gstr1-sheet-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&sheet_type=18&limit=0&type=1&is_gstr1a_data=0:0
+[62530190ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62530190ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62530190ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62530190ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62533113ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-credit-debit-note-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&filing_type=1&limit=0&per_page=50&filter_data=&selected_month=&col_filter=&is_all_selected=&is_gstr1a_data=0&order_field=&order_by=:0
+[62533448ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533448ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533448ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533448ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533456ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533456ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533456ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533456ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62533466ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-gstr1-b2cs-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&filing_type=1&limit=0&per_page=50&filter_data=&%20selected_moth=&is_all_selected=&is_gstr1a_data=0&order_field=&order_by=&col_filter=&import_template=:0
+[62533853ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[62533853ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[62533853ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[62533853ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[62533858ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-advance-receipt-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&filing_type=1&limit=0&per_page=50&filter_data=&selected_moth=&is_all_selected=&is_gstr1a_data=0&order_field=&order_by=&col_filter=:0
+[62534386ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[62534386ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[62534387ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[62534387ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/833.bundle.1776164415305.js:0
+[62534411ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-gstr1-exp-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&filing_type=1&limit=0&per_page=50&filter_data=&selected_month=&col_filter=&is_all_selected=&is_gstr1a_data=0&order_field=&order_by=:0
+[62537725ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62537725ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62537725ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62537725ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[62540069ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62540069ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62540069ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62540069ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62540129ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-gstr1-exp-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0S1cyenQwTFd5UXlrNHlZVG1QQ3p0c1IyVCtscXJjQ1Q1dlIxdVppS1ZHdVE9PQ==&select_period=Mar%202026%20(Monthly)&filing_type=1&limit=0&per_page=50&filter_data=&selected_month=&col_filter=&is_all_selected=&is_gstr1a_data=0&order_field=&order_by=:0
+[62559853ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62559853ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62559853ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62559853ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62562535ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/company-list?col_filter=&status=1&frequency=1&per_page=50&order_field=&order_by=&limit=0&filter=&year=2025&org_id=&select_year=2024:0
+[62571955ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62571955ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62571955ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62571955ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62574131ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62574131ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62574131ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62574131ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62578064ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62578064ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62578064ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62578064ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62580473ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) @ https://gst.themunim.com/gstr1a-prepare:0
+[62580473ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://gst.themunim.com/gstr1a-prepare:0
+[62582037ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62582037ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62582037ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62582037ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62588124ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62588124ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62588124ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62588124ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62918417ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62918417ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62918417ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62918417ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[62933277ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62933277ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62933277ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62933277ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[62935569ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) @ https://gst.themunim.com/gstr1a-prepare:0
+[62935569ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://gst.themunim.com/gstr1a-prepare:0
+[63031035ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63031035ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63031035ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63031036ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63033894ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63033895ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63033895ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63033895ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63036087ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) @ https://gst.themunim.com/gstr1a-prepare:0
+[63036088ms] [VERBOSE] [DOM] Password field is not contained in a form: (More info: https://goo.gl/9p2vKq) %o @ https://gst.themunim.com/gstr1a-prepare:0
+[63037167ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63037167ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63037167ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63037167ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63052813ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63052813ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63052813ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63052813ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[63228034ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63228034ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63228034ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63228034ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63228746ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63228747ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63228747ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63228747ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63233050ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[63233050ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[63233050ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/gstr1-view-invoice:0
+[63233050ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/gstr1-view-invoice:0
+[63234209ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63234209ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63234209ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63234209ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[63271510ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271510ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271510ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271510ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271522ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271522ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271522ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271522ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271524ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271525ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271525ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271525ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271525ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271526ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271526ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271526ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271526ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271527ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271528ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271528ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271528ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271528ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271529ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271529ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271529ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271529ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63271838ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63271838ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63271838ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63271838ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63281748ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63281748ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63281749ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63281749ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://scripts.clarity.ms/0.8.59-beta/clarity.js:1
+[63284245ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284245ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284245ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284245ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284246ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284246ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284246ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284246ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284247ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284247ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284247ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284247ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284248ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284248ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284248ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284248ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284249ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284249ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284249ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284249ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284250ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284250ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284250ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284250ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284251ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284251ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284251ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284251ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[63284252ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67438073ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67438073ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67438073ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67438073ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67438082ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67438082ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67438082ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67438082ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67438175ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-uploaded-history?filing_id=ZkxtUWYvalhZMzNJcU1xd1ZxN3lheWIvaDhmazBMU2hkOFhPdmdDNEFPMkNVY1AzZXJ1Q3h4UmJFSlUyTHhRK2NmcVowKzYwelIrdzhPVjV4WVU3Snc9PQ==&filing_type=0&is_gstr1a_data=0:0
+[67439782ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67489239ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67489239ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67489239ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67489239ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67489278ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67489278ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67489278ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67489278ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67495065ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67495065ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67495065ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67495065ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67495071ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67495071ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67495072ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67495072ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67495148ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-uploaded-history?filing_id=ZkxtUWYvalhZMzNJcU1xd1ZxN3lheWIvaDhmazBMU2hkOFhPdmdDNEFPMkNVY1AzZXJ1Q3h4UmJFSlUyTHhRK2NmcVowKzYwelIrdzhPVjV4WVU3Snc9PQ==&filing_type=0&is_gstr1a_data=0:0
+[67555535ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67555535ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67555535ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67555535ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67555572ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67555573ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67555573ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67555573ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:1
+[67556492ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67556492ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67556492ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67556493ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[67556500ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67556500ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67556500ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67556500ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[67556568ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-uploaded-history?filing_id=ZkxtUWYvalhZMzNJcU1xd1ZxN3lheWIvaDhmazBMU2hkOFhPdmdDNEFPMkNVY1AzZXJ1Q3h4UmJFSlUyTHhRK2NmcVowKzYwelIrdzhPVjV4WVU3Snc9PQ==&filing_type=0&is_gstr1a_data=0:0
+[68962657ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[68972198ms] [ERROR] Tawk.to setAttributes error: INVALID_NAME @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70319809ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70319810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70319810ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70319810ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70351591ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70351591ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70351591ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70351591ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70359699ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70359700ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70359700ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70359700ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70361096ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70361096ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70361096ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70361096ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70367646ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70367646ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70367647ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70367647ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70369150ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70369150ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70369150ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70369150ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70401193ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70401194ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70401194ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70401194ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70406875ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70406875ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70406875ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70406875ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70413152ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70413152ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70413152ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70413152ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70421986ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70421986ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70421986ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70421986ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70426829ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70426829ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70426829ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70426829ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/3048.bundle.1776164415305.js:74
+[70506462ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70506462ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70506462ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70506462ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70520113ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://gstapi.themunim.com/api/get-gstr1-sheet-data?id=R2cyODJrWVdORXo0ak8wa2pxbDZlNVd1VS9RRmZwM3pzcVVUTS9YaTI0TDV5ZnplM0QxbXoxR1lyQVBBVXJOTEttUVF2REx1b1hOS0dsR0x3RUNSY1E9PQ==&select_period=Mar%202026%20(Monthly)&sheet_type=18&limit=0&type=1&is_gstr1a_data=0:0
+[70526897ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70526897ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70526897ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70526897ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/munim.bundle.1776164415305.js:1
+[70650088ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.woff?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70650088ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70650088ms] [WARNING] Failed to decode downloaded font: https://gst.themunim.com/static/css/fonts/feather.ttf?t=1525787366991 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0
+[70650088ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008821359 @ https://gst.themunim.com/static/js/6879.bundle.1776164415305.js:0

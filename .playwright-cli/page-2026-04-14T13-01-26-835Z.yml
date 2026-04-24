@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2A" [ref=e55] [cursor=pointer]
+          - button "GSTR2B" [ref=e56] [cursor=pointer]
+          - button "GSTR3B" [ref=e57] [cursor=pointer]
+          - button "ITC" [ref=e58] [cursor=pointer]
+        - generic [ref=e59]:
+          - button [ref=e60] [cursor=pointer]:
+            - img [ref=e61]
+          - generic [ref=e64]: "Last Sync Date : 28-02-2024"
+          - generic [ref=e65]:
+            - generic [ref=e66]: "Financial Year:"
+            - generic [ref=e67]:
+              - combobox [ref=e68]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24" [selected]
+              - img
+          - button "Sync" [ref=e69] [cursor=pointer]:
+            - img [ref=e70]
+            - text: Sync
+          - button [ref=e75] [cursor=pointer]:
+            - img [ref=e76]
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - heading "Return Filing Tracker" [level=2] [ref=e83]
+          - generic [ref=e86]:
+            - generic [ref=e87]: Return Type
+            - generic [ref=e88]: Apr 23
+            - generic [ref=e89]: May 23
+            - generic [ref=e90]: Jun 23
+            - generic [ref=e91]: Jul 23
+            - generic [ref=e92]: Aug 23
+            - generic [ref=e93]: Sep 23
+            - generic [ref=e94]: Oct 23
+            - generic [ref=e95]: Nov 23
+            - generic [ref=e96]: Dec 23
+            - generic [ref=e97]: Jan 24
+            - generic [ref=e98]: Feb 24
+            - generic [ref=e99]: Mar 24
+            - generic [ref=e100]: GSTR 1
+            - img [ref=e104]
+            - img [ref=e110]
+            - img [ref=e116]
+            - img [ref=e122]
+            - img [ref=e128]
+            - img [ref=e134]
+            - img [ref=e140]
+            - img [ref=e146]
+            - img [ref=e152]
+            - img [ref=e158]
+            - img [ref=e164]
+            - img [ref=e170]
+            - generic [ref=e173]: GSTR 3B
+            - img [ref=e177]
+            - img [ref=e183]
+            - img [ref=e189]
+            - img [ref=e195]
+            - img [ref=e201]
+            - img [ref=e207]
+            - img [ref=e213]
+            - img [ref=e219]
+            - img [ref=e225]
+            - img [ref=e231]
+            - img [ref=e237]
+            - img [ref=e243]
+        - generic [ref=e246]:
+          - generic [ref=e247]:
+            - heading "Announcements" [level=2] [ref=e249]
+            - generic [ref=e250]:
+              - article [ref=e251]:
+                - generic [ref=e252]:
+                  - generic [ref=e253]:
+                    - img [ref=e255]
+                    - generic [ref=e258]:
+                      - paragraph [ref=e259]: 29/12/2023
+                      - paragraph [ref=e260]: "Advisory: Date extension for reporting opening balance for ITC reversal"
+                      - paragraph [ref=e261]: Opening balance changes can still be reported without impacting already synced returns.
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: Circular
+                    - img [ref=e264]
+              - article [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e270]:
+                    - img [ref=e272]
+                    - generic [ref=e275]:
+                      - paragraph [ref=e276]: 01/01/2024
+                      - paragraph [ref=e277]: Advisory on the functionalities available on the portal for the GTA taxpayers
+                      - paragraph [ref=e278]: Portal capabilities for GTA taxpayers have been refreshed for the new filing period.
+                  - generic [ref=e279]:
+                    - generic [ref=e280]: Notification
+                    - img [ref=e281]
+              - article [ref=e285]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]:
+                    - img [ref=e289]
+                    - generic [ref=e292]:
+                      - paragraph [ref=e293]: 15/01/2024
+                      - paragraph [ref=e294]: Advisory on introduction of new Tables 14 & 15 in GSTR-1
+                      - paragraph [ref=e295]: New tables are now available for outbound invoice declarations in the active return cycle.
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: Gf
+                    - img [ref=e298]
+          - generic [ref=e303]:
+            - generic [ref=e304]:
+              - heading "Net Tax Liability" [level=2] [ref=e305]
+              - generic [ref=e306]: (Output- Input)
+            - generic [ref=e307]:
+              - generic [ref=e309]:
+                - generic [ref=e310]: Output Tax
+                - generic [ref=e311]: Rs 12.84L
+              - generic [ref=e315]:
+                - generic [ref=e316]: Input Credit
+                - generic [ref=e317]: Rs 8.42L
+              - generic [ref=e321]:
+                - generic [ref=e322]: Net Liability
+                - generic [ref=e323]: Rs 4.42L
+  - alert [ref=e326]

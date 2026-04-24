@@ -1,0 +1,136 @@
+- generic [ref=e79]:
+  - generic [ref=e80]:
+    - img [ref=e83] [cursor=pointer]
+    - list [ref=e87]:
+      - listitem [ref=e88] [cursor=pointer]:
+        - link "Home" [ref=e89]:
+          - /url: /app/home/dashboard
+          - img [ref=e90]
+          - generic [ref=e92]: Home
+      - listitem [ref=e93] [cursor=pointer]:
+        - link "Data Entry" [ref=e94]:
+          - /url: /app/da/dashboard
+          - img [ref=e95]
+          - generic [ref=e98]: Data Entry
+      - listitem [ref=e99] [cursor=pointer]:
+        - link "GST" [ref=e100]:
+          - /url: /app/ga/dashboard
+          - img [ref=e101]
+          - generic [ref=e105]: GST
+        - generic [ref=e106]: Beta
+      - listitem [ref=e107] [cursor=pointer]:
+        - link "Chat" [ref=e108]:
+          - /url: /app/chat/get-started
+          - img [ref=e109]
+          - generic [ref=e113]: Chat
+        - generic [ref=e114]: Beta
+      - listitem [ref=e115] [cursor=pointer]:
+        - link "Task" [ref=e116]:
+          - /url: /app/pms/document-task
+          - img [ref=e117]
+          - generic [ref=e119]: Task
+        - generic [ref=e120]: Beta
+      - listitem [ref=e121] [cursor=pointer]:
+        - link "Drive" [ref=e122]:
+          - /url: /app/drive/all-documents
+          - img [ref=e123]
+          - generic [ref=e125]: Drive
+    - img [ref=e128] [cursor=pointer]
+    - generic [ref=e133] [cursor=pointer]: J
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - img [ref=e138]
+      - list [ref=e142]:
+        - listitem [ref=e143] [cursor=pointer]:
+          - link "Dashboard" [ref=e144]:
+            - /url: /app/da/dashboard
+            - img [ref=e146]
+            - generic [ref=e148]: Dashboard
+        - listitem [ref=e150] [cursor=pointer]:
+          - link "Bulk Upload" [ref=e151]:
+            - /url: /app/da/banking
+            - img [ref=e153]
+            - generic [ref=e155]: Bulk Upload
+        - listitem [ref=e157] [cursor=pointer]:
+          - link "Transactions" [ref=e158]:
+            - /url: /app/da/sales
+            - img [ref=e160]
+            - generic [ref=e163]: Transactions
+        - listitem [ref=e165] [cursor=pointer]:
+          - link "Master" [ref=e166]:
+            - /url: /app/da/ledger-master
+            - img [ref=e168]
+            - generic [ref=e170]: Master
+        - listitem [ref=e172] [cursor=pointer]:
+          - link "Learn Vyapar TaxOne" [ref=e173]:
+            - /url: /app/da/learn-suvit
+            - img [ref=e175]
+            - generic [ref=e177]: Learn Vyapar TaxOne
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - generic [ref=e182]:
+          - img [ref=e832]
+          - heading "Rule list" [level=6] [ref=e834]
+          - superscript [ref=e187]:
+            - generic [ref=e191]: "1"
+        - generic [ref=e202]:
+          - img [ref=e205] [cursor=pointer]
+          - link [ref=e210] [cursor=pointer]:
+            - /url: https://app.suvit.io/suvit-x64/VyaparTaxOne-1.4.7.exe
+            - img [ref=e211]
+          - generic [ref=e214]:
+            - superscript [ref=e216]:
+              - generic [ref=e218]: "7"
+            - img [ref=e220] [cursor=pointer]
+          - generic [ref=e226] [cursor=pointer]:
+            - generic [ref=e227]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e229]
+      - main [ref=e231]:
+        - generic [ref=e835]:
+          - tablist [ref=e836]:
+            - generic [ref=e838]:
+              - tab "Ledger" [ref=e840] [cursor=pointer]:
+                - generic [ref=e841]: Ledger
+              - tab "Item" [ref=e843] [cursor=pointer]:
+                - generic [ref=e844]: Item
+              - tab "Rule List" [selected] [ref=e846] [cursor=pointer]:
+                - generic [ref=e847]: Rule List
+          - generic:
+            - generic:
+              - tabpanel "Rule List"
+        - table [ref=e855]:
+          - rowgroup [ref=e862]:
+            - row "Sr. No. Company Name Bank Name Total Rules Action" [ref=e863]:
+              - columnheader "Sr. No." [ref=e864]
+              - columnheader "Company Name" [ref=e865]
+              - columnheader "Bank Name" [ref=e866]
+              - columnheader "Total Rules" [ref=e867]
+              - columnheader "Action" [ref=e868]
+          - rowgroup [ref=e869]:
+            - row "1 PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000) HDFC 12" [ref=e870]:
+              - cell "1" [ref=e871]
+              - cell "PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)" [ref=e872]:
+                - generic [ref=e873]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)
+              - cell "HDFC" [ref=e874]
+              - cell "12" [ref=e875]
+              - cell [ref=e876]:
+                - img [ref=e879] [cursor=pointer]
+        - list [ref=e883]:
+          - listitem "Previous Page" [ref=e884]:
+            - button "left" [disabled] [ref=e885]:
+              - img "left" [ref=e886]:
+                - img [ref=e887]
+          - listitem "1" [ref=e889] [cursor=pointer]:
+            - generic [ref=e890]: "1"
+          - listitem "Next Page" [ref=e891]:
+            - button "right" [disabled] [ref=e892]:
+              - img "right" [ref=e893]:
+                - img [ref=e894]
+          - listitem [ref=e896]:
+            - generic "Page Size" [ref=e897] [cursor=pointer]:
+              - generic [ref=e898]:
+                - combobox "Page Size" [ref=e900]
+                - generic "20 / page" [ref=e901]
+              - generic:
+                - img:
+                  - img

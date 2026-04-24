@@ -8,7 +8,6 @@ import {
   Plus,
   Upload,
   Image as ImageIcon,
-  Share2,
   Trash2,
   ArrowUpDown,
   Filter,
@@ -96,6 +95,13 @@ interface ParticularsRow {
   amount: string;
 }
 
+interface CompanyOption {
+  id: string;
+  name: string;
+  shortName: string;
+  period: string;
+}
+
 // ─── Tab Config ───
 const TXN_TABS = ['Sales', 'Purchase', 'Payment', 'Receipt', 'Contra'] as const;
 type TxnTab = typeof TXN_TABS[number];
@@ -152,6 +158,33 @@ const TAB_CONFIG: Record<TxnTab, TabConfig> = {
   },
 };
 
+const COMPANY_OPTIONS: CompanyOption[] = [
+  {
+    id: 'paarijaat',
+    name: 'PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)',
+    shortName: 'PAARIJAAT PERSONAL CARE PRIVATE...',
+    period: '01/04/2026 - 31/03/2027',
+  },
+  {
+    id: 'sva-couture',
+    name: 'SVA COUTURE PRIVATE LIMITED (100001)',
+    shortName: 'SVA COUTURE PRIVATE LIMITED',
+    period: '01/04/2026 - 31/03/2027',
+  },
+  {
+    id: 'burgeon-law',
+    name: 'BURGEON LAW LLP (100002)',
+    shortName: 'BURGEON LAW LLP',
+    period: '01/04/2026 - 31/03/2027',
+  },
+  {
+    id: 'brego-group',
+    name: 'BREGO GROUP PRIVATE LIMITED (100003)',
+    shortName: 'BREGO GROUP PRIVATE LIMITED',
+    period: '01/04/2026 - 31/03/2027',
+  },
+];
+
 // ─── Component ───
 export default function TransactionsSection() {
   const router = useRouter();
@@ -165,6 +198,8 @@ export default function TransactionsSection() {
   const [isDragging, setIsDragging] = useState(false);
   const [activeInvoiceId, setActiveInvoiceId] = useState<number | null>(null);
   const [activePurchaseInvoiceId, setActivePurchaseInvoiceId] = useState<number | null>(null);
+  const [companyDropdownOpen, setCompanyDropdownOpen] = useState(false);
+  const [selectedCompany, setSelectedCompany] = useState<CompanyOption>(COMPANY_OPTIONS[0]);
 
   // Create voucher form state
   const [showCreateForm, setShowCreateForm] = useState(false);
@@ -184,6 +219,7 @@ export default function TransactionsSection() {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const accountDropdownRef = useRef<HTMLDivElement>(null);
   const particularsDropdownRef = useRef<HTMLDivElement>(null);
+  const companyDropdownRef = useRef<HTMLDivElement>(null);
 
   const config = TAB_CONFIG[activeTab];
 
@@ -192,6 +228,9 @@ export default function TransactionsSection() {
     function handleClickOutside(event: MouseEvent) {
       if (createRef.current && !createRef.current.contains(event.target as Node)) {
         setCreateDropdownOpen(false);
+      }
+      if (companyDropdownRef.current && !companyDropdownRef.current.contains(event.target as Node)) {
+        setCompanyDropdownOpen(false);
       }
       if (accountDropdownRef.current && !accountDropdownRef.current.contains(event.target as Node)) {
         setFormAccountOpen(false);
@@ -206,6 +245,21 @@ export default function TransactionsSection() {
 
 
   useEffect(() => {
+    const closeEmbeddedInvoice = (type: 'sales' | 'purchase') => {
+      if (type === 'sales') {
+        setActiveInvoiceId(null);
+        if (window.history.state?.salesInvoiceId) {
+          window.history.back();
+        }
+        return;
+      }
+
+      setActivePurchaseInvoiceId(null);
+      if (window.history.state?.purchaseInvoiceId) {
+        window.history.back();
+      }
+    };
+
     const syncInvoiceStateFromHistory = () => {
       const salesId = Number(window.history.state?.salesInvoiceId);
       const purchaseId = Number(window.history.state?.purchaseInvoiceId);
@@ -234,25 +288,26 @@ export default function TransactionsSection() {
       }
 
       if (event.data?.type === 'close-sales-invoice') {
-        setActiveInvoiceId(null);
-        if (window.history.state?.salesInvoiceId) {
-          window.history.back();
-        }
+        closeEmbeddedInvoice('sales');
       }
 
       if (event.data?.type === 'close-purchase-invoice') {
-        setActivePurchaseInvoiceId(null);
-        if (window.history.state?.purchaseInvoiceId) {
-          window.history.back();
-        }
+        closeEmbeddedInvoice('purchase');
       }
     };
+
+    (window as typeof window & {
+      closeEmbeddedInvoice?: (type: 'sales' | 'purchase') => void;
+    }).closeEmbeddedInvoice = closeEmbeddedInvoice;
 
     syncInvoiceStateFromHistory();
     window.addEventListener('popstate', syncInvoiceStateFromHistory);
     window.addEventListener('message', handleInvoiceMessage);
 
     return () => {
+      delete (window as typeof window & {
+        closeEmbeddedInvoice?: (type: 'sales' | 'purchase') => void;
+      }).closeEmbeddedInvoice;
       window.removeEventListener('popstate', syncInvoiceStateFromHistory);
       window.removeEventListener('message', handleInvoiceMessage);
     };
@@ -376,7 +431,7 @@ export default function TransactionsSection() {
           </div>
           <div className="flex items-center gap-3">
             <div className="text-right">
-              <p className="text-sm text-gray-700 font-medium truncate max-w-[200px]">PAARIJAAT PERSONAL CARE PRIVATE...</p>
+              <p className="text-sm text-gray-700 font-medium truncate max-w-[240px]">{selectedCompany.shortName}</p>
             </div>
           </div>
         </div>
@@ -622,17 +677,51 @@ export default function TransactionsSection() {
         </div>
 
         {/* Right: Company info */}
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center">
-              <Plus className="w-5 h-5 text-white" />
+        <div ref={companyDropdownRef} className="relative">
+          <button
+            onClick={() => setCompanyDropdownOpen((prev) => !prev)}
+            className="flex items-center gap-3 rounded-lg px-2 py-1 transition-colors hover:bg-slate-50"
+          >
+            <div className="text-right">
+              <p className="text-sm text-gray-700 font-medium truncate max-w-[240px]">{selectedCompany.shortName}</p>
+              <p className="text-[11px] text-gray-500">{selectedCompany.period}</p>
             </div>
-          </div>
-          <div className="text-right">
-            <p className="text-sm text-gray-700 font-medium truncate max-w-[200px]">PAARIJAAT PERSONAL CARE PRIVATE...</p>
-            <p className="text-[11px] text-gray-500">01/04/2026 - 31/03/2027</p>
-          </div>
-          <ChevronDown size={16} className="text-gray-500" />
+            <ChevronDown
+              size={16}
+              className={`text-gray-500 transition-transform ${companyDropdownOpen ? 'rotate-180' : ''}`}
+            />
+          </button>
+          {companyDropdownOpen && (
+            <div className="absolute right-0 top-full z-30 mt-2 w-[320px] overflow-hidden rounded-xl border border-slate-200 bg-white shadow-lg">
+              <div className="border-b border-slate-100 px-4 py-3">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-400">Companies</p>
+              </div>
+              <div className="py-1">
+                {COMPANY_OPTIONS.map((company) => (
+                  <button
+                    key={company.id}
+                    onClick={() => {
+                      setSelectedCompany(company);
+                      setCompanyDropdownOpen(false);
+                    }}
+                    className={`flex w-full items-start justify-between gap-3 px-4 py-3 text-left transition-colors ${
+                      selectedCompany.id === company.id ? 'bg-blue-50' : 'hover:bg-slate-50'
+                    }`}
+                  >
+                    <div className="min-w-0">
+                      <p className={`truncate text-[12px] font-medium ${selectedCompany.id === company.id ? 'text-blue-700' : 'text-slate-800'}`}>
+                        {company.name}
+                      </p>
+                      <p className="mt-0.5 text-[11px] text-slate-500">{company.period}</p>
+                    </div>
+                    {selectedCompany.id === company.id && (
+                      <span className="mt-0.5 text-[11px] font-semibold text-blue-600">Selected</span>
+                    )}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -792,7 +881,6 @@ export default function TransactionsSection() {
                         className="flex items-center justify-center gap-2"
                         onClick={(event) => event.stopPropagation()}
                       >
-                        <button className="text-gray-400 hover:text-gray-600"><Share2 size={14} /></button>
                         <button className="text-red-500 hover:text-red-700"><Trash2 size={14} /></button>
                       </div>
                     </td>

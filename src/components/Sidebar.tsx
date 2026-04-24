@@ -1,109 +1,97 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 import {
-  Home,
+  Calculator,
+  CheckCircle2,
+  FileSpreadsheet,
   FileText,
-  Briefcase,
-  MessageCircle,
-  HardDrive,
-  HelpCircle,
   Grid3x3,
-  Upload,
   Link2,
+  LogOut,
+  Settings,
   Table,
-} from 'lucide-react';
+  Upload,
+  UserRound,
+} from "lucide-react";
 
 interface SidebarProps {
   activePage?: string;
   onNavigate?: (page: string) => void;
 }
 
-export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: SidebarProps) {
-  const [collapsed, setCollapsed] = useState(true);
-  const iconBarItems = [
-    { id: 'home', icon: Home, label: 'Home', badge: null },
-    { id: 'dashboard', icon: Grid3x3, label: 'Dashboard', badge: null },
-    { id: 'data-entry', icon: FileText, label: 'Data Entry', badge: null },
-    { id: 'chat', icon: MessageCircle, label: 'Chat', badge: null },
-    { id: 'workspace', icon: Briefcase, label: 'Workspace', badge: null },
-    { id: 'data-room', icon: HardDrive, label: 'Data Room', badge: null },
-  ];
+const mainMenuItems = [
+  { id: "dashboard", label: "Dashboard", icon: Grid3x3 },
+  { id: "bulk-upload", label: "Bulk Upload", icon: Upload },
+  { id: "transactions", label: "Transactions", icon: Link2 },
+  { id: "master", label: "Master", icon: Table },
+  { id: "gst", label: "GST", icon: Calculator },
+  { id: "review", label: "Review", icon: CheckCircle2 },
+  { id: "tds-filing", label: "TDS Filing", icon: FileSpreadsheet },
+  { id: "mis-report", label: "MIS Report", icon: FileSpreadsheet },
+  { id: "advanced-text", label: "Advanced Text", icon: FileText },
+];
 
-  const mainMenuItems = [
-    { id: 'dashboard', label: 'Dashboard', icon: Grid3x3 },
-    { id: 'bulk-upload', label: 'Bulk Upload', icon: Upload },
-    { id: 'transactions', label: 'Transactions', icon: Link2 },
-    { id: 'master', label: 'Master', icon: Table },
-  ];
+export default function Sidebar({
+  activePage = "bulk-upload",
+  onNavigate,
+}: SidebarProps) {
+  const [collapsed, setCollapsed] = useState(true);
+  const [profileMenuOpen, setProfileMenuOpen] = useState(false);
+  const profileMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        profileMenuRef.current &&
+        !profileMenuRef.current.contains(event.target as Node)
+      ) {
+        setProfileMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
-    <div className="flex h-screen bg-gray-50">
-      {/* Left Icon Bar */}
-      <div className="w-[50px] bg-[#1E1B4B] flex flex-col items-center py-3 gap-3">
-        {/* Logo Area */}
-        <div className="flex items-center justify-center w-full mb-1 px-1">
-          <img src="/logo-circle.svg" alt="Logo" className="w-9 h-9" />
-        </div>
-
-        {/* Icon Buttons */}
-        <div className="flex flex-col gap-4">
-          {iconBarItems.map((item) => {
-            const Icon = item.icon;
-            const isActive = item.id === 'data-entry';
-
-            return (
-              <div key={item.id} className="relative group">
-                <button
-                  className={`p-2 rounded transition-colors relative ${
-                    isActive
-                      ? 'bg-[#2D2655] text-white'
-                      : 'text-gray-400 hover:text-white'
-                  }`}
-                  title={item.label}
-                >
-                  <Icon size={18} />
-                  {item.badge && (
-                    <span className="absolute -top-1 -right-1 bg-teal-500 text-white text-[7px] font-bold px-1 rounded">
-                      {item.badge}
-                    </span>
-                  )}
-                </button>
-                {/* Tooltip */}
-                <div className="absolute left-full ml-2 bg-gray-900 text-white text-xs px-2 py-1 rounded whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity z-50 pointer-events-none">
-                  {item.label}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Bottom Icons */}
-        <div className="flex flex-col gap-4 mt-auto">
-          <button
-            className="p-2 rounded text-gray-400 hover:text-white transition-colors"
-            title="Help"
-          >
-            <HelpCircle size={18} />
-          </button>
-          <button
-            className="w-8 h-8 rounded-full bg-indigo-600 text-white flex items-center justify-center text-xs font-bold hover:bg-indigo-700 transition-colors"
-            title="User Profile"
-          >
-            J
-          </button>
+    <aside
+      onMouseEnter={() => setCollapsed(false)}
+      onMouseLeave={() => {
+        setCollapsed(true);
+        setProfileMenuOpen(false);
+      }}
+      className={`flex h-screen flex-col border-r border-slate-200 bg-white transition-all duration-200 ${
+        collapsed ? "w-[72px]" : "w-[224px]"
+      }`}
+    >
+      <div
+        className={`border-b border-slate-100 py-4 transition-all duration-200 ${
+          collapsed ? "px-3" : "px-5"
+        }`}
+      >
+        <div
+          className={`flex items-center ${collapsed ? "justify-center" : "gap-3"}`}
+        >
+          <img
+            src={collapsed ? "/logo-circle.svg" : "/logo-full.svg"}
+            alt="Brego"
+            className={`object-contain transition-all duration-200 ${
+              collapsed ? "h-10 w-10" : "h-7 w-auto max-w-[160px]"
+            }`}
+          />
         </div>
       </div>
 
-      {/* Main Sidebar - Hover to expand */}
-      <div
-        onMouseEnter={() => setCollapsed(false)}
-        onMouseLeave={() => setCollapsed(true)}
-        className={`bg-white border-r border-gray-200 py-6 px-0 flex flex-col transition-all duration-200 overflow-hidden ${
-          collapsed ? 'w-[50px]' : 'w-[140px]'
-        }`}
-      >
-        <nav className="space-y-1 flex-1">
+      <nav className="flex-1 px-3 py-4">
+        <p
+          className={`overflow-hidden px-3 pb-2 text-[11px] font-semibold uppercase tracking-[0.2em] text-slate-400 transition-all duration-200 ${
+            collapsed ? "max-h-0 opacity-0" : "max-h-8 opacity-100"
+          }`}
+        >
+          Workspace
+        </p>
+        <div className="space-y-1">
           {mainMenuItems.map((item) => {
             const Icon = item.icon;
             const isActive = activePage === item.id;
@@ -112,19 +100,113 @@ export default function Sidebar({ activePage = 'bulk-upload', onNavigate }: Side
               <button
                 key={item.id}
                 onClick={() => onNavigate?.(item.id)}
-                className={`w-full flex items-center gap-3 px-4 py-3 transition-all text-sm whitespace-nowrap ${
+                className={`group flex w-full items-center rounded-xl px-3 py-3 text-sm transition-all duration-200 ${
                   isActive
-                    ? 'bg-blue-50 text-blue-600 font-medium'
-                    : 'text-gray-700 hover:bg-gray-50'
-                }`}
+                    ? "bg-blue-50 text-blue-700 shadow-sm"
+                    : "text-slate-700 hover:bg-slate-50"
+                } ${collapsed ? "justify-center" : "gap-3"}`}
+                title={collapsed ? item.label : undefined}
               >
-                <Icon size={18} className="flex-shrink-0" />
-                <span className={`truncate transition-opacity duration-200 ${collapsed ? 'opacity-0' : 'opacity-100'}`}>{item.label}</span>
+                <span
+                  className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border transition-colors ${
+                    isActive
+                      ? "border-blue-100 bg-white text-blue-700"
+                      : "border-slate-200 bg-slate-50 text-slate-500 group-hover:text-slate-900"
+                  }`}
+                >
+                  <Icon size={18} />
+                </span>
+                <span
+                  className={`overflow-hidden whitespace-nowrap font-medium transition-all duration-200 ${
+                    collapsed ? "w-0 opacity-0" : "w-auto opacity-100"
+                  }`}
+                >
+                  {item.label}
+                </span>
               </button>
             );
           })}
-        </nav>
+        </div>
+      </nav>
+
+      <div
+        ref={profileMenuRef}
+        className={`relative border-t border-slate-100 py-4 transition-all duration-200 ${
+          collapsed ? "px-3" : "px-4"
+        }`}
+      >
+        {profileMenuOpen && (
+          <div className="absolute bottom-[76px] left-3 right-3 z-40 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_18px_50px_rgba(15,23,42,0.16)]">
+            <div className="border-b border-slate-100 bg-slate-50 px-4 py-4">
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-700 text-sm font-black text-white shadow-[0_10px_22px_rgba(37,99,235,0.24)]">
+                  JS
+                </div>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-black text-slate-900">
+                    Juned Sayyed
+                  </p>
+                  <p className="truncate text-xs font-medium text-slate-500">
+                    juned@bregobusiness.com
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="p-2">
+              <button
+                type="button"
+                className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50"
+              >
+                <UserRound size={17} className="text-slate-500" />
+                Profile
+              </button>
+              <button
+                type="button"
+                className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-semibold text-slate-700 transition-colors hover:bg-slate-50"
+              >
+                <Settings size={17} className="text-slate-500" />
+                Settings
+              </button>
+            </div>
+
+            <div className="border-t border-slate-100 p-2">
+              <button
+                type="button"
+                className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-left text-sm font-bold text-rose-600 transition-colors hover:bg-rose-50"
+              >
+                <LogOut size={17} />
+                Logout
+              </button>
+            </div>
+          </div>
+        )}
+
+        <button
+          type="button"
+          onClick={() => setProfileMenuOpen((current) => !current)}
+          className={`group flex w-full items-center rounded-2xl border border-slate-200 bg-slate-50 p-2 text-left transition-all hover:border-blue-200 hover:bg-blue-50 ${
+            collapsed ? "justify-center" : "gap-3"
+          }`}
+          title={collapsed ? "Juned Sayyed" : undefined}
+        >
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-700 text-sm font-black text-white shadow-[0_10px_22px_rgba(37,99,235,0.24)]">
+            JS
+          </span>
+          <span
+            className={`min-w-0 overflow-hidden transition-all duration-200 ${
+              collapsed ? "w-0 opacity-0" : "w-auto opacity-100"
+            }`}
+          >
+            <span className="block truncate text-sm font-black text-slate-900">
+              Juned Sayyed
+            </span>
+            <span className="block truncate text-xs font-semibold text-slate-500">
+              Account settings
+            </span>
+          </span>
+        </button>
       </div>
-    </div>
+    </aside>
   );
 }

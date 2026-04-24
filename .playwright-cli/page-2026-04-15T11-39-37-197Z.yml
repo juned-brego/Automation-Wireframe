@@ -1,0 +1,847 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e5079]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Try A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Try A/c. & Billing
+      - listitem [ref=e84]:
+        - link "7 days remaining on your free trial period Buy Now" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e87]:
+            - heading "7 days remaining on your free trial period" [level=5] [ref=e88]
+            - button "Buy Now" [ref=e90]
+      - listitem [ref=e91]:
+        - link "Live Chat" [ref=e92] [cursor=pointer]:
+          - /url: /
+          - img [ref=e93]
+          - generic [ref=e96]: Live Chat
+      - listitem [ref=e97]:
+        - link "Settings" [ref=e98] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e99]
+          - generic [ref=e103]: Settings
+  - navigation [ref=e104]:
+    - list [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button [ref=e113] [cursor=pointer]:
+            - img [ref=e116]
+          - generic [ref=e2605]:
+            - combobox "Select Year" [ref=e2606]: 2025-26
+            - button "Open" [ref=e2608] [cursor=pointer]
+            - group
+          - generic [ref=e2612]:
+            - combobox "Select Period" [ref=e2613]: Mar 2026 (Monthly)
+            - button "Open" [ref=e2615] [cursor=pointer]
+            - group
+        - heading "CLEAR WATER CRAFT (27CDRPS5642C2Z5)" [level=5] [ref=e136]:
+          - paragraph [ref=e137]: CLEAR WATER CRAFT (27CDRPS5642C2Z5)
+        - generic [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Need help?" [ref=e140] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Need help?
+                - img [ref=e147]
+          - listitem [ref=e149]:
+            - link "9821555450 Owner" [ref=e150] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: "9821555450"
+                - generic [ref=e153]: Owner
+              - img [ref=e156]
+  - generic [ref=e5084]:
+    - generic [ref=e5085]:
+      - heading "GSTR-1 Data Prepare | Mar 2026 (Monthly)" [level=2] [ref=e5091]:
+        - button [ref=e5092] [cursor=pointer]:
+          - img [ref=e5093]
+        - heading "GSTR-1 Data Prepare | Mar 2026 (Monthly)" [level=2] [ref=e5098]
+      - generic [ref=e5099]:
+        - generic [ref=e5101]:
+          - button [ref=e5102] [cursor=pointer]
+          - generic [ref=e5103] [cursor=pointer]: File Nil Return
+        - button "Add Invoice" [ref=e5104] [cursor=pointer]
+        - button "Import Your Data" [ref=e5105] [cursor=pointer]
+    - generic [ref=e5108]:
+      - generic [ref=e5111]:
+        - button "Data Prepare" [ref=e5113] [cursor=pointer]:
+          - generic [ref=e5114]:
+            - img [ref=e5116]:
+              - generic [ref=e5118]: "1"
+            - generic [ref=e5120]: Data Prepare
+        - button "Check Invoices" [ref=e5123] [cursor=pointer]:
+          - generic [ref=e5124]:
+            - img [ref=e5126]:
+              - generic [ref=e5128]: "2"
+            - generic [ref=e5130]: Check Invoices
+        - button "Push to GSTN" [ref=e5133] [cursor=pointer]:
+          - generic [ref=e5134]:
+            - img [ref=e5136]:
+              - generic [ref=e5138]: "3"
+            - generic [ref=e5140]: Push to GSTN
+        - button "File GSTR-1" [ref=e5143] [cursor=pointer]:
+          - generic [ref=e5144]:
+            - img [ref=e5146]:
+              - generic [ref=e5148]: "4"
+            - generic [ref=e5150]: File GSTR-1
+      - generic [ref=e5151]:
+        - generic [ref=e5152]:
+          - generic [ref=e5155] [cursor=pointer]: Delete Data
+          - generic [ref=e5156]:
+            - generic [ref=e5157]: Frequently used section
+            - table [ref=e5162]:
+              - rowgroup [ref=e5163]:
+                - row "Type of Invoice Documents Taxable Amount IGST CGST SGST CESS Tax Amount Invoice Value Actions" [ref=e5164]:
+                  - columnheader "Type of Invoice" [ref=e5165]:
+                    - generic [ref=e5166]:
+                      - generic "Type of Invoice" [ref=e5168]
+                      - separator [ref=e5170]
+                  - columnheader "Documents" [ref=e5171]:
+                    - generic [ref=e5172]:
+                      - generic "Documents" [ref=e5174]
+                      - separator [ref=e5176]
+                  - columnheader "Taxable Amount" [ref=e5177]:
+                    - generic [ref=e5178]:
+                      - generic "Taxable Amount" [ref=e5180]
+                      - separator [ref=e5182]
+                  - columnheader "IGST" [ref=e5183]:
+                    - generic [ref=e5184]:
+                      - generic "IGST" [ref=e5186]
+                      - separator [ref=e5188]
+                  - columnheader "CGST" [ref=e5189]:
+                    - generic [ref=e5190]:
+                      - generic "CGST" [ref=e5192]
+                      - separator [ref=e5194]
+                  - columnheader "SGST" [ref=e5195]:
+                    - generic [ref=e5196]:
+                      - generic "SGST" [ref=e5198]
+                      - separator [ref=e5200]
+                  - columnheader "CESS" [ref=e5201]:
+                    - generic [ref=e5202]:
+                      - generic "CESS" [ref=e5204]
+                      - separator [ref=e5206]
+                  - columnheader "Tax Amount" [ref=e5207]:
+                    - generic [ref=e5208]:
+                      - generic "Tax Amount" [ref=e5210]
+                      - separator [ref=e5212]
+                  - columnheader "Invoice Value" [ref=e5213]:
+                    - generic [ref=e5214]:
+                      - generic "Invoice Value" [ref=e5216]
+                      - separator [ref=e5218]
+                  - columnheader "Actions" [ref=e5219]:
+                    - generic [ref=e5220]:
+                      - generic "Actions" [ref=e5222]
+                      - separator [ref=e5224]
+              - rowgroup [ref=e5225]:
+                - row "B2B(4A, 4B, 6B, 6C) 13 7,61,650.00 38,082.50 0.00 0.00 0.00 38,082.50 7,99,732.50 Edit" [ref=e5226]:
+                  - cell "B2B(4A, 4B, 6B, 6C)" [ref=e5227]
+                  - cell "13" [ref=e5228]
+                  - cell "7,61,650.00" [ref=e5229]
+                  - cell "38,082.50" [ref=e5230]
+                  - cell "0.00" [ref=e5231]
+                  - cell "0.00" [ref=e5232]
+                  - cell "0.00" [ref=e5233]
+                  - cell "38,082.50" [ref=e5234]
+                  - cell "7,99,732.50" [ref=e5235]
+                  - cell "Edit" [ref=e5236]:
+                    - button "Edit" [ref=e5239] [cursor=pointer]:
+                      - img [ref=e5240]
+                      - text: Edit
+                - row "Credit/Debit Notes (Registered) (9B) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5243]:
+                  - cell "Credit/Debit Notes (Registered) (9B)" [ref=e5244]
+                  - cell "0" [ref=e5245]
+                  - cell "0.00" [ref=e5246]
+                  - cell "0.00" [ref=e5247]
+                  - cell "0.00" [ref=e5248]
+                  - cell "0.00" [ref=e5249]
+                  - cell "0.00" [ref=e5250]
+                  - cell "0.00" [ref=e5251]
+                  - cell "0.00" [ref=e5252]
+                  - cell "Edit" [ref=e5253]:
+                    - button "Edit" [ref=e5256] [cursor=pointer]:
+                      - img [ref=e5257]
+                      - text: Edit
+                - row "Export Invoices (6A) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5260]:
+                  - cell "Export Invoices (6A)" [ref=e5261]
+                  - cell "0" [ref=e5262]
+                  - cell "0.00" [ref=e5263]
+                  - cell "0.00" [ref=e5264]
+                  - cell "0.00" [ref=e5265]
+                  - cell "0.00" [ref=e5266]
+                  - cell "0.00" [ref=e5267]
+                  - cell "0.00" [ref=e5268]
+                  - cell "0.00" [ref=e5269]
+                  - cell "Edit" [ref=e5270]:
+                    - button "Edit" [ref=e5273] [cursor=pointer]:
+                      - img [ref=e5274]
+                      - text: Edit
+                - row "B2C Others (7) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5277]:
+                  - cell "B2C Others (7)" [ref=e5278]
+                  - cell "0" [ref=e5279]
+                  - cell "0.00" [ref=e5280]
+                  - cell "0.00" [ref=e5281]
+                  - cell "0.00" [ref=e5282]
+                  - cell "0.00" [ref=e5283]
+                  - cell "0.00" [ref=e5284]
+                  - cell "0.00" [ref=e5285]
+                  - cell "0.00" [ref=e5286]
+                  - cell "Edit" [ref=e5287]:
+                    - button "Edit" [ref=e5290] [cursor=pointer]:
+                      - img [ref=e5291]
+                      - text: Edit
+                - row "Total - 7,61,650.00 38,082.50 0.00 0.00 0.00 38,082.50 7,99,732.50" [ref=e5294]:
+                  - cell "Total" [ref=e5295]
+                  - cell "-" [ref=e5296]
+                  - cell "7,61,650.00" [ref=e5297]
+                  - cell "38,082.50" [ref=e5298]
+                  - cell "0.00" [ref=e5299]
+                  - cell "0.00" [ref=e5300]
+                  - cell "0.00" [ref=e5301]
+                  - cell "38,082.50" [ref=e5302]
+                  - cell "7,99,732.50" [ref=e5303]
+                  - cell [ref=e5304]
+                - row "HSN summary of outward supplies (12) 0 0.00 0.00 0.00 0.00 0.00 0.00 -" [ref=e5305]:
+                  - cell "HSN summary of outward supplies (12)" [ref=e5306]
+                  - cell "0" [ref=e5307]
+                  - cell "0.00" [ref=e5308]
+                  - cell "0.00" [ref=e5309]
+                  - cell "0.00" [ref=e5310]
+                  - cell "0.00" [ref=e5311]
+                  - cell "0.00" [ref=e5312]
+                  - cell "0.00" [ref=e5313]
+                  - cell "-" [ref=e5314]
+                  - cell [ref=e5315]
+                - row "HSN B2B 0 0.00 0.00 0.00 0.00 0.00 0.00 - Edit" [ref=e5316]:
+                  - cell "HSN B2B" [ref=e5317]
+                  - cell "0" [ref=e5318]
+                  - cell "0.00" [ref=e5319]
+                  - cell "0.00" [ref=e5320]
+                  - cell "0.00" [ref=e5321]
+                  - cell "0.00" [ref=e5322]
+                  - cell "0.00" [ref=e5323]
+                  - cell "0.00" [ref=e5324]
+                  - cell "-" [ref=e5325]
+                  - cell "Edit" [ref=e5326]:
+                    - button "Edit" [ref=e5329] [cursor=pointer]:
+                      - img [ref=e5330]
+                      - text: Edit
+                - row "HSN B2C 0 0.00 0.00 0.00 0.00 0.00 0.00 - Edit" [ref=e5333]:
+                  - cell "HSN B2C" [ref=e5334]
+                  - cell "0" [ref=e5335]
+                  - cell "0.00" [ref=e5336]
+                  - cell "0.00" [ref=e5337]
+                  - cell "0.00" [ref=e5338]
+                  - cell "0.00" [ref=e5339]
+                  - cell "0.00" [ref=e5340]
+                  - cell "0.00" [ref=e5341]
+                  - cell "-" [ref=e5342]
+                  - cell "Edit" [ref=e5343]:
+                    - button "Edit" [ref=e5346] [cursor=pointer]:
+                      - img [ref=e5347]
+                      - text: Edit
+          - generic [ref=e5350]:
+            - generic [ref=e5351]:
+              - text: GSTR-1 Other Details
+              - img [ref=e5354] [cursor=pointer]
+            - table [ref=e5361]:
+              - rowgroup [ref=e5362]:
+                - row "Nature Of Document Count of Documents Cancelled Docs Net Issued Docs Actions" [ref=e5363]:
+                  - columnheader "Nature Of Document" [ref=e5364]:
+                    - generic [ref=e5365]:
+                      - generic "Nature Of Document" [ref=e5367]
+                      - separator [ref=e5369]
+                  - columnheader "Count of Documents" [ref=e5370]:
+                    - generic [ref=e5371]:
+                      - generic "Count of Documents" [ref=e5373]
+                      - separator [ref=e5375]
+                  - columnheader "Cancelled Docs" [ref=e5376]:
+                    - generic [ref=e5377]:
+                      - generic "Cancelled Docs" [ref=e5379]
+                      - separator [ref=e5381]
+                  - columnheader "Net Issued Docs" [ref=e5382]:
+                    - generic [ref=e5383]:
+                      - generic "Net Issued Docs" [ref=e5385]
+                      - separator [ref=e5387]
+                  - columnheader "Actions" [ref=e5388]:
+                    - generic [ref=e5389]:
+                      - generic "Actions" [ref=e5391]
+                      - separator [ref=e5393]
+              - rowgroup [ref=e5394]:
+                - row "Document Series Summary (13) 0 0 0 Edit" [ref=e5395]:
+                  - cell "Document Series Summary (13)" [ref=e5396]
+                  - cell "0" [ref=e5397]
+                  - cell "0" [ref=e5398]
+                  - cell "0" [ref=e5399]
+                  - cell "Edit" [ref=e5400]:
+                    - button "Edit" [ref=e5403] [cursor=pointer]:
+                      - img [ref=e5404]
+                      - text: Edit
+          - generic [ref=e5407]:
+            - generic [ref=e5408]:
+              - generic [ref=e5409]: Invoice level details
+              - paragraph [ref=e5410]: We have done category wise summary for the invoices upload or created by you in GSTR1 (Categories like B2B, B2C(large), Credit/Debit note for register & unregistered and also Exported invoices.)
+            - table [ref=e5415]:
+              - rowgroup [ref=e5416]:
+                - row "Type of Invoice Documents Taxable Amount IGST CGST SGST CESS Tax Amount Invoice Value Actions" [ref=e5417]:
+                  - columnheader [ref=e5418]:
+                    - generic [ref=e5419]:
+                      - generic "Select All" [ref=e5421]:
+                        - button [ref=e5423] [cursor=pointer]
+                      - separator [ref=e5425]
+                  - columnheader "Type of Invoice" [ref=e5426]:
+                    - generic [ref=e5427]:
+                      - generic "Type of Invoice" [ref=e5429]
+                      - separator [ref=e5431]
+                  - columnheader "Documents" [ref=e5432]:
+                    - generic [ref=e5433]:
+                      - generic "Documents" [ref=e5435]
+                      - separator [ref=e5437]
+                  - columnheader "Taxable Amount" [ref=e5438]:
+                    - generic [ref=e5439]:
+                      - generic "Taxable Amount" [ref=e5441]
+                      - separator [ref=e5443]
+                  - columnheader "IGST" [ref=e5444]:
+                    - generic [ref=e5445]:
+                      - generic "IGST" [ref=e5447]
+                      - separator [ref=e5449]
+                  - columnheader "CGST" [ref=e5450]:
+                    - generic [ref=e5451]:
+                      - generic "CGST" [ref=e5453]
+                      - separator [ref=e5455]
+                  - columnheader "SGST" [ref=e5456]:
+                    - generic [ref=e5457]:
+                      - generic "SGST" [ref=e5459]
+                      - separator [ref=e5461]
+                  - columnheader "CESS" [ref=e5462]:
+                    - generic [ref=e5463]:
+                      - generic "CESS" [ref=e5465]
+                      - separator [ref=e5467]
+                  - columnheader "Tax Amount" [ref=e5468]:
+                    - generic [ref=e5469]:
+                      - generic "Tax Amount" [ref=e5471]
+                      - separator [ref=e5473]
+                  - columnheader "Invoice Value" [ref=e5474]:
+                    - generic [ref=e5475]:
+                      - generic "Invoice Value" [ref=e5477]
+                      - separator [ref=e5479]
+                  - columnheader "Actions" [ref=e5480]:
+                    - generic [ref=e5481]:
+                      - generic "Actions" [ref=e5483]
+                      - separator [ref=e5485]
+              - rowgroup [ref=e5486]:
+                - row "B2B(4A, 4B, 6B, 6C) 13 7,61,650.00 38,082.50 0.00 0.00 0.00 38,082.50 7,99,732.50 Edit" [ref=e5487]:
+                  - cell [ref=e5488]:
+                    - button [ref=e5491] [cursor=pointer]
+                  - cell "B2B(4A, 4B, 6B, 6C)" [ref=e5492]
+                  - cell "13" [ref=e5493]
+                  - cell "7,61,650.00" [ref=e5494]
+                  - cell "38,082.50" [ref=e5495]
+                  - cell "0.00" [ref=e5496]
+                  - cell "0.00" [ref=e5497]
+                  - cell "0.00" [ref=e5498]
+                  - cell "38,082.50" [ref=e5499]
+                  - cell "7,99,732.50" [ref=e5500]
+                  - cell "Edit" [ref=e5501]:
+                    - button "Edit" [ref=e5504] [cursor=pointer]:
+                      - img [ref=e5505]
+                      - text: Edit
+                - row "B2C Large (5A, 5B) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5508]:
+                  - cell [ref=e5509]:
+                    - button [ref=e5512] [cursor=pointer]
+                  - cell "B2C Large (5A, 5B)" [ref=e5513]
+                  - cell "0" [ref=e5514]
+                  - cell "0.00" [ref=e5515]
+                  - cell "0.00" [ref=e5516]
+                  - cell "0.00" [ref=e5517]
+                  - cell "0.00" [ref=e5518]
+                  - cell "0.00" [ref=e5519]
+                  - cell "0.00" [ref=e5520]
+                  - cell "0.00" [ref=e5521]
+                  - cell "Edit" [ref=e5522]:
+                    - button "Edit" [ref=e5525] [cursor=pointer]:
+                      - img [ref=e5526]
+                      - text: Edit
+                - row "Credit/Debit Notes (Registered) (9B) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5529]:
+                  - cell [ref=e5530]:
+                    - button [ref=e5533] [cursor=pointer]
+                  - cell "Credit/Debit Notes (Registered) (9B)" [ref=e5534]
+                  - cell "0" [ref=e5535]
+                  - cell "0.00" [ref=e5536]
+                  - cell "0.00" [ref=e5537]
+                  - cell "0.00" [ref=e5538]
+                  - cell "0.00" [ref=e5539]
+                  - cell "0.00" [ref=e5540]
+                  - cell "0.00" [ref=e5541]
+                  - cell "0.00" [ref=e5542]
+                  - cell "Edit" [ref=e5543]:
+                    - button "Edit" [ref=e5546] [cursor=pointer]:
+                      - img [ref=e5547]
+                      - text: Edit
+                - row "Credit/Debit Notes (Unregistered) (9B) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5550]:
+                  - cell [ref=e5551]:
+                    - button [ref=e5554] [cursor=pointer]
+                  - cell "Credit/Debit Notes (Unregistered) (9B)" [ref=e5555]
+                  - cell "0" [ref=e5556]
+                  - cell "0.00" [ref=e5557]
+                  - cell "0.00" [ref=e5558]
+                  - cell "0.00" [ref=e5559]
+                  - cell "0.00" [ref=e5560]
+                  - cell "0.00" [ref=e5561]
+                  - cell "0.00" [ref=e5562]
+                  - cell "0.00" [ref=e5563]
+                  - cell "Edit" [ref=e5564]:
+                    - button "Edit" [ref=e5567] [cursor=pointer]:
+                      - img [ref=e5568]
+                      - text: Edit
+                - row "Export Invoices (6A) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5571]:
+                  - cell [ref=e5572]:
+                    - button [ref=e5575] [cursor=pointer]
+                  - cell "Export Invoices (6A)" [ref=e5576]
+                  - cell "0" [ref=e5577]
+                  - cell "0.00" [ref=e5578]
+                  - cell "0.00" [ref=e5579]
+                  - cell "0.00" [ref=e5580]
+                  - cell "0.00" [ref=e5581]
+                  - cell "0.00" [ref=e5582]
+                  - cell "0.00" [ref=e5583]
+                  - cell "0.00" [ref=e5584]
+                  - cell "Edit" [ref=e5585]:
+                    - button "Edit" [ref=e5588] [cursor=pointer]:
+                      - img [ref=e5589]
+                      - text: Edit
+                - row "Supplies U/s 9(5) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5592]:
+                  - cell [ref=e5593]:
+                    - button [ref=e5596] [cursor=pointer]
+                  - cell "Supplies U/s 9(5)" [ref=e5597]
+                  - cell "0" [ref=e5598]
+                  - cell "0.00" [ref=e5599]
+                  - cell "0.00" [ref=e5600]
+                  - cell "0.00" [ref=e5601]
+                  - cell "0.00" [ref=e5602]
+                  - cell "0.00" [ref=e5603]
+                  - cell "0.00" [ref=e5604]
+                  - cell "0.00" [ref=e5605]
+                  - cell "Edit" [ref=e5606]:
+                    - button "Edit" [ref=e5609] [cursor=pointer]:
+                      - img [ref=e5610]
+                      - text: Edit
+          - generic [ref=e5613]:
+            - generic [ref=e5614]:
+              - generic [ref=e5615]: Other details (summary level)
+              - paragraph [ref=e5616]: As per GSTR1 (government), Summary level data required for B2C Others, Nil rated supplies, Advance received and Adjustment of Advances type of invoice.
+            - table [ref=e5621]:
+              - rowgroup [ref=e5622]:
+                - row "Type of Invoice Documents Taxable Amount IGST CGST SGST CESS Tax Amount Invoice Value Actions" [ref=e5623]:
+                  - columnheader [ref=e5624]:
+                    - generic [ref=e5625]:
+                      - generic "Select All" [ref=e5627]:
+                        - button [ref=e5629] [cursor=pointer]
+                      - separator [ref=e5631]
+                  - columnheader "Type of Invoice" [ref=e5632]:
+                    - generic [ref=e5633]:
+                      - generic "Type of Invoice" [ref=e5635]
+                      - separator [ref=e5637]
+                  - columnheader "Documents" [ref=e5638]:
+                    - generic [ref=e5639]:
+                      - generic "Documents" [ref=e5641]
+                      - separator [ref=e5643]
+                  - columnheader "Taxable Amount" [ref=e5644]:
+                    - generic [ref=e5645]:
+                      - generic "Taxable Amount" [ref=e5647]
+                      - separator [ref=e5649]
+                  - columnheader "IGST" [ref=e5650]:
+                    - generic [ref=e5651]:
+                      - generic "IGST" [ref=e5653]
+                      - separator [ref=e5655]
+                  - columnheader "CGST" [ref=e5656]:
+                    - generic [ref=e5657]:
+                      - generic "CGST" [ref=e5659]
+                      - separator [ref=e5661]
+                  - columnheader "SGST" [ref=e5662]:
+                    - generic [ref=e5663]:
+                      - generic "SGST" [ref=e5665]
+                      - separator [ref=e5667]
+                  - columnheader "CESS" [ref=e5668]:
+                    - generic [ref=e5669]:
+                      - generic "CESS" [ref=e5671]
+                      - separator [ref=e5673]
+                  - columnheader "Tax Amount" [ref=e5674]:
+                    - generic [ref=e5675]:
+                      - generic "Tax Amount" [ref=e5677]
+                      - separator [ref=e5679]
+                  - columnheader "Invoice Value" [ref=e5680]:
+                    - generic [ref=e5681]:
+                      - generic "Invoice Value" [ref=e5683]
+                      - separator [ref=e5685]
+                  - columnheader "Actions" [ref=e5686]:
+                    - generic [ref=e5687]:
+                      - generic "Actions" [ref=e5689]
+                      - separator [ref=e5691]
+              - rowgroup [ref=e5692]:
+                - row "B2C Others (7) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5693]:
+                  - cell [ref=e5694]:
+                    - button [ref=e5697] [cursor=pointer]
+                  - cell "B2C Others (7)" [ref=e5698]
+                  - cell "0" [ref=e5699]
+                  - cell "0.00" [ref=e5700]
+                  - cell "0.00" [ref=e5701]
+                  - cell "0.00" [ref=e5702]
+                  - cell "0.00" [ref=e5703]
+                  - cell "0.00" [ref=e5704]
+                  - cell "0.00" [ref=e5705]
+                  - cell "0.00" [ref=e5706]
+                  - cell "Edit" [ref=e5707]:
+                    - button "Edit" [ref=e5710] [cursor=pointer]:
+                      - img [ref=e5711]
+                      - text: Edit
+                - row "Nil rated Supplies (8A, 8B, 8C, 8D) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5714]:
+                  - cell [ref=e5715]:
+                    - button [ref=e5718] [cursor=pointer]
+                  - cell "Nil rated Supplies (8A, 8B, 8C, 8D)" [ref=e5719]
+                  - cell "0" [ref=e5720]
+                  - cell "0.00" [ref=e5721]
+                  - cell "0.00" [ref=e5722]
+                  - cell "0.00" [ref=e5723]
+                  - cell "0.00" [ref=e5724]
+                  - cell "0.00" [ref=e5725]
+                  - cell "0.00" [ref=e5726]
+                  - cell "0.00" [ref=e5727]
+                  - cell "Edit" [ref=e5728]:
+                    - button "Edit" [ref=e5731] [cursor=pointer]:
+                      - img [ref=e5732]
+                      - text: Edit
+                - row "Advances Received (Tax Liability) (11A(1), 11A(2)) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5735]:
+                  - cell [ref=e5736]:
+                    - button [ref=e5739] [cursor=pointer]
+                  - cell "Advances Received (Tax Liability) (11A(1), 11A(2))" [ref=e5740]
+                  - cell "0" [ref=e5741]
+                  - cell "0.00" [ref=e5742]
+                  - cell "0.00" [ref=e5743]
+                  - cell "0.00" [ref=e5744]
+                  - cell "0.00" [ref=e5745]
+                  - cell "0.00" [ref=e5746]
+                  - cell "0.00" [ref=e5747]
+                  - cell "0.00" [ref=e5748]
+                  - cell "Edit" [ref=e5749]:
+                    - button "Edit" [ref=e5752] [cursor=pointer]:
+                      - img [ref=e5753]
+                      - text: Edit
+                - row "Adjustment of Advances (11B(1), 11B(2)) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5756]:
+                  - cell [ref=e5757]:
+                    - button [ref=e5760] [cursor=pointer]
+                  - cell "Adjustment of Advances (11B(1), 11B(2))" [ref=e5761]
+                  - cell "0" [ref=e5762]
+                  - cell "0.00" [ref=e5763]
+                  - cell "0.00" [ref=e5764]
+                  - cell "0.00" [ref=e5765]
+                  - cell "0.00" [ref=e5766]
+                  - cell "0.00" [ref=e5767]
+                  - cell "0.00" [ref=e5768]
+                  - cell "0.00" [ref=e5769]
+                  - cell "Edit" [ref=e5770]:
+                    - button "Edit" [ref=e5773] [cursor=pointer]:
+                      - img [ref=e5774]
+                      - text: Edit
+                - row "HSN summary of outward supplies (12) 0 0.00 0.00 0.00 0.00 0.00 0.00 - Edit" [ref=e5777]:
+                  - cell [ref=e5778]:
+                    - button [ref=e5781] [cursor=pointer]
+                  - cell "HSN summary of outward supplies (12)" [ref=e5782]
+                  - cell "0" [ref=e5783]
+                  - cell "0.00" [ref=e5784]
+                  - cell "0.00" [ref=e5785]
+                  - cell "0.00" [ref=e5786]
+                  - cell "0.00" [ref=e5787]
+                  - cell "0.00" [ref=e5788]
+                  - cell "0.00" [ref=e5789]
+                  - cell "-" [ref=e5790]
+                  - cell "Edit" [ref=e5791]:
+                    - button "Edit" [ref=e5794] [cursor=pointer]:
+                      - img [ref=e5795]
+                      - text: Edit
+                - row "Supplies made through Eco - u/s 52 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5798]:
+                  - cell [ref=e5799]:
+                    - button [ref=e5802] [cursor=pointer]
+                  - cell "Supplies made through Eco - u/s 52" [ref=e5803]
+                  - cell "0" [ref=e5804]
+                  - cell "0.00" [ref=e5805]
+                  - cell "0.00" [ref=e5806]
+                  - cell "0.00" [ref=e5807]
+                  - cell "0.00" [ref=e5808]
+                  - cell "0.00" [ref=e5809]
+                  - cell "0.00" [ref=e5810]
+                  - cell "0.00" [ref=e5811]
+                  - cell "Edit" [ref=e5812]:
+                    - button "Edit" [ref=e5815] [cursor=pointer]:
+                      - img [ref=e5816]
+                      - text: Edit
+                - row "Supplies U/s 9(5) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5819]:
+                  - cell [ref=e5820]:
+                    - button [ref=e5823] [cursor=pointer]
+                  - cell "Supplies U/s 9(5)" [ref=e5824]
+                  - cell "0" [ref=e5825]
+                  - cell "0.00" [ref=e5826]
+                  - cell "0.00" [ref=e5827]
+                  - cell "0.00" [ref=e5828]
+                  - cell "0.00" [ref=e5829]
+                  - cell "0.00" [ref=e5830]
+                  - cell "0.00" [ref=e5831]
+                  - cell "0.00" [ref=e5832]
+                  - cell "Edit" [ref=e5833]:
+                    - button "Edit" [ref=e5836] [cursor=pointer]:
+                      - img [ref=e5837]
+                      - text: Edit
+          - generic [ref=e5840]:
+            - generic [ref=e5841]: Amendments details
+            - table [ref=e5846]:
+              - rowgroup [ref=e5847]:
+                - row "Type of Invoice Documents Taxable Amount IGST CGST SGST CESS Tax Amount Invoice Value Actions" [ref=e5848]:
+                  - columnheader [ref=e5849]:
+                    - generic [ref=e5850]:
+                      - generic "Select All" [ref=e5852]:
+                        - button [ref=e5854] [cursor=pointer]
+                      - separator [ref=e5856]
+                  - columnheader "Type of Invoice" [ref=e5857]:
+                    - generic [ref=e5858]:
+                      - generic "Type of Invoice" [ref=e5860]
+                      - separator [ref=e5862]
+                  - columnheader "Documents" [ref=e5863]:
+                    - generic [ref=e5864]:
+                      - generic "Documents" [ref=e5866]
+                      - separator [ref=e5868]
+                  - columnheader "Taxable Amount" [ref=e5869]:
+                    - generic [ref=e5870]:
+                      - generic "Taxable Amount" [ref=e5872]
+                      - separator [ref=e5874]
+                  - columnheader "IGST" [ref=e5875]:
+                    - generic [ref=e5876]:
+                      - generic "IGST" [ref=e5878]
+                      - separator [ref=e5880]
+                  - columnheader "CGST" [ref=e5881]:
+                    - generic [ref=e5882]:
+                      - generic "CGST" [ref=e5884]
+                      - separator [ref=e5886]
+                  - columnheader "SGST" [ref=e5887]:
+                    - generic [ref=e5888]:
+                      - generic "SGST" [ref=e5890]
+                      - separator [ref=e5892]
+                  - columnheader "CESS" [ref=e5893]:
+                    - generic [ref=e5894]:
+                      - generic "CESS" [ref=e5896]
+                      - separator [ref=e5898]
+                  - columnheader "Tax Amount" [ref=e5899]:
+                    - generic [ref=e5900]:
+                      - generic "Tax Amount" [ref=e5902]
+                      - separator [ref=e5904]
+                  - columnheader "Invoice Value" [ref=e5905]:
+                    - generic [ref=e5906]:
+                      - generic "Invoice Value" [ref=e5908]
+                      - separator [ref=e5910]
+                  - columnheader "Actions" [ref=e5911]:
+                    - generic [ref=e5912]:
+                      - generic "Actions" [ref=e5914]
+                      - separator [ref=e5916]
+              - rowgroup [ref=e5917]:
+                - row "B2B Amendments (9A) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5918]:
+                  - cell [ref=e5919]:
+                    - button [ref=e5922] [cursor=pointer]
+                  - cell "B2B Amendments (9A)" [ref=e5923]
+                  - cell "0" [ref=e5924]
+                  - cell "0.00" [ref=e5925]
+                  - cell "0.00" [ref=e5926]
+                  - cell "0.00" [ref=e5927]
+                  - cell "0.00" [ref=e5928]
+                  - cell "0.00" [ref=e5929]
+                  - cell "0.00" [ref=e5930]
+                  - cell "0.00" [ref=e5931]
+                  - cell "Edit" [ref=e5932]:
+                    - button "Edit" [ref=e5935] [cursor=pointer]:
+                      - img [ref=e5936]
+                      - text: Edit
+                - row "B2C Large Amendments (9A) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5939]:
+                  - cell [ref=e5940]:
+                    - button [ref=e5943] [cursor=pointer]
+                  - cell "B2C Large Amendments (9A)" [ref=e5944]
+                  - cell "0" [ref=e5945]
+                  - cell "0.00" [ref=e5946]
+                  - cell "0.00" [ref=e5947]
+                  - cell "0.00" [ref=e5948]
+                  - cell "0.00" [ref=e5949]
+                  - cell "0.00" [ref=e5950]
+                  - cell "0.00" [ref=e5951]
+                  - cell "0.00" [ref=e5952]
+                  - cell "Edit" [ref=e5953]:
+                    - button "Edit" [ref=e5956] [cursor=pointer]:
+                      - img [ref=e5957]
+                      - text: Edit
+                - row "Credit/Debit Notes (Registered) Amendments (9C) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5960]:
+                  - cell [ref=e5961]:
+                    - button [ref=e5964] [cursor=pointer]
+                  - cell "Credit/Debit Notes (Registered) Amendments (9C)" [ref=e5965]
+                  - cell "0" [ref=e5966]
+                  - cell "0.00" [ref=e5967]
+                  - cell "0.00" [ref=e5968]
+                  - cell "0.00" [ref=e5969]
+                  - cell "0.00" [ref=e5970]
+                  - cell "0.00" [ref=e5971]
+                  - cell "0.00" [ref=e5972]
+                  - cell "0.00" [ref=e5973]
+                  - cell "Edit" [ref=e5974]:
+                    - button "Edit" [ref=e5977] [cursor=pointer]:
+                      - img [ref=e5978]
+                      - text: Edit
+                - row "Credit/Debit Notes (Unregistered) Amendments (9C) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e5981]:
+                  - cell [ref=e5982]:
+                    - button [ref=e5985] [cursor=pointer]
+                  - cell "Credit/Debit Notes (Unregistered) Amendments (9C)" [ref=e5986]
+                  - cell "0" [ref=e5987]
+                  - cell "0.00" [ref=e5988]
+                  - cell "0.00" [ref=e5989]
+                  - cell "0.00" [ref=e5990]
+                  - cell "0.00" [ref=e5991]
+                  - cell "0.00" [ref=e5992]
+                  - cell "0.00" [ref=e5993]
+                  - cell "0.00" [ref=e5994]
+                  - cell "Edit" [ref=e5995]:
+                    - button "Edit" [ref=e5998] [cursor=pointer]:
+                      - img [ref=e5999]
+                      - text: Edit
+                - row "Export Invoices Amendments (9A) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6002]:
+                  - cell [ref=e6003]:
+                    - button [ref=e6006] [cursor=pointer]
+                  - cell "Export Invoices Amendments (9A)" [ref=e6007]
+                  - cell "0" [ref=e6008]
+                  - cell "0.00" [ref=e6009]
+                  - cell "0.00" [ref=e6010]
+                  - cell "0.00" [ref=e6011]
+                  - cell "0.00" [ref=e6012]
+                  - cell "0.00" [ref=e6013]
+                  - cell "0.00" [ref=e6014]
+                  - cell "0.00" [ref=e6015]
+                  - cell "Edit" [ref=e6016]:
+                    - button "Edit" [ref=e6019] [cursor=pointer]:
+                      - img [ref=e6020]
+                      - text: Edit
+                - row "B2C Others Amendments (10) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6023]:
+                  - cell [ref=e6024]:
+                    - button [ref=e6027] [cursor=pointer]
+                  - cell "B2C Others Amendments (10)" [ref=e6028]
+                  - cell "0" [ref=e6029]
+                  - cell "0.00" [ref=e6030]
+                  - cell "0.00" [ref=e6031]
+                  - cell "0.00" [ref=e6032]
+                  - cell "0.00" [ref=e6033]
+                  - cell "0.00" [ref=e6034]
+                  - cell "0.00" [ref=e6035]
+                  - cell "0.00" [ref=e6036]
+                  - cell "Edit" [ref=e6037]:
+                    - button "Edit" [ref=e6040] [cursor=pointer]:
+                      - img [ref=e6041]
+                      - text: Edit
+                - row "Advances Received (Tax Liability) Amendments (11(2)) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6044]:
+                  - cell [ref=e6045]:
+                    - button [ref=e6048] [cursor=pointer]
+                  - cell "Advances Received (Tax Liability) Amendments (11(2))" [ref=e6049]
+                  - cell "0" [ref=e6050]
+                  - cell "0.00" [ref=e6051]
+                  - cell "0.00" [ref=e6052]
+                  - cell "0.00" [ref=e6053]
+                  - cell "0.00" [ref=e6054]
+                  - cell "0.00" [ref=e6055]
+                  - cell "0.00" [ref=e6056]
+                  - cell "0.00" [ref=e6057]
+                  - cell "Edit" [ref=e6058]:
+                    - button "Edit" [ref=e6061] [cursor=pointer]:
+                      - img [ref=e6062]
+                      - text: Edit
+                - row "Adjustment of Advances Amendments (11(2)) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6065]:
+                  - cell [ref=e6066]:
+                    - button [ref=e6069] [cursor=pointer]
+                  - cell "Adjustment of Advances Amendments (11(2))" [ref=e6070]
+                  - cell "0" [ref=e6071]
+                  - cell "0.00" [ref=e6072]
+                  - cell "0.00" [ref=e6073]
+                  - cell "0.00" [ref=e6074]
+                  - cell "0.00" [ref=e6075]
+                  - cell "0.00" [ref=e6076]
+                  - cell "0.00" [ref=e6077]
+                  - cell "0.00" [ref=e6078]
+                  - cell "Edit" [ref=e6079]:
+                    - button "Edit" [ref=e6082] [cursor=pointer]:
+                      - img [ref=e6083]
+                      - text: Edit
+                - row "Supplies made through Eco Amendments - u/s 52 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6086]:
+                  - cell [ref=e6087]:
+                    - button [ref=e6090] [cursor=pointer]
+                  - cell "Supplies made through Eco Amendments - u/s 52" [ref=e6091]
+                  - cell "0" [ref=e6092]
+                  - cell "0.00" [ref=e6093]
+                  - cell "0.00" [ref=e6094]
+                  - cell "0.00" [ref=e6095]
+                  - cell "0.00" [ref=e6096]
+                  - cell "0.00" [ref=e6097]
+                  - cell "0.00" [ref=e6098]
+                  - cell "0.00" [ref=e6099]
+                  - cell "Edit" [ref=e6100]:
+                    - button "Edit" [ref=e6103] [cursor=pointer]:
+                      - img [ref=e6104]
+                      - text: Edit
+                - row "Amendments Supplies U/s 9(5) 0 0.00 0.00 0.00 0.00 0.00 0.00 0.00 Edit" [ref=e6107]:
+                  - cell [ref=e6108]:
+                    - button [ref=e6111] [cursor=pointer]
+                  - cell "Amendments Supplies U/s 9(5)" [ref=e6112]
+                  - cell "0" [ref=e6113]
+                  - cell "0.00" [ref=e6114]
+                  - cell "0.00" [ref=e6115]
+                  - cell "0.00" [ref=e6116]
+                  - cell "0.00" [ref=e6117]
+                  - cell "0.00" [ref=e6118]
+                  - cell "0.00" [ref=e6119]
+                  - cell "0.00" [ref=e6120]
+                  - cell "Edit" [ref=e6121]:
+                    - button "Edit" [ref=e6124] [cursor=pointer]:
+                      - img [ref=e6125]
+                      - text: Edit
+            - generic [ref=e6130] [cursor=pointer]:
+              - img [ref=e6132]
+              - generic [ref=e6133]:
+                - heading "Download Guide on Amendments" [level=4] [ref=e6134]
+                - paragraph [ref=e6135]: Guide on Amendments and list of error messages with solution
+        - button "Next" [ref=e6138] [cursor=pointer]

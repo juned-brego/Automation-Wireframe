@@ -1,0 +1,309 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e34]
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading "Ledger" [level=1] [ref=e38]
+              - generic [ref=e39]: "181"
+            - paragraph [ref=e40]: Manage ledgers mapped for sync and review master records before sending to Tally.
+          - generic [ref=e41]:
+            - img
+            - textbox "Search by Name" [ref=e42]
+        - generic [ref=e43]:
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+          - button [ref=e50] [cursor=pointer]:
+            - img [ref=e51]
+          - button "Ledger guide" [ref=e54] [cursor=pointer]:
+            - img [ref=e55]
+            - text: Ledger guide
+          - button "PAARIJAAT PERSONAL CARE PRIVATE LIMITED" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e60]
+      - generic [ref=e63]:
+        - button "Ledger" [ref=e64] [cursor=pointer]
+        - button "Item" [ref=e65] [cursor=pointer]
+        - button "Rule List" [ref=e66] [cursor=pointer]
+      - generic [ref=e68]:
+        - table [ref=e71]:
+          - rowgroup [ref=e72]:
+            - row "Sr.No. Name Under All 181 Capital Account Events & Marketing Expense Fixed Assets Indirect Expenses Sundry Creditors Unsecured Loans GST No Integrated Tax Status" [ref=e307]:
+              - columnheader [ref=e74]:
+                - checkbox [ref=e75] [cursor=pointer]
+              - columnheader "Sr.No." [ref=e76]
+              - columnheader "Name" [ref=e77]
+              - columnheader "Under All 181 Capital Account Events & Marketing Expense Fixed Assets Indirect Expenses Sundry Creditors Unsecured Loans" [ref=e308]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: Under
+                  - button [active] [ref=e81] [cursor=pointer]:
+                    - img [ref=e82]
+                  - generic [ref=e309]:
+                    - button "All 181" [ref=e310] [cursor=pointer]:
+                      - generic [ref=e311]: All
+                      - generic [ref=e312]: "181"
+                    - generic [ref=e313]:
+                      - generic [ref=e314] [cursor=pointer]:
+                        - checkbox "Capital Account" [ref=e315]
+                        - generic [ref=e316]: Capital Account
+                      - generic [ref=e317] [cursor=pointer]:
+                        - checkbox "Events & Marketing Expense" [ref=e318]
+                        - generic [ref=e319]: Events & Marketing Expense
+                      - generic [ref=e320] [cursor=pointer]:
+                        - checkbox "Fixed Assets" [ref=e321]
+                        - generic [ref=e322]: Fixed Assets
+                      - generic [ref=e323] [cursor=pointer]:
+                        - checkbox "Indirect Expenses" [ref=e324]
+                        - generic [ref=e325]: Indirect Expenses
+                      - generic [ref=e326] [cursor=pointer]:
+                        - checkbox "Sundry Creditors" [ref=e327]
+                        - generic [ref=e328]: Sundry Creditors
+                      - generic [ref=e329] [cursor=pointer]:
+                        - checkbox "Unsecured Loans" [ref=e330]
+                        - generic [ref=e331]: Unsecured Loans
+              - columnheader "GST No" [ref=e84]
+              - columnheader "Integrated Tax" [ref=e85]
+              - columnheader "Status" [ref=e86]
+          - rowgroup [ref=e87]:
+            - row "1 1 MAGNOLIA LANE Sundry Creditors 07ABTPC1768M1Z4 - Saved" [ref=e88]:
+              - cell [ref=e89]:
+                - checkbox [ref=e90] [cursor=pointer]
+              - cell "1" [ref=e91]
+              - cell "1 MAGNOLIA LANE" [ref=e92]
+              - cell "Sundry Creditors" [ref=e93]
+              - cell "07ABTPC1768M1Z4" [ref=e94]
+              - cell "-" [ref=e95]
+              - cell "Saved" [ref=e96]:
+                - generic [ref=e97]: Saved
+            - row "2 AISHWARYA AALESH AVLANI Capital Account - - Saved" [ref=e98]:
+              - cell [ref=e99]:
+                - checkbox [ref=e100] [cursor=pointer]
+              - cell "2" [ref=e101]
+              - cell "AISHWARYA AALESH AVLANI" [ref=e102]
+              - cell "Capital Account" [ref=e103]
+              - cell "-" [ref=e104]
+              - cell "-" [ref=e105]
+              - cell "Saved" [ref=e106]:
+                - generic [ref=e107]: Saved
+            - row "3 ALDIVO CREATIVE PRODUCTS PVT.LTD Sundry Creditors 07AAOCA8714E1ZL - Saved" [ref=e108]:
+              - cell [ref=e109]:
+                - checkbox [ref=e110] [cursor=pointer]
+              - cell "3" [ref=e111]
+              - cell "ALDIVO CREATIVE PRODUCTS PVT.LTD" [ref=e112]
+              - cell "Sundry Creditors" [ref=e113]
+              - cell "07AAOCA8714E1ZL" [ref=e114]
+              - cell "-" [ref=e115]
+              - cell "Saved" [ref=e116]:
+                - generic [ref=e117]: Saved
+            - row "4 AMP Fitness LLP Sundry Creditors 27ABGFA3922Q1Z2 - Saved" [ref=e118]:
+              - cell [ref=e119]:
+                - checkbox [ref=e120] [cursor=pointer]
+              - cell "4" [ref=e121]
+              - cell "AMP Fitness LLP" [ref=e122]
+              - cell "Sundry Creditors" [ref=e123]
+              - cell "27ABGFA3922Q1Z2" [ref=e124]
+              - cell "-" [ref=e125]
+              - cell "Saved" [ref=e126]:
+                - generic [ref=e127]: Saved
+            - row "5 ANEESH ASHIT SHETH Capital Account - - Saved" [ref=e128]:
+              - cell [ref=e129]:
+                - checkbox [ref=e130] [cursor=pointer]
+              - cell "5" [ref=e131]
+              - cell "ANEESH ASHIT SHETH" [ref=e132]
+              - cell "Capital Account" [ref=e133]
+              - cell "-" [ref=e134]
+              - cell "-" [ref=e135]
+              - cell "Saved" [ref=e136]:
+                - generic [ref=e137]: Saved
+            - row "6 Accounting Expenses Indirect Expenses - - Saved" [ref=e138]:
+              - cell [ref=e139]:
+                - checkbox [ref=e140] [cursor=pointer]
+              - cell "6" [ref=e141]
+              - cell "Accounting Expenses" [ref=e142]
+              - cell "Indirect Expenses" [ref=e143]
+              - cell "-" [ref=e144]
+              - cell "-" [ref=e145]
+              - cell "Saved" [ref=e146]:
+                - generic [ref=e147]: Saved
+            - row "7 Acquisory India Consulting Pvt Ltd Sundry Creditors 27AAICA6372N1Z4 - Saved" [ref=e148]:
+              - cell [ref=e149]:
+                - checkbox [ref=e150] [cursor=pointer]
+              - cell "7" [ref=e151]
+              - cell "Acquisory India Consulting Pvt Ltd" [ref=e152]
+              - cell "Sundry Creditors" [ref=e153]
+              - cell "27AAICA6372N1Z4" [ref=e154]
+              - cell "-" [ref=e155]
+              - cell "Saved" [ref=e156]:
+                - generic [ref=e157]: Saved
+            - row "8 Adani Electricity Mumbai Ltd Indirect Expenses 27AAACA4798L1ZF - Saved" [ref=e158]:
+              - cell [ref=e159]:
+                - checkbox [ref=e160] [cursor=pointer]
+              - cell "8" [ref=e161]
+              - cell "Adani Electricity Mumbai Ltd" [ref=e162]
+              - cell "Indirect Expenses" [ref=e163]
+              - cell "27AAACA4798L1ZF" [ref=e164]
+              - cell "-" [ref=e165]
+              - cell "Saved" [ref=e166]:
+                - generic [ref=e167]: Saved
+            - row "9 Adhiraj Patel Loan - 12% Annually Unsecured Loans - - Saved" [ref=e168]:
+              - cell [ref=e169]:
+                - checkbox [ref=e170] [cursor=pointer]
+              - cell "9" [ref=e171]
+              - cell "Adhiraj Patel Loan - 12% Annually" [ref=e172]
+              - cell "Unsecured Loans" [ref=e173]
+              - cell "-" [ref=e174]
+              - cell "-" [ref=e175]
+              - cell "Saved" [ref=e176]:
+                - generic [ref=e177]: Saved
+            - row "10 Adhiraj Patel Share Capital Capital Account - - Saved" [ref=e178]:
+              - cell [ref=e179]:
+                - checkbox [ref=e180] [cursor=pointer]
+              - cell "10" [ref=e181]
+              - cell "Adhiraj Patel Share Capital" [ref=e182]
+              - cell "Capital Account" [ref=e183]
+              - cell "-" [ref=e184]
+              - cell "-" [ref=e185]
+              - cell "Saved" [ref=e186]:
+                - generic [ref=e187]: Saved
+            - row "11 Advertisment & Marketing Expenses Events & Marketing Expense - - Saved" [ref=e188]:
+              - cell [ref=e189]:
+                - checkbox [ref=e190] [cursor=pointer]
+              - cell "11" [ref=e191]
+              - cell "Advertisment & Marketing Expenses" [ref=e192]
+              - cell "Events & Marketing Expense" [ref=e193]
+              - cell "-" [ref=e194]
+              - cell "-" [ref=e195]
+              - cell "Saved" [ref=e196]:
+                - generic [ref=e197]: Saved
+            - row "12 Alibaba.Com Sundry Creditors - - Saved" [ref=e198]:
+              - cell [ref=e199]:
+                - checkbox [ref=e200] [cursor=pointer]
+              - cell "12" [ref=e201]
+              - cell "Alibaba.Com" [ref=e202]
+              - cell "Sundry Creditors" [ref=e203]
+              - cell "-" [ref=e204]
+              - cell "-" [ref=e205]
+              - cell "Saved" [ref=e206]:
+                - generic [ref=e207]: Saved
+            - row "13 Amazon Sundry Creditors - - Saved" [ref=e208]:
+              - cell [ref=e209]:
+                - checkbox [ref=e210] [cursor=pointer]
+              - cell "13" [ref=e211]
+              - cell "Amazon" [ref=e212]
+              - cell "Sundry Creditors" [ref=e213]
+              - cell "-" [ref=e214]
+              - cell "-" [ref=e215]
+              - cell "Saved" [ref=e216]:
+                - generic [ref=e217]: Saved
+            - row "14 Amazon Seller Services Private Limited Sundry Creditors 29AAICA3918J1ZE - Saved" [ref=e218]:
+              - cell [ref=e219]:
+                - checkbox [ref=e220] [cursor=pointer]
+              - cell "14" [ref=e221]
+              - cell "Amazon Seller Services Private Limited" [ref=e222]
+              - cell "Sundry Creditors" [ref=e223]
+              - cell "29AAICA3918J1ZE" [ref=e224]
+              - cell "-" [ref=e225]
+              - cell "Saved" [ref=e226]:
+                - generic [ref=e227]: Saved
+            - row "15 Anusha Sudhanshu Kala Sundry Creditors - - Saved" [ref=e228]:
+              - cell [ref=e229]:
+                - checkbox [ref=e230] [cursor=pointer]
+              - cell "15" [ref=e231]
+              - cell "Anusha Sudhanshu Kala" [ref=e232]
+              - cell "Sundry Creditors" [ref=e233]
+              - cell "-" [ref=e234]
+              - cell "-" [ref=e235]
+              - cell "Saved" [ref=e236]:
+                - generic [ref=e237]: Saved
+            - row "16 Anushree Vaza Sundry Creditors - - Saved" [ref=e238]:
+              - cell [ref=e239]:
+                - checkbox [ref=e240] [cursor=pointer]
+              - cell "16" [ref=e241]
+              - cell "Anushree Vaza" [ref=e242]
+              - cell "Sundry Creditors" [ref=e243]
+              - cell "-" [ref=e244]
+              - cell "-" [ref=e245]
+              - cell "Saved" [ref=e246]:
+                - generic [ref=e247]: Saved
+            - row "17 Apple - USB Adapter Fixed Assets - - Saved" [ref=e248]:
+              - cell [ref=e249]:
+                - checkbox [ref=e250] [cursor=pointer]
+              - cell "17" [ref=e251]
+              - cell "Apple - USB Adapter" [ref=e252]
+              - cell "Fixed Assets" [ref=e253]
+              - cell "-" [ref=e254]
+              - cell "-" [ref=e255]
+              - cell "Saved" [ref=e256]:
+                - generic [ref=e257]: Saved
+            - row "18 Apple India Private Limited Sundry Creditors 29AABCA1906H1ZY - Saved" [ref=e258]:
+              - cell [ref=e259]:
+                - checkbox [ref=e260] [cursor=pointer]
+              - cell "18" [ref=e261]
+              - cell "Apple India Private Limited" [ref=e262]
+              - cell "Sundry Creditors" [ref=e263]
+              - cell "29AABCA1906H1ZY" [ref=e264]
+              - cell "-" [ref=e265]
+              - cell "Saved" [ref=e266]:
+                - generic [ref=e267]: Saved
+            - row "19 Ashmita Mangharam Sundry Creditors - - Saved" [ref=e268]:
+              - cell [ref=e269]:
+                - checkbox [ref=e270] [cursor=pointer]
+              - cell "19" [ref=e271]
+              - cell "Ashmita Mangharam" [ref=e272]
+              - cell "Sundry Creditors" [ref=e273]
+              - cell "-" [ref=e274]
+              - cell "-" [ref=e275]
+              - cell "Saved" [ref=e276]:
+                - generic [ref=e277]: Saved
+            - row "20 Aves Products Private Limited Sundry Creditors 06AAVCA5575G1Z7 - Saved" [ref=e278]:
+              - cell [ref=e279]:
+                - checkbox [ref=e280] [cursor=pointer]
+              - cell "20" [ref=e281]
+              - cell "Aves Products Private Limited" [ref=e282]
+              - cell "Sundry Creditors" [ref=e283]
+              - cell "06AAVCA5575G1Z7" [ref=e284]
+              - cell "-" [ref=e285]
+              - cell "Saved" [ref=e286]:
+                - generic [ref=e287]: Saved
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: Page Size
+            - generic [ref=e291]:
+              - combobox [ref=e292]:
+                - option "10 / page"
+                - option "20 / page" [selected]
+                - option "50 / page"
+              - img
+          - generic [ref=e293]:
+            - button "Previous" [disabled] [ref=e294]:
+              - img [ref=e295]
+              - text: Previous
+            - button "1" [ref=e297] [cursor=pointer]
+            - button "2" [ref=e298] [cursor=pointer]
+            - button "3" [ref=e299] [cursor=pointer]
+            - button "4" [ref=e300] [cursor=pointer]
+            - button "5" [ref=e301] [cursor=pointer]
+            - generic [ref=e302]: ...
+            - button "Next" [ref=e303] [cursor=pointer]:
+              - text: Next
+              - img [ref=e304]
+  - alert [ref=e306]

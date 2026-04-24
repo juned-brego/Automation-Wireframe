@@ -1,0 +1,8 @@
+[     221ms] [ERROR] Access to script at 'https://embed.tawk.to/6708ec1d2480f5b4f58bdf08/1i9tdkl89' from origin 'https://gst.themunim.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://gst.themunim.com/gstr-3b/summary-data:0
+[     221ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://embed.tawk.to/6708ec1d2480f5b4f58bdf08/1i9tdkl89:0
+[     230ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=common_data:0
+[     255ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=m_d_c:0
+[     339ms] Unexpected token '<'
+[     390ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.themunim.com/api/get-cookie?key=common_data:0
+[     390ms] [ERROR] Access to script at 'https://embed.tawk.to/6284e229b0d10b6f3e72d47d/1g3bh6tt2' from origin 'https://accounts.themunim.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://accounts.themunim.com/log-in?product=gst:0
+[     390ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://embed.tawk.to/6284e229b0d10b6f3e72d47d/1g3bh6tt2:0

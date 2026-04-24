@@ -1,0 +1,30 @@
+[    2041ms] [LOG] MIXPANEL PEOPLE REQUEST (QUEUED, PENDING IDENTIFY): @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[    2041ms] [LOG] {$set_once: Object, $token: 0fdd7e71716cd0f982dba2923a76e933, $distinct_id: $device:9791d4c1-b477-4c91-89a5-589046c3aa88, $device_id: 9791d4c1-b477-4c91-89a5-589046c3aa88} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[    2070ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://taxone.vyapar.com/audio.wav:0
+[    2164ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://taxone.vyapar.com/app/signIn:0
+[    2186ms] Uncaught (in promise) Error: Can only be used on: https://in.suvit.io
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160603:0:18311)
+    at <anonymous> (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160603:0:18373)
+[   30264ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   30265ms] [LOG] {event: User Properties Set, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   30265ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   30265ms] [LOG] {event: Successful login, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   31023ms] [LOG] All caches deleted @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   31048ms] [WARNING] Usetiful: UserId set with delay. Retrying loading from API (attempt 1/5) in 10ms. @ https://www.usetiful.com/dist/usetiful.js:0
+[   31055ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   31055ms] [LOG] {event: Company Context Set, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   31448ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   31448ms] [LOG] {event: Company Context Set, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   32050ms] [LOG] [batch] MIXPANEL REQUEST: [Object] @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   32051ms] [LOG] [batch] MIXPANEL REQUEST: [Object, Object, Object, Object, Object, Object] @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   32051ms] [LOG] [batch] MIXPANEL REQUEST: [Object, Object] @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   32481ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   32481ms] [LOG] {event: User Properties Set, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   37165ms] [LOG] [batch] MIXPANEL REQUEST: [Object] @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   42210ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   42210ms] [LOG] {event: Clicked Data Entry Automation Icon, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   43370ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   43370ms] [LOG] {event: User Properties Set, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[   47302ms] [LOG] [batch] MIXPANEL REQUEST: [Object] @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[  157708ms] [LOG] MIXPANEL REQUEST: @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1
+[  157708ms] [LOG] {event: Opened Drawer, properties: Object} @ https://taxone.vyapar.com/app/static/js/main.20ce94a0.js:1

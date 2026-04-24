@@ -1,0 +1,333 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: GSTR-1 Workflow
+            - heading "GSTR-1 Check Invoices | Mar 2026 (Monthly)" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - button "Add Amendment Invoice" [ref=e75] [cursor=pointer]
+            - button "Add Invoice" [ref=e76] [cursor=pointer]
+        - generic [ref=e77]:
+          - button "1 Data Prepare" [ref=e78] [cursor=pointer]:
+            - generic [ref=e79]: "1"
+            - generic [ref=e80]: Data Prepare
+          - button "2 Check Invoices" [ref=e81] [cursor=pointer]:
+            - generic [ref=e82]: "2"
+            - generic [ref=e83]: Check Invoices
+          - button "3 Push to GSTN" [ref=e84] [cursor=pointer]:
+            - generic [ref=e85]: "3"
+            - generic [ref=e86]: Push to GSTN
+          - button "4 File GSTR-1" [ref=e87] [cursor=pointer]:
+            - generic [ref=e88]: "4"
+            - generic [ref=e89]: File GSTR-1
+        - generic [ref=e90]:
+          - generic [ref=e92]:
+            - generic [ref=e93]:
+              - button "Invoice" [ref=e94] [cursor=pointer]
+              - button "Credit / Debit Note" [ref=e95] [cursor=pointer]
+              - button "B2CS" [ref=e96] [cursor=pointer]
+              - button "Advance Receipt" [ref=e97] [cursor=pointer]
+              - button "Export" [ref=e98] [cursor=pointer]
+            - generic [ref=e99]:
+              - button [ref=e100] [cursor=pointer]:
+                - img [ref=e101]
+              - button [ref=e104] [cursor=pointer]:
+                - img [ref=e105]
+          - generic [ref=e108]:
+            - generic [ref=e109]:
+              - paragraph [ref=e110]: Total Transactions
+              - paragraph [ref=e111]: "13"
+            - generic [ref=e112]:
+              - paragraph [ref=e113]: Taxable Amount
+              - paragraph [ref=e114]: ₹7,61,650.00
+            - generic [ref=e115]:
+              - paragraph [ref=e116]: Total IGST
+              - paragraph [ref=e117]: ₹38,082.50
+            - generic [ref=e118]:
+              - paragraph [ref=e119]: Total SGST
+              - paragraph [ref=e120]: ₹0.00
+            - generic [ref=e121]:
+              - paragraph [ref=e122]: Total CGST
+              - paragraph [ref=e123]: ₹0.00
+            - generic [ref=e124]:
+              - paragraph [ref=e125]: Total CESS
+              - paragraph [ref=e126]: ₹0.00
+            - generic [ref=e127]:
+              - paragraph [ref=e128]: Total Amount
+              - paragraph [ref=e129]: ₹7,99,732.50
+          - generic [ref=e131]:
+            - paragraph [ref=e132]: 2 B2B invoices need GSTIN correction before upload.
+            - button "Resolve in Workbench" [ref=e133] [cursor=pointer]
+          - table [ref=e135]:
+            - rowgroup [ref=e136]:
+              - row "Select all invoice rows Date Invoice Number Customer GSTIN Taxable Amt (₹) Total Tax (₹) Rate (%) Total Amt (₹) Type Status" [ref=e137]:
+                - columnheader "Select all invoice rows" [ref=e138]:
+                  - button "Select all invoice rows" [ref=e139] [cursor=pointer]:
+                    - img [ref=e140]
+                - columnheader "Date" [ref=e142]
+                - columnheader "Invoice Number" [ref=e143]
+                - columnheader "Customer" [ref=e144]
+                - columnheader "GSTIN" [ref=e145]
+                - columnheader "Taxable Amt (₹)" [ref=e146]
+                - columnheader "Total Tax (₹)" [ref=e147]
+                - columnheader "Rate (%)" [ref=e148]
+                - columnheader "Total Amt (₹)" [ref=e149]
+                - columnheader "Type" [ref=e150]
+                - columnheader "Status" [ref=e151]
+            - rowgroup [ref=e152]:
+              - row "Select invoice 2025-26/117 21-03-2026 2025-26/117 VIJAY TEX 36AACCR2213F2ZU 35,600.00 1,780.00 5.00 37,380.00 B2B Pending for Upload." [ref=e153] [cursor=pointer]:
+                - cell "Select invoice 2025-26/117" [ref=e154]:
+                  - button "Select invoice 2025-26/117" [active] [ref=e155]:
+                    - img [ref=e156]
+                - cell "21-03-2026" [ref=e158]
+                - cell "2025-26/117" [ref=e159]
+                - cell "VIJAY TEX" [ref=e160]
+                - cell "36AACCR2213F2ZU" [ref=e161]
+                - cell "35,600.00" [ref=e162]
+                - cell "1,780.00" [ref=e163]
+                - cell "5.00" [ref=e164]
+                - cell "37,380.00" [ref=e165]
+                - cell "B2B" [ref=e166]
+                - cell "Pending for Upload." [ref=e167]
+              - row "Select invoice 2025-26/121 28-03-2026 2025-26/121 VIJAY TEX 36AACCR2213F2ZU 27,400.00 1,370.00 5.00 28,770.00 B2B Pending for Upload." [ref=e168] [cursor=pointer]:
+                - cell "Select invoice 2025-26/121" [ref=e169]:
+                  - button "Select invoice 2025-26/121" [ref=e170]:
+                    - img [ref=e171]
+                - cell "28-03-2026" [ref=e173]
+                - cell "2025-26/121" [ref=e174]
+                - cell "VIJAY TEX" [ref=e175]
+                - cell "36AACCR2213F2ZU" [ref=e176]
+                - cell "27,400.00" [ref=e177]
+                - cell "1,370.00" [ref=e178]
+                - cell "5.00" [ref=e179]
+                - cell "28,770.00" [ref=e180]
+                - cell "B2B" [ref=e181]
+                - cell "Pending for Upload." [ref=e182]
+              - row "Select invoice 2025-26/120 27-03-2026 2025-26/120 VINIT PRINT 36AACCR2213F2ZU 24,375.00 1,218.75 5.00 25,593.75 B2B Pending for Upload." [ref=e183] [cursor=pointer]:
+                - cell "Select invoice 2025-26/120" [ref=e184]:
+                  - button "Select invoice 2025-26/120" [ref=e185]:
+                    - img [ref=e186]
+                - cell "27-03-2026" [ref=e188]
+                - cell "2025-26/120" [ref=e189]
+                - cell "VINIT PRINT" [ref=e190]
+                - cell "36AACCR2213F2ZU" [ref=e191]
+                - cell "24,375.00" [ref=e192]
+                - cell "1,218.75" [ref=e193]
+                - cell "5.00" [ref=e194]
+                - cell "25,593.75" [ref=e195]
+                - cell "B2B" [ref=e196]
+                - cell "Pending for Upload." [ref=e197]
+              - row "Select invoice 2025-26/116 20-03-2026 2025-26/116 VINIT PRINT 36AACCR2213F2ZU 1,33,125.00 6,656.25 5.00 1,39,781.25 B2B Pending for Upload." [ref=e198] [cursor=pointer]:
+                - cell "Select invoice 2025-26/116" [ref=e199]:
+                  - button "Select invoice 2025-26/116" [ref=e200]:
+                    - img [ref=e201]
+                - cell "20-03-2026" [ref=e203]
+                - cell "2025-26/116" [ref=e204]
+                - cell "VINIT PRINT" [ref=e205]
+                - cell "36AACCR2213F2ZU" [ref=e206]
+                - cell "1,33,125.00" [ref=e207]
+                - cell "6,656.25" [ref=e208]
+                - cell "5.00" [ref=e209]
+                - cell "1,39,781.25" [ref=e210]
+                - cell "B2B" [ref=e211]
+                - cell "Pending for Upload." [ref=e212]
+              - row "Select invoice 2025-26/118 22-03-2026 2025-26/118 VAMAN FEB PVT LTD 36AACCR2213F2ZU 24,550.00 1,227.50 5.00 25,777.50 B2B Pending for Upload." [ref=e213] [cursor=pointer]:
+                - cell "Select invoice 2025-26/118" [ref=e214]:
+                  - button "Select invoice 2025-26/118" [ref=e215]:
+                    - img [ref=e216]
+                - cell "22-03-2026" [ref=e218]
+                - cell "2025-26/118" [ref=e219]
+                - cell "VAMAN FEB PVT LTD" [ref=e220]
+                - cell "36AACCR2213F2ZU" [ref=e221]
+                - cell "24,550.00" [ref=e222]
+                - cell "1,227.50" [ref=e223]
+                - cell "5.00" [ref=e224]
+                - cell "25,777.50" [ref=e225]
+                - cell "B2B" [ref=e226]
+                - cell "Pending for Upload." [ref=e227]
+              - row "Select invoice 2025-26/115 19-03-2026 2025-26/115 TIRUPATI PRINT 36AACCR2213F2ZU 81,000.00 4,050.00 5.00 85,050.00 B2B Pending for Upload." [ref=e228] [cursor=pointer]:
+                - cell "Select invoice 2025-26/115" [ref=e229]:
+                  - button "Select invoice 2025-26/115" [ref=e230]:
+                    - img [ref=e231]
+                - cell "19-03-2026" [ref=e233]
+                - cell "2025-26/115" [ref=e234]
+                - cell "TIRUPATI PRINT" [ref=e235]
+                - cell "36AACCR2213F2ZU" [ref=e236]
+                - cell "81,000.00" [ref=e237]
+                - cell "4,050.00" [ref=e238]
+                - cell "5.00" [ref=e239]
+                - cell "85,050.00" [ref=e240]
+                - cell "B2B" [ref=e241]
+                - cell "Pending for Upload." [ref=e242]
+              - row "Select invoice 2025-26/123 28-03-2026 2025-26/123 TIRUPATI UDHOG 36AACCR2213F2ZU 38,400.00 1,920.00 5.00 40,320.00 B2B Pending for Upload." [ref=e243] [cursor=pointer]:
+                - cell "Select invoice 2025-26/123" [ref=e244]:
+                  - button "Select invoice 2025-26/123" [ref=e245]:
+                    - img [ref=e246]
+                - cell "28-03-2026" [ref=e248]
+                - cell "2025-26/123" [ref=e249]
+                - cell "TIRUPATI UDHOG" [ref=e250]
+                - cell "36AACCR2213F2ZU" [ref=e251]
+                - cell "38,400.00" [ref=e252]
+                - cell "1,920.00" [ref=e253]
+                - cell "5.00" [ref=e254]
+                - cell "40,320.00" [ref=e255]
+                - cell "B2B" [ref=e256]
+                - cell "Pending for Upload." [ref=e257]
+              - row "Select invoice 2025-26/122 28-03-2026 2025-26/122 VINIT PRINT 36AACCR2213F2ZU 33,000.00 1,650.00 5.00 34,650.00 B2B Pending for Upload." [ref=e258] [cursor=pointer]:
+                - cell "Select invoice 2025-26/122" [ref=e259]:
+                  - button "Select invoice 2025-26/122" [ref=e260]:
+                    - img [ref=e261]
+                - cell "28-03-2026" [ref=e263]
+                - cell "2025-26/122" [ref=e264]
+                - cell "VINIT PRINT" [ref=e265]
+                - cell "36AACCR2213F2ZU" [ref=e266]
+                - cell "33,000.00" [ref=e267]
+                - cell "1,650.00" [ref=e268]
+                - cell "5.00" [ref=e269]
+                - cell "34,650.00" [ref=e270]
+                - cell "B2B" [ref=e271]
+                - cell "Pending for Upload." [ref=e272]
+              - row "Select invoice 2025-26/112 15-03-2026 2025-26/112 VINIT PRINT 36AACCR2213F2ZU 55,600.00 2,780.00 5.00 58,380.00 B2B Pending for Upload." [ref=e273] [cursor=pointer]:
+                - cell "Select invoice 2025-26/112" [ref=e274]:
+                  - button "Select invoice 2025-26/112" [ref=e275]:
+                    - img [ref=e276]
+                - cell "15-03-2026" [ref=e278]
+                - cell "2025-26/112" [ref=e279]
+                - cell "VINIT PRINT" [ref=e280]
+                - cell "36AACCR2213F2ZU" [ref=e281]
+                - cell "55,600.00" [ref=e282]
+                - cell "2,780.00" [ref=e283]
+                - cell "5.00" [ref=e284]
+                - cell "58,380.00" [ref=e285]
+                - cell "B2B" [ref=e286]
+                - cell "Pending for Upload." [ref=e287]
+              - row "Select invoice 2025-26/119 25-03-2026 2025-26/119 SHREE JAI GANESH PRINTS 36AACCR2213F2ZU 1,23,200.00 6,160.00 5.00 1,29,360.00 B2B Pending for Upload." [ref=e288] [cursor=pointer]:
+                - cell "Select invoice 2025-26/119" [ref=e289]:
+                  - button "Select invoice 2025-26/119" [ref=e290]:
+                    - img [ref=e291]
+                - cell "25-03-2026" [ref=e293]
+                - cell "2025-26/119" [ref=e294]
+                - cell "SHREE JAI GANESH PRINTS" [ref=e295]
+                - cell "36AACCR2213F2ZU" [ref=e296]
+                - cell "1,23,200.00" [ref=e297]
+                - cell "6,160.00" [ref=e298]
+                - cell "5.00" [ref=e299]
+                - cell "1,29,360.00" [ref=e300]
+                - cell "B2B" [ref=e301]
+                - cell "Pending for Upload." [ref=e302]
+              - row "Select invoice 2025-26/114 18-03-2026 2025-26/114 SHREE JAI GANESH PRINTS 36AACCR2213F2ZU 68,000.00 3,400.00 5.00 71,400.00 B2B Pending for Upload." [ref=e303] [cursor=pointer]:
+                - cell "Select invoice 2025-26/114" [ref=e304]:
+                  - button "Select invoice 2025-26/114" [ref=e305]:
+                    - img [ref=e306]
+                - cell "18-03-2026" [ref=e308]
+                - cell "2025-26/114" [ref=e309]
+                - cell "SHREE JAI GANESH PRINTS" [ref=e310]
+                - cell "36AACCR2213F2ZU" [ref=e311]
+                - cell "68,000.00" [ref=e312]
+                - cell "3,400.00" [ref=e313]
+                - cell "5.00" [ref=e314]
+                - cell "71,400.00" [ref=e315]
+                - cell "B2B" [ref=e316]
+                - cell "Pending for Upload." [ref=e317]
+              - row "Select invoice 2025-26/113 17-03-2026 2025-26/113 SHREE JAI GANESH PRINTS 36AACCR2213F2ZU 89,600.00 4,480.00 5.00 94,080.00 B2B Pending for Upload." [ref=e318] [cursor=pointer]:
+                - cell "Select invoice 2025-26/113" [ref=e319]:
+                  - button "Select invoice 2025-26/113" [ref=e320]:
+                    - img [ref=e321]
+                - cell "17-03-2026" [ref=e323]
+                - cell "2025-26/113" [ref=e324]
+                - cell "SHREE JAI GANESH PRINTS" [ref=e325]
+                - cell "36AACCR2213F2ZU" [ref=e326]
+                - cell "89,600.00" [ref=e327]
+                - cell "4,480.00" [ref=e328]
+                - cell "5.00" [ref=e329]
+                - cell "94,080.00" [ref=e330]
+                - cell "B2B" [ref=e331]
+                - cell "Pending for Upload." [ref=e332]
+              - row "Select invoice 2025-26/124 28-03-2026 2025-26/124 SHREE JAI GANESH PRINTS 36AACCR2213F2ZU 27,800.00 1,390.00 5.00 29,190.00 B2B Pending for Upload." [ref=e333] [cursor=pointer]:
+                - cell "Select invoice 2025-26/124" [ref=e334]:
+                  - button "Select invoice 2025-26/124" [ref=e335]:
+                    - img [ref=e336]
+                - cell "28-03-2026" [ref=e338]
+                - cell "2025-26/124" [ref=e339]
+                - cell "SHREE JAI GANESH PRINTS" [ref=e340]
+                - cell "36AACCR2213F2ZU" [ref=e341]
+                - cell "27,800.00" [ref=e342]
+                - cell "1,390.00" [ref=e343]
+                - cell "5.00" [ref=e344]
+                - cell "29,190.00" [ref=e345]
+                - cell "B2B" [ref=e346]
+                - cell "Pending for Upload." [ref=e347]
+          - generic [ref=e348]:
+            - button "Previous" [ref=e349] [cursor=pointer]
+            - generic [ref=e350]:
+              - button "Edit Selected Items" [ref=e351] [cursor=pointer]
+              - button "Mark as Uploaded" [ref=e352] [cursor=pointer]
+              - button "Mark as Not Uploaded" [ref=e353] [cursor=pointer]
+              - button "Mark as Filed" [disabled] [ref=e354]
+              - button "Delete selected Items" [ref=e355] [cursor=pointer]
+            - button "Next" [ref=e356] [cursor=pointer]
+  - alert [ref=e357]

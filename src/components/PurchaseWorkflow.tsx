@@ -1727,7 +1727,7 @@ function PurchaseTransactionsScreen({
             <div className="px-6 py-5 space-y-4">
               <p className="text-[13px] text-gray-700 font-medium">We are saving your transactions to Tally, please follow below steps:</p>
               <ul className="text-[13px] text-gray-600 space-y-2 list-disc ml-5">
-                <li>Open <strong>Vyapar TaxOne&apos;s Tally connector app</strong> and <strong>Tally</strong> on your pc/laptop.</li>
+                <li>Open <strong>Brego TaxOne&apos;s Tally connector app</strong> and <strong>Tally</strong> on your pc/laptop.</li>
                 <li>Please make sure that you have selected <strong>company</strong> in Tally for which your are saving data.</li>
               </ul>
               <div className="grid grid-cols-4 gap-0 border border-gray-200 rounded-lg overflow-hidden mt-4">

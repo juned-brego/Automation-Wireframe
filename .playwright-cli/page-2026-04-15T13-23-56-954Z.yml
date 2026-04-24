@@ -1,0 +1,172 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e6596]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Try A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Try A/c. & Billing
+      - listitem [ref=e84]:
+        - link "7 days remaining on your free trial period Buy Now" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e87]:
+            - heading "7 days remaining on your free trial period" [level=5] [ref=e88]
+            - button "Buy Now" [ref=e90]
+      - listitem [ref=e91]:
+        - link "Live Chat" [ref=e92] [cursor=pointer]:
+          - /url: /
+          - img [ref=e93]
+          - generic [ref=e96]: Live Chat
+      - listitem [ref=e97]:
+        - link "Settings" [ref=e98] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e99]
+          - generic [ref=e103]: Settings
+  - navigation [ref=e104]:
+    - list [ref=e109]:
+      - generic [ref=e110]:
+        - generic [ref=e111]:
+          - button [ref=e113] [cursor=pointer]:
+            - img [ref=e116]
+          - generic [ref=e2605]:
+            - combobox "Select Year" [ref=e2606]: 2025-26
+            - button "Open" [ref=e2608] [cursor=pointer]
+            - group
+          - generic [ref=e2612]:
+            - combobox "Select Period" [ref=e2613]: Mar 2026 (Monthly)
+            - button "Open" [ref=e2615] [cursor=pointer]
+            - group
+        - heading "CLEAR WATER CRAFT (27CDRPS5642C2Z5)" [level=5] [ref=e136]:
+          - paragraph [ref=e137]: CLEAR WATER CRAFT (27CDRPS5642C2Z5)
+        - generic [ref=e138]:
+          - listitem [ref=e139]:
+            - link "Need help?" [ref=e140] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e141]:
+                - img [ref=e143]
+                - generic [ref=e145]: Need help?
+                - img [ref=e147]
+          - listitem [ref=e149]:
+            - link "9821555450 Owner" [ref=e150] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e151]:
+                - paragraph [ref=e152]: "9821555450"
+                - generic [ref=e153]: Owner
+              - img [ref=e156]
+  - generic [ref=e6601]:
+    - generic [ref=e6602]:
+      - heading "Edit Invoice" [level=2] [ref=e6608]:
+        - button [ref=e6609] [cursor=pointer]:
+          - img [ref=e6610]
+        - heading "Edit Invoice" [level=2] [ref=e6615]
+      - button "Add Row" [ref=e6617] [cursor=pointer]:
+        - img [ref=e6618]
+        - text: Add Row
+    - generic [ref=e6619]:
+      - list [ref=e6621]:
+        - listitem [ref=e6622]:
+          - generic [ref=e6623] [cursor=pointer]: B2B
+      - generic [ref=e6627]:
+        - generic [ref=e6628]:
+          - generic [ref=e6629]:
+            - paragraph [ref=e6631]: "Count of Documents :"
+            - heading "1" [level=6] [ref=e6633]
+          - generic [ref=e6634]:
+            - paragraph [ref=e6636]: "Taxable Amount :"
+            - heading "₹35,600.00" [level=6] [ref=e6638]
+          - generic [ref=e6639]:
+            - paragraph [ref=e6641]: "Tax Amount :"
+            - heading "₹1,780.00" [level=6] [ref=e6643]
+          - generic [ref=e6644]:
+            - paragraph [ref=e6646]: "Invoice Value :"
+            - heading "₹37,380.00" [level=6] [ref=e6648]
+        - table [ref=e6653]:
+          - rowgroup [ref=e6654]:
+            - row "Sr.No. GSTIN/UIN Of Recipient Receiver Name Invoice Number Invoice Date Invoice Value Place Of Supply Reverse Charge Applicable % of Tax Rate Invoice Type E-Commerce GSTIN Rate (%) Total Taxable Value Cess Amount" [ref=e6655]:
+              - columnheader [ref=e6656]:
+                - button [ref=e6658] [cursor=pointer]
+              - columnheader "Sr.No." [ref=e6659]
+              - columnheader "GSTIN/UIN Of Recipient" [ref=e6660]
+              - columnheader "Receiver Name" [ref=e6661]
+              - columnheader "Invoice Number" [ref=e6662]
+              - columnheader "Invoice Date" [ref=e6663]
+              - columnheader "Invoice Value" [ref=e6664]
+              - columnheader "Place Of Supply" [ref=e6665]
+              - columnheader "Reverse Charge" [ref=e6666]
+              - columnheader "Applicable % of Tax Rate" [ref=e6667]
+              - columnheader "Invoice Type" [ref=e6668]
+              - columnheader "E-Commerce GSTIN" [ref=e6669]
+              - columnheader "Rate (%)" [ref=e6670]
+              - columnheader "Total Taxable Value" [ref=e6671]
+              - columnheader "Cess Amount" [ref=e6672]
+          - rowgroup [ref=e6673]:
+            - row "1 36AACCR2213F2ZU VIJAY TEX 2025-26/117 21-03-2026 37380.00 08-Rajasthan N None Regular B2B 5.00 35600.00" [ref=e6674]:
+              - cell [ref=e6675]:
+                - button [ref=e6679] [cursor=pointer]
+              - cell "1" [ref=e6680]:
+                - generic "1" [ref=e6682]
+              - cell "36AACCR2213F2ZU" [ref=e6683]:
+                - generic "36AACCR2213F2ZU" [ref=e6685]
+              - cell "VIJAY TEX" [ref=e6686]:
+                - generic "VIJAY TEX" [ref=e6688]
+              - cell "2025-26/117" [ref=e6689]:
+                - generic "2025-26/117" [ref=e6691]
+              - cell "21-03-2026" [ref=e6692]:
+                - generic "21-03-2026" [ref=e6694]
+              - cell "37380.00" [ref=e6695]:
+                - generic "37380.00" [ref=e6697]
+              - cell "08-Rajasthan" [ref=e6698]:
+                - generic "08-Rajasthan" [ref=e6700]
+              - cell "N" [ref=e6701]:
+                - generic "N" [ref=e6703]
+              - cell "None" [ref=e6704]:
+                - generic "None" [ref=e6706]
+              - cell "Regular B2B" [ref=e6707]:
+                - generic "Regular B2B" [ref=e6709]
+              - cell [ref=e6710]
+              - cell "5.00" [ref=e6711]:
+                - generic "5.00" [ref=e6713]
+              - cell "35600.00" [ref=e6714]:
+                - generic "35600.00" [ref=e6716]
+              - cell [ref=e6717]
+        - generic [ref=e6718]:
+          - button "Cancel" [ref=e6720] [cursor=pointer]
+          - generic [ref=e6721]:
+            - button "Delete Items" [disabled]
+            - generic [ref=e6722]:
+              - button "Save & Verify" [disabled]

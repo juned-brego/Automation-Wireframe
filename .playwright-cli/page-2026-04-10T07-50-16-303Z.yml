@@ -1,0 +1,248 @@
+- generic [ref=e1]:
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - img [ref=e78] [cursor=pointer]
+      - list [ref=e82]:
+        - listitem [ref=e83] [cursor=pointer]:
+          - link "Home" [ref=e84]:
+            - /url: /app/home/dashboard
+            - img [ref=e85]
+            - generic [ref=e87]: Home
+        - listitem [ref=e88] [cursor=pointer]:
+          - link "Data Entry" [ref=e89]:
+            - /url: /app/da/dashboard
+            - img [ref=e90]
+            - generic [ref=e93]: Data Entry
+        - listitem [ref=e94] [cursor=pointer]:
+          - link "GST" [ref=e95]:
+            - /url: /app/ga/dashboard
+            - img [ref=e96]
+            - generic [ref=e100]: GST
+          - generic [ref=e101]: Beta
+        - listitem [ref=e102] [cursor=pointer]:
+          - link "Chat" [ref=e103]:
+            - /url: /app/chat/get-started
+            - img [ref=e104]
+            - generic [ref=e108]: Chat
+          - generic [ref=e109]: Beta
+        - listitem [ref=e110] [cursor=pointer]:
+          - link "Task" [ref=e111]:
+            - /url: /app/pms/document-task
+            - img [ref=e112]
+            - generic [ref=e114]: Task
+          - generic [ref=e115]: Beta
+        - listitem [ref=e116] [cursor=pointer]:
+          - link "Drive" [ref=e117]:
+            - /url: /app/drive/all-documents
+            - img [ref=e118]
+            - generic [ref=e120]: Drive
+      - img [ref=e123] [cursor=pointer]
+      - generic [ref=e128] [cursor=pointer]: J
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - img [ref=e133]
+        - list [ref=e137]:
+          - listitem [ref=e138] [cursor=pointer]:
+            - link "Dashboard" [ref=e139]:
+              - /url: /app/da/dashboard
+              - img [ref=e141]
+              - generic [ref=e143]: Dashboard
+          - listitem [ref=e620] [cursor=pointer]:
+            - link "Bulk Upload" [ref=e621]:
+              - /url: /app/da/banking
+              - img [ref=e623]
+              - generic [ref=e625]: Bulk Upload
+          - listitem [ref=e627] [cursor=pointer]:
+            - link "Transactions" [ref=e628]:
+              - /url: /app/da/sales
+              - img [ref=e630]
+              - generic [ref=e633]: Transactions
+          - listitem [ref=e635] [cursor=pointer]:
+            - link "Master" [ref=e636]:
+              - /url: /app/da/ledger-master
+              - img [ref=e638]
+              - generic [ref=e640]: Master
+          - listitem [ref=e642] [cursor=pointer]:
+            - link "Learn Vyapar TaxOne" [ref=e643]:
+              - /url: /app/da/learn-suvit
+              - img [ref=e645]
+              - generic [ref=e647]: Learn Vyapar TaxOne
+      - generic [ref=e162]:
+        - generic [ref=e163]:
+          - generic [ref=e899]:
+            - img [ref=e1776]
+            - heading "Rule list" [level=6] [ref=e1778]
+            - superscript [ref=e904]:
+              - generic [ref=e908]: "1"
+          - generic [ref=e170]:
+            - img [ref=e650] [cursor=pointer]
+            - link [ref=e187] [cursor=pointer]:
+              - /url: https://app.suvit.io/suvit-x64/VyaparTaxOne-1.4.7.exe
+              - img [ref=e188]
+            - generic [ref=e191]:
+              - superscript [ref=e193]:
+                - generic [ref=e195]: "7"
+              - img [ref=e197] [cursor=pointer]
+            - generic [ref=e657] [cursor=pointer]:
+              - generic [ref=e658]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+              - img [ref=e660]
+        - main [ref=e199]:
+          - generic [ref=e1779]:
+            - tablist [ref=e1780]:
+              - generic [ref=e1782]:
+                - tab "Ledger" [ref=e1784] [cursor=pointer]:
+                  - generic [ref=e1785]: Ledger
+                - tab "Item" [ref=e1787] [cursor=pointer]:
+                  - generic [ref=e1788]: Item
+                - tab "Rule List" [selected] [ref=e1790] [cursor=pointer]:
+                  - generic [ref=e1791]: Rule List
+            - generic:
+              - generic:
+                - tabpanel "Rule List"
+          - table [ref=e1799]:
+            - rowgroup [ref=e1806]:
+              - row "Sr. No. Company Name Bank Name Total Rules Action" [ref=e1807]:
+                - columnheader "Sr. No." [ref=e1808]
+                - columnheader "Company Name" [ref=e1809]
+                - columnheader "Bank Name" [ref=e1810]
+                - columnheader "Total Rules" [ref=e1811]
+                - columnheader "Action" [ref=e1812]
+            - rowgroup [ref=e1813]:
+              - row "1 PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000) HDFC 11" [ref=e1814]:
+                - cell "1" [ref=e1815]
+                - cell "PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)" [ref=e1816]:
+                  - generic [ref=e1817]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)
+                - cell "HDFC" [ref=e1818]
+                - cell "11" [ref=e1819]
+                - cell [ref=e1820]:
+                  - img [ref=e1823] [cursor=pointer]
+          - list [ref=e1827]:
+            - listitem "Previous Page" [ref=e1828]:
+              - button "left" [disabled] [ref=e1829]:
+                - img "left" [ref=e1830]:
+                  - img [ref=e1831]
+            - listitem "1" [ref=e1833] [cursor=pointer]:
+              - generic [ref=e1834]: "1"
+            - listitem "Next Page" [ref=e1835]:
+              - button "right" [disabled] [ref=e1836]:
+                - img "right" [ref=e1837]:
+                  - img [ref=e1838]
+            - listitem [ref=e1840]:
+              - generic "Page Size" [ref=e1841] [cursor=pointer]:
+                - generic [ref=e1842]:
+                  - combobox "Page Size" [ref=e1844]
+                  - generic "20 / page" [ref=e1845]
+                - generic:
+                  - img:
+                    - img
+  - dialog [ref=e1847]:
+    - generic [ref=e1849]:
+      - button "Close" [ref=e1850] [cursor=pointer]:
+        - img "close" [ref=e1851]:
+          - img [ref=e1852]
+      - generic [ref=e1855]:
+        - text: Rules
+        - generic [ref=e1857]:
+          - textbox "Search..." [ref=e1859]
+          - button "search" [ref=e1860] [cursor=pointer]:
+            - img "search" [ref=e1862]:
+              - img [ref=e1863]
+    - table [ref=e1872]:
+      - rowgroup [ref=e1874]:
+        - row "Sr. No. Rule Description From To Ledger Type" [ref=e1875]:
+          - columnheader "Sr. No." [ref=e1876]
+          - columnheader "Rule" [ref=e1877]
+          - columnheader "Description" [ref=e1878]
+          - columnheader "From" [ref=e1879]
+          - columnheader "To" [ref=e1880]
+          - columnheader "Ledger" [ref=e1881]
+          - columnheader "Type" [ref=e1882]
+      - rowgroup [ref=e1883]:
+        - row "1 Auto TELE 0 0 Telephone Expenses -" [ref=e1884]:
+          - cell "1" [ref=e1885]
+          - cell "Auto" [ref=e1886]
+          - cell "TELE" [ref=e1887]
+          - cell "0" [ref=e1888]
+          - cell "0" [ref=e1889]
+          - cell "Telephone Expenses" [ref=e1890]
+          - cell "-" [ref=e1891]
+        - row "2 Auto please 0 0 Please See Advertising Pvt. Ltd -" [ref=e1892]:
+          - cell "2" [ref=e1893] [cursor=pointer]
+          - cell "Auto" [ref=e1894] [cursor=pointer]
+          - cell "please" [ref=e1895] [cursor=pointer]
+          - cell "0" [ref=e1896] [cursor=pointer]
+          - cell "0" [ref=e1897] [cursor=pointer]
+          - cell "Please See Advertising Pvt. Ltd" [ref=e1898] [cursor=pointer]
+          - cell "-" [ref=e1899] [cursor=pointer]
+        - row "3 Auto tarin 0 0 Tarini Naidu -" [ref=e1900]:
+          - cell "3" [ref=e1901]
+          - cell "Auto" [ref=e1902]
+          - cell "tarin" [ref=e1903]
+          - cell "0" [ref=e1904]
+          - cell "0" [ref=e1905]
+          - cell "Tarini Naidu" [ref=e1906]
+          - cell "-" [ref=e1907]
+        - row "4 Auto zoho 0 0 ZOHO Corporation Private Limited -" [ref=e1908]:
+          - cell "4" [ref=e1909]
+          - cell "Auto" [ref=e1910]
+          - cell "zoho" [ref=e1911]
+          - cell "0" [ref=e1912]
+          - cell "0" [ref=e1913]
+          - cell "ZOHO Corporation Private Limited" [ref=e1914]
+          - cell "-" [ref=e1915]
+        - row "5 Auto googl 0 0 Google India Private Limited -" [ref=e1916]:
+          - cell "5" [ref=e1917]
+          - cell "Auto" [ref=e1918]
+          - cell "googl" [ref=e1919]
+          - cell "0" [ref=e1920]
+          - cell "0" [ref=e1921]
+          - cell "Google India Private Limited" [ref=e1922]
+          - cell "-" [ref=e1923]
+        - row "6 Auto onsglo 0 0 ONS GLOBAL COMPLIANCES SERVICES -" [ref=e1924]:
+          - cell "6" [ref=e1925]
+          - cell "Auto" [ref=e1926]
+          - cell "onsglo" [ref=e1927]
+          - cell "0" [ref=e1928]
+          - cell "0" [ref=e1929]
+          - cell "ONS GLOBAL COMPLIANCES SERVICES" [ref=e1930]
+          - cell "-" [ref=e1931]
+        - row "7 Auto RAZORP 0 0 Razorpay -" [ref=e1932]:
+          - cell "7" [ref=e1933]
+          - cell "Auto" [ref=e1934]
+          - cell "RAZORP" [ref=e1935]
+          - cell "0" [ref=e1936]
+          - cell "0" [ref=e1937]
+          - cell "Razorpay" [ref=e1938]
+          - cell "-" [ref=e1939]
+        - row "8 Auto god 0 0 GODADDY -" [ref=e1940]:
+          - cell "8" [ref=e1941]
+          - cell "Auto" [ref=e1942]
+          - cell "god" [ref=e1943]
+          - cell "0" [ref=e1944]
+          - cell "0" [ref=e1945]
+          - cell "GODADDY" [ref=e1946]
+          - cell "-" [ref=e1947]
+        - row "9 Auto link 0 0 LinkedIn Singapore Pte Ltd -" [ref=e1948]:
+          - cell "9" [ref=e1949]
+          - cell "Auto" [ref=e1950]
+          - cell "link" [ref=e1951]
+          - cell "0" [ref=e1952]
+          - cell "0" [ref=e1953]
+          - cell "LinkedIn Singapore Pte Ltd" [ref=e1954]
+          - cell "-" [ref=e1955]
+        - row "10 Auto inter 0 0 Software & Technology Expenses -" [ref=e1956]:
+          - cell "10" [ref=e1957]
+          - cell "Auto" [ref=e1958]
+          - cell "inter" [ref=e1959]
+          - cell "0" [ref=e1960]
+          - cell "0" [ref=e1961]
+          - cell "Software & Technology Expenses" [ref=e1962]
+          - cell "-" [ref=e1963]
+        - row "11 Auto paya 0 0 Payal Savla Designs -" [ref=e1964]:
+          - cell "11" [ref=e1965]
+          - cell "Auto" [ref=e1966]
+          - cell "paya" [ref=e1967]
+          - cell "0" [ref=e1968]
+          - cell "0" [ref=e1969]
+          - cell "Payal Savla Designs" [ref=e1970]
+          - cell "-" [ref=e1971]

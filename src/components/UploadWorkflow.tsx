@@ -52,7 +52,7 @@ export default function UploadWorkflow({ type }: UploadWorkflowProps) {
                     <Play size={18} className="text-white fill-white" />
                   </div>
                   <div className="text-white">
-                    <p className="text-sm font-medium">Vyapar Channel</p>
+                    <p className="text-sm font-medium">Brego Channel</p>
                   </div>
                 </div>
 

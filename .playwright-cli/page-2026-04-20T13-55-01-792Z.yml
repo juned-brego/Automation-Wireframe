@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e372]:
+      - generic [ref=e373]:
+        - generic [ref=e374]:
+          - img [ref=e376]
+          - generic [ref=e379]:
+            - heading "Audit" [level=1] [ref=e380]
+            - generic [ref=e381]: "2"
+            - img [ref=e382]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e384] [cursor=pointer]:
+          - generic [ref=e385]:
+            - paragraph [ref=e386]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e387]: 01/04/2026 - 31/03/2027
+          - img [ref=e388]
+      - generic [ref=e390]:
+        - generic [ref=e391]:
+          - button "Overview" [ref=e392] [cursor=pointer]
+          - button "GSTR1" [ref=e393] [cursor=pointer]
+          - button "GSTR2B" [ref=e394] [cursor=pointer]
+          - button "GSTR3B" [ref=e395] [cursor=pointer]
+          - button "ITC" [ref=e396] [cursor=pointer]
+        - generic [ref=e397]:
+          - generic [ref=e398]:
+            - generic [ref=e399]: "Financial Year:"
+            - generic [ref=e400]:
+              - combobox [ref=e401]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e402]:
+            - generic [ref=e403]: "Period:"
+            - generic [ref=e404]:
+              - combobox [ref=e405]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e407]:
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - heading "GSTR-3B Push to GSTN | Mar 2026 (Monthly)" [level=2] [ref=e411]
+            - paragraph [ref=e412]: "The live product uses the same upload decision point here: choose the GSTN upload mode, start the upload, review the upload history, and only then move to final filing."
+          - button "More Option" [ref=e413] [cursor=pointer]
+        - generic [ref=e415]:
+          - button "1 Summary Data" [ref=e416] [cursor=pointer]:
+            - generic [ref=e417]: "1"
+            - generic [ref=e418]: Summary Data
+          - img [ref=e419]
+          - button "2 Prepare & File" [ref=e421] [cursor=pointer]:
+            - generic [ref=e422]: "2"
+            - generic [ref=e423]: Prepare & File
+          - img [ref=e424]
+          - button "3 Push to GSTN" [ref=e426] [cursor=pointer]:
+            - generic [ref=e427]: "3"
+            - generic [ref=e428]: Push to GSTN
+          - img [ref=e429]
+          - button "4 File GSTR-3B" [ref=e431] [cursor=pointer]:
+            - generic [ref=e432]: "4"
+            - generic [ref=e433]: File GSTR-3B
+        - generic [ref=e435]:
+          - generic [ref=e436]:
+            - generic [ref=e437]:
+              - radio "Upload without OTP" [checked] [ref=e438]
+              - text: Upload without OTP
+            - generic [ref=e439]:
+              - radio "Upload via OTP" [ref=e440]
+              - text: Upload via OTP
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - generic [ref=e443]:
+                - button "Upload Data to GSTN" [ref=e444] [cursor=pointer]:
+                  - img [ref=e445]
+                  - text: Upload Data to GSTN
+                - button "Preview Govt Summary" [disabled] [ref=e448]
+              - generic [ref=e449]:
+                - generic [ref=e450]: 0%
+                - generic [ref=e451]: Awaiting upload
+              - generic [ref=e452]:
+                - generic [ref=e453]: Connect to GSTN
+                - generic [ref=e454]: Save 3B Data on GSTN
+                - generic [ref=e455]: Upload Processed Successfully
+                - generic [ref=e456]: Ready to File
+            - generic [ref=e457]:
+              - heading "Want to delete existing data from GSTN?" [level=3] [ref=e458]
+              - generic [ref=e459]:
+                - button "Reset GSTN data" [disabled] [ref=e460]
+                - button "Re-Generate Summary" [disabled] [ref=e461]
+                - button "Proceed to File" [disabled] [ref=e462]
+        - generic [ref=e463]:
+          - img [ref=e464]
+          - generic [ref=e466]: Important advisory updates to GSTR-3B filing and portal-side liability processing should stay visible at this stage.
+        - generic [ref=e467]:
+          - generic [ref=e468]:
+            - button "Document level details that would be uploaded to GSTN:" [ref=e470] [cursor=pointer]
+            - table [ref=e472]:
+              - rowgroup [ref=e473]:
+                - row "Type of Invoice To Be Uploaded Uploaded" [ref=e474]:
+                  - columnheader "Type of Invoice" [ref=e475]
+                  - columnheader "To Be Uploaded" [ref=e476]
+                  - columnheader "Uploaded" [ref=e477]
+              - rowgroup [ref=e478]:
+                - row "3.1 Tax on outward and reverse charge inward supplies 6 0" [ref=e479]:
+                  - cell "3.1 Tax on outward and reverse charge inward supplies" [ref=e480]
+                  - cell "6" [ref=e481]:
+                    - button "6" [ref=e482] [cursor=pointer]
+                  - cell "0" [ref=e483]
+                - row "3.1.1 Supplies notified under section 9(5) of the CGST Act, 2017 2 0" [ref=e484]:
+                  - cell "3.1.1 Supplies notified under section 9(5) of the CGST Act, 2017" [ref=e485]
+                  - cell "2" [ref=e486]:
+                    - button "2" [ref=e487] [cursor=pointer]
+                  - cell "0" [ref=e488]
+                - row "3.2 Inter-state supplies 3 0" [ref=e489]:
+                  - cell "3.2 Inter-state supplies" [ref=e490]
+                  - cell "3" [ref=e491]:
+                    - button "3" [ref=e492] [cursor=pointer]
+                  - cell "0" [ref=e493]
+                - row "4 Eligible ITC 4 0" [ref=e494]:
+                  - cell "4 Eligible ITC" [ref=e495]
+                  - cell "4" [ref=e496]:
+                    - button "4" [ref=e497] [cursor=pointer]
+                  - cell "0" [ref=e498]
+                - row "5 Exempt, nil and Non GST inward supplies 3 0" [ref=e499]:
+                  - cell "5 Exempt, nil and Non GST inward supplies" [ref=e500]
+                  - cell "3" [ref=e501]:
+                    - button "3" [ref=e502] [cursor=pointer]
+                  - cell "0" [ref=e503]
+                - row "5.1 Interest and Late fee for previous tax period 2 0" [ref=e504]:
+                  - cell "5.1 Interest and Late fee for previous tax period" [ref=e505]
+                  - cell "2" [ref=e506]:
+                    - button "2" [ref=e507] [cursor=pointer]
+                  - cell "0" [ref=e508]
+                - row "6.1 Payment of Tax 4 0" [ref=e509]:
+                  - cell "6.1 Payment of Tax" [ref=e510]
+                  - cell "4" [ref=e511]:
+                    - button "4" [ref=e512] [cursor=pointer]
+                  - cell "0" [ref=e513]
+          - generic [ref=e514]:
+            - button "Summary level details that would be uploaded to GSTN:" [ref=e516] [cursor=pointer]
+            - table [ref=e518]:
+              - rowgroup [ref=e519]:
+                - row "Type of Invoice To Be Uploaded Uploaded" [ref=e520]:
+                  - columnheader "Type of Invoice" [ref=e521]
+                  - columnheader "To Be Uploaded" [ref=e522]
+                  - columnheader "Uploaded" [ref=e523]
+              - rowgroup [ref=e524]:
+                - row "Output Tax Liability 8,30,456.00 0.00" [ref=e525]:
+                  - cell "Output Tax Liability" [ref=e526]
+                  - cell "8,30,456.00" [ref=e527]:
+                    - button "8,30,456.00" [ref=e528] [cursor=pointer]
+                  - cell "0.00" [ref=e529]
+                - row "Eligible ITC 6,62,640.00 0.00" [ref=e530]:
+                  - cell "Eligible ITC" [ref=e531]
+                  - cell "6,62,640.00" [ref=e532]:
+                    - button "6,62,640.00" [ref=e533] [cursor=pointer]
+                  - cell "0.00" [ref=e534]
+                - row "Net Cash Liability 1,67,816.00 0.00" [ref=e535]:
+                  - cell "Net Cash Liability" [ref=e536]
+                  - cell "1,67,816.00" [ref=e537]:
+                    - button "1,67,816.00" [ref=e538] [cursor=pointer]
+                  - cell "0.00" [ref=e539]
+                - row "Interest and Late Fee 0.00 0.00" [ref=e540]:
+                  - cell "Interest and Late Fee" [ref=e541]
+                  - cell "0.00" [ref=e542]
+                  - cell "0.00" [ref=e543]
+          - generic [ref=e544]:
+            - button "Upload History" [ref=e546] [cursor=pointer]
+            - table [ref=e548]:
+              - rowgroup [ref=e549]:
+                - row "Requested Date Status Actions Details Upload Type" [ref=e550]:
+                  - columnheader "Requested Date" [ref=e551]
+                  - columnheader "Status" [ref=e552]
+                  - columnheader "Actions" [ref=e553]
+                  - columnheader "Details" [ref=e554]
+                  - columnheader "Upload Type" [ref=e555]
+              - rowgroup [ref=e556]:
+                - row "There are no records to display" [ref=e557]:
+                  - cell "There are no records to display" [ref=e558]
+        - button "Previous" [ref=e560] [cursor=pointer]
+  - alert [ref=e211]

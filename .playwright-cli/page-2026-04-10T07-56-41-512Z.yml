@@ -1,0 +1,195 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e502]
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading "Rule List" [level=1] [ref=e506]
+              - generic [ref=e39]: "1"
+            - paragraph [ref=e40]: Track company banking rules and audit how many automated rules are active.
+          - generic [ref=e41]:
+            - img
+            - textbox "Search by Company Name" [ref=e507]
+        - generic [ref=e43]:
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+          - button [ref=e50] [cursor=pointer]:
+            - img [ref=e51]
+          - button "Rule guide" [ref=e508] [cursor=pointer]:
+            - img [ref=e55]
+            - text: Rule guide
+          - button "PAARIJAAT PERSONAL CARE PRIVATE LIMITED" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e60]
+      - generic [ref=e63]:
+        - button "Ledger" [ref=e64] [cursor=pointer]
+        - button "Item" [ref=e65] [cursor=pointer]
+        - button "Rule List" [ref=e66] [cursor=pointer]
+      - generic [ref=e68]:
+        - table [ref=e510]:
+          - rowgroup [ref=e511]:
+            - row "Sr. No. Company Name Bank Name Total Rules Action" [ref=e512]:
+              - columnheader "Sr. No." [ref=e513]
+              - columnheader "Company Name" [ref=e514]
+              - columnheader "Bank Name" [ref=e515]
+              - columnheader "Total Rules" [ref=e516]
+              - columnheader "Action" [ref=e517]
+          - rowgroup [ref=e518]:
+            - row "1 PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000) HDFC 11" [ref=e519]:
+              - cell "1" [ref=e520]
+              - cell "PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)" [ref=e521]
+              - cell "HDFC" [ref=e522]
+              - cell "11" [ref=e523]
+              - cell [ref=e524]:
+                - button [active] [ref=e525] [cursor=pointer]:
+                  - img [ref=e526]
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: Page Size
+            - generic [ref=e291]:
+              - combobox [ref=e292]:
+                - option "10 / page"
+                - option "20 / page" [selected]
+                - option "50 / page"
+              - img
+          - generic [ref=e293]:
+            - button "Previous" [disabled] [ref=e294]:
+              - img [ref=e295]
+              - text: Previous
+            - button "1" [ref=e297] [cursor=pointer]
+            - button "Next" [disabled] [ref=e303]:
+              - text: Next
+              - img [ref=e304]
+      - generic [ref=e529]:
+        - button "Close drawer" [ref=e530] [cursor=pointer]
+        - generic [ref=e531]:
+          - generic [ref=e532]:
+            - generic [ref=e533]:
+              - paragraph [ref=e534]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)
+              - generic [ref=e535]:
+                - heading "Rules" [level=2] [ref=e536]
+                - generic [ref=e537]: "11"
+            - button [ref=e538] [cursor=pointer]:
+              - img [ref=e539]
+          - generic [ref=e543]:
+            - img
+            - textbox "Search..." [ref=e544]
+          - table [ref=e547]:
+            - rowgroup [ref=e548]:
+              - row "Sr. No. Rule Description From To Ledger Type" [ref=e549]:
+                - columnheader "Sr. No." [ref=e550]
+                - columnheader "Rule" [ref=e551]
+                - columnheader "Description" [ref=e552]
+                - columnheader "From" [ref=e553]
+                - columnheader "To" [ref=e554]
+                - columnheader "Ledger" [ref=e555]
+                - columnheader "Type" [ref=e556]
+            - rowgroup [ref=e557]:
+              - row "1 Auto TELE 0 0 Telephone Expenses -" [ref=e558]:
+                - cell "1" [ref=e559]
+                - cell "Auto" [ref=e560]
+                - cell "TELE" [ref=e561]
+                - cell "0" [ref=e562]
+                - cell "0" [ref=e563]
+                - cell "Telephone Expenses" [ref=e564]
+                - cell "-" [ref=e565]
+              - row "2 Auto please 0 0 Please See Advertising Pvt. Ltd -" [ref=e566]:
+                - cell "2" [ref=e567]
+                - cell "Auto" [ref=e568]
+                - cell "please" [ref=e569]
+                - cell "0" [ref=e570]
+                - cell "0" [ref=e571]
+                - cell "Please See Advertising Pvt. Ltd" [ref=e572]
+                - cell "-" [ref=e573]
+              - row "3 Auto tarin 0 0 Tarini Naidu -" [ref=e574]:
+                - cell "3" [ref=e575]
+                - cell "Auto" [ref=e576]
+                - cell "tarin" [ref=e577]
+                - cell "0" [ref=e578]
+                - cell "0" [ref=e579]
+                - cell "Tarini Naidu" [ref=e580]
+                - cell "-" [ref=e581]
+              - row "4 Auto zoho 0 0 ZOHO Corporation Private Limited -" [ref=e582]:
+                - cell "4" [ref=e583]
+                - cell "Auto" [ref=e584]
+                - cell "zoho" [ref=e585]
+                - cell "0" [ref=e586]
+                - cell "0" [ref=e587]
+                - cell "ZOHO Corporation Private Limited" [ref=e588]
+                - cell "-" [ref=e589]
+              - row "5 Auto googl 0 0 Google India Private Limited -" [ref=e590]:
+                - cell "5" [ref=e591]
+                - cell "Auto" [ref=e592]
+                - cell "googl" [ref=e593]
+                - cell "0" [ref=e594]
+                - cell "0" [ref=e595]
+                - cell "Google India Private Limited" [ref=e596]
+                - cell "-" [ref=e597]
+              - row "6 Auto onsglo 0 0 ONS GLOBAL COMPLIANCES SERVICES -" [ref=e598]:
+                - cell "6" [ref=e599]
+                - cell "Auto" [ref=e600]
+                - cell "onsglo" [ref=e601]
+                - cell "0" [ref=e602]
+                - cell "0" [ref=e603]
+                - cell "ONS GLOBAL COMPLIANCES SERVICES" [ref=e604]
+                - cell "-" [ref=e605]
+              - row "7 Auto RAZORP 0 0 Razorpay -" [ref=e606]:
+                - cell "7" [ref=e607]
+                - cell "Auto" [ref=e608]
+                - cell "RAZORP" [ref=e609]
+                - cell "0" [ref=e610]
+                - cell "0" [ref=e611]
+                - cell "Razorpay" [ref=e612]
+                - cell "-" [ref=e613]
+              - row "8 Auto god 0 0 GODADDY -" [ref=e614]:
+                - cell "8" [ref=e615]
+                - cell "Auto" [ref=e616]
+                - cell "god" [ref=e617]
+                - cell "0" [ref=e618]
+                - cell "0" [ref=e619]
+                - cell "GODADDY" [ref=e620]
+                - cell "-" [ref=e621]
+              - row "9 Auto link 0 0 LinkedIn Singapore Pte Ltd -" [ref=e622]:
+                - cell "9" [ref=e623]
+                - cell "Auto" [ref=e624]
+                - cell "link" [ref=e625]
+                - cell "0" [ref=e626]
+                - cell "0" [ref=e627]
+                - cell "LinkedIn Singapore Pte Ltd" [ref=e628]
+                - cell "-" [ref=e629]
+              - row "10 Auto inter 0 0 Software & Technology Expenses -" [ref=e630]:
+                - cell "10" [ref=e631]
+                - cell "Auto" [ref=e632]
+                - cell "inter" [ref=e633]
+                - cell "0" [ref=e634]
+                - cell "0" [ref=e635]
+                - cell "Software & Technology Expenses" [ref=e636]
+                - cell "-" [ref=e637]
+              - row "11 Auto paya 0 0 Payal Savla Designs -" [ref=e638]:
+                - cell "11" [ref=e639]
+                - cell "Auto" [ref=e640]
+                - cell "paya" [ref=e641]
+                - cell "0" [ref=e642]
+                - cell "0" [ref=e643]
+                - cell "Payal Savla Designs" [ref=e644]
+                - cell "-" [ref=e645]
+  - alert [ref=e306]

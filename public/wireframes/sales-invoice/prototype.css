@@ -345,8 +345,16 @@ body {
   transition: transform 180ms ease;
 }
 
+.modal-panel--overflow-visible {
+  overflow: visible;
+}
+
 .modal-shell.open .modal-panel {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.details-modal-body {
+  overflow: visible;
 }
 
 .stock-modal-shell {
@@ -383,6 +391,17 @@ body {
 
 .stock-select-shell {
   position: relative;
+}
+
+.stock-date-shell .voucher-input[readonly] {
+  cursor: pointer;
+}
+
+.native-date-input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .stock-select-shell .stock-select-icon,

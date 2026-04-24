@@ -26,15 +26,15 @@
       <div class="border-b border-slate-200 bg-white px-2 py-2">
         <div class="grid items-center gap-3 xl:grid-cols-[200px_1fr_360px]">
           <div class="flex items-center gap-2 text-sm font-semibold text-ink-900">
-            <button type="button" onclick="window.parent.postMessage({ type: 'close-purchase-invoice' }, window.location.origin);" class="rounded border border-slate-200 px-1.5 py-0.5 text-brand-600">&lt;</button>
-            <span>Item Invoice</span>
+            <button type="button" onclick="if (window.parent && window.parent !== window && typeof window.parent.closeEmbeddedInvoice === 'function') { window.parent.closeEmbeddedInvoice('purchase'); } else if (window.parent && window.parent !== window) { window.parent.postMessage({ type: 'close-purchase-invoice' }, window.location.origin); } else { window.history.back(); }" class="rounded border border-slate-200 px-1.5 py-0.5 text-brand-600">&lt;</button>
+            <span id="invoice-mode-title">Item Invoice</span>
           </div>
           <div class="text-center text-[11px] font-semibold text-slate-500">Company Name: <span class="text-brand-600">SVA COUTURE PRIVATE...</span></div>
           <div class="flex items-center justify-end gap-3 text-[11px] font-semibold">
             <div class="flex items-center gap-2">
-              <span class="text-slate-700">Accounting Invoice</span>
-              <button type="button" class="relative inline-flex h-5 w-10 items-center rounded-full bg-brand-500 px-[2px]"><span class="ml-auto h-4 w-4 rounded-full bg-white shadow-sm"></span></button>
-              <span class="text-ink-900">Item Invoice</span>
+              <span id="invoice-mode-accounting-label" class="text-slate-700">Accounting Invoice</span>
+              <button id="invoice-mode-toggle" type="button" class="relative inline-flex h-5 w-10 items-center rounded-full bg-brand-500 px-[2px]" aria-label="Toggle invoice mode" aria-pressed="true" data-invoice-mode="item"><span id="invoice-mode-knob" class="ml-auto h-4 w-4 rounded-full bg-white shadow-sm"></span></button>
+              <span id="invoice-mode-item-label" class="text-ink-900">Item Invoice</span>
             </div>
             <button data-open-modal="config-modal" class="rounded border border-brand-200 bg-brand-500 px-3 py-1.5 text-white">Configuration</button>
           </div>
@@ -61,26 +61,28 @@
               <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Voucher Type</label><div class="stock-select-shell mt-1"><input class="voucher-input pr-8" value="Purchase" data-autocomplete-source="voucher-types" /><i data-lucide="chevron-down" class="stock-select-icon"></i><div class="autocomplete-list"></div></div></div>
               <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Invoice No.</label><input class="voucher-input mt-1" value="SI/2025-26/117" /></div>
               <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Voucher Date</label><div class="stock-select-shell mt-1"><input class="voucher-input pr-8" type="text" value="28/01/2026" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
-              <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Party Name</label><div class="mt-1 flex gap-2"><input class="voucher-input" value="SVA COUTURE PRIVATE LIMITED" /><button type="button" class="h-7 rounded border border-brand-500 px-2.5 text-[11px] font-bold text-brand-600">+</button></div></div>
+              <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Party Name</label><div class="mt-1 flex gap-2"><input id="party-name-input" class="voucher-input" value="SVA COUTURE PRIVATE LIMITED" /><button type="button" data-open-modal="ledger-create-modal" class="h-7 rounded border border-brand-500 px-2.5 text-[11px] font-bold text-brand-600">+</button></div></div>
               <div class="hidden xl:flex xl:items-end xl:justify-center xl:pb-[7px]"><button type="button" data-open-modal="customer-drawer" class="text-[11px] font-semibold text-brand-600">View Supplier Details</button></div>
-              <div><label class="text-[11px] font-semibold text-slate-600">GST Number</label><div class="mt-1 flex gap-2"><input class="voucher-input" value="07AAKCS4535K1Z1" /><button type="button" class="h-7 rounded border border-brand-500 px-3 text-[11px] font-semibold text-brand-600">Details</button></div></div>
-              <div><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Purchase Ledger</label><div class="relative mt-1"><input class="voucher-input" placeholder="Purchase Ledger" data-autocomplete-source="purchase-ledgers" /><div class="autocomplete-list"></div></div></div>
+              <div><label class="text-[11px] font-semibold text-slate-600">GST Number</label><div class="mt-1 flex gap-2"><input class="voucher-input" value="07AAKCS4535K1Z1" /><button type="button" data-open-modal="additional-details-modal" class="h-7 rounded border border-brand-500 px-3 text-[11px] font-semibold text-brand-600">Details</button></div></div>
+              <div data-item-only><label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Purchase Ledger</label><div class="relative mt-1"><input class="voucher-input" placeholder="Purchase Ledger" data-autocomplete-source="purchase-ledgers" /><div class="autocomplete-list"></div></div></div>
               <div><label class="text-[11px] font-semibold text-slate-600">Place of Supply</label><div class="stock-select-shell mt-1"><input class="voucher-input pr-8" value="Delhi" data-autocomplete-source="states" /><i data-lucide="chevron-down" class="stock-select-icon"></i><div class="autocomplete-list"></div></div></div>
             </div>
 
             <div class="px-3 py-2">
-              <p class="mb-2 border-t border-dashed border-slate-200 pt-2 text-[12px] font-semibold text-slate-700">Item Details</p>
-              <div class="overflow-visible rounded border border-slate-200">
-                <div class="grid grid-cols-[56px_2fr_0.9fr_0.9fr_0.9fr_64px] bg-slate-50 px-3 py-1.5 text-[11px] font-semibold text-slate-500"><span>Sr. No</span><span><span class="text-rose-500">*</span> Item Name</span><span><span class="text-rose-500">*</span> Qty</span><span><span class="text-rose-500">*</span> Rate</span><span>Amount</span><span class="flex items-center justify-center gap-1">Action <button type="button" data-open-modal="stock-create-modal" class="inline-flex items-center justify-center text-brand-500"><i data-lucide="plus-circle" class="h-3.5 w-3.5"></i></button></span></div>
-                <div class="grid grid-cols-[56px_2fr_0.9fr_0.9fr_0.9fr_64px] items-start border-t border-slate-200 px-3 py-1.5 text-[11px]">
-                  <div class="pt-1.5 text-center">1</div>
-                  <div class="pr-2"><div class="relative"><input class="voucher-input" id="item-name-input" placeholder="Item name" data-autocomplete-source="items" value="Bridal Kurta Set" /><div class="autocomplete-list"></div></div></div>
-                  <div class="pr-2"><input class="voucher-input calc-item" id="item-qty" type="number" min="0" step="1" placeholder="Qty" value="1" /></div>
-                  <div class="pr-2"><input class="voucher-input calc-item" id="item-rate" type="number" min="0" step="0.01" placeholder="Rate" value="42500" /></div>
-                  <div class="pr-2"><input class="voucher-input bg-slate-50" id="item-amount" placeholder="Amount" readonly /></div>
-                  <div class="pt-1.5 text-center"><button type="button" class="icon-button"><i data-lucide="trash-2" class="h-[14px] w-[14px]"></i></button></div>
+              <div data-item-only>
+                <p class="mb-2 border-t border-dashed border-slate-200 pt-2 text-[12px] font-semibold text-slate-700">Item Details</p>
+                <div class="overflow-visible rounded border border-slate-200">
+                  <div class="grid grid-cols-[56px_2fr_0.9fr_0.9fr_0.9fr_64px] bg-slate-50 px-3 py-1.5 text-[11px] font-semibold text-slate-500"><span>Sr. No</span><span><span class="text-rose-500">*</span> Item Name</span><span><span class="text-rose-500">*</span> Qty</span><span><span class="text-rose-500">*</span> Rate</span><span>Amount</span><span class="flex items-center justify-center gap-1">Action <button type="button" data-open-modal="stock-create-modal" class="inline-flex items-center justify-center text-brand-500"><i data-lucide="plus-circle" class="h-3.5 w-3.5"></i></button></span></div>
+                  <div class="grid grid-cols-[56px_2fr_0.9fr_0.9fr_0.9fr_64px] items-start border-t border-slate-200 px-3 py-1.5 text-[11px]">
+                    <div class="pt-1.5 text-center">1</div>
+                    <div class="pr-2"><div class="relative"><input class="voucher-input" id="item-name-input" placeholder="Item name" data-autocomplete-source="items" value="Bridal Kurta Set" /><div class="autocomplete-list"></div></div></div>
+                    <div class="pr-2"><input class="voucher-input calc-item" id="item-qty" type="number" min="0" step="1" placeholder="Qty" value="1" /></div>
+                    <div class="pr-2"><input class="voucher-input calc-item" id="item-rate" type="number" min="0" step="0.01" placeholder="Rate" value="42500" /></div>
+                    <div class="pr-2"><input class="voucher-input bg-slate-50" id="item-amount" placeholder="Amount" readonly /></div>
+                    <div class="pt-1.5 text-center"><button type="button" class="icon-button"><i data-lucide="trash-2" class="h-[14px] w-[14px]"></i></button></div>
+                  </div>
+                  <div class="border-t border-slate-200 px-3 py-1.5 text-right text-[11px] font-semibold">Total: <span class="text-slate-700" id="item-total">Rs 0.00</span></div>
                 </div>
-                <div class="border-t border-slate-200 px-3 py-1.5 text-right text-[11px] font-semibold">Total: <span class="text-slate-700" id="item-total">Rs 0.00</span></div>
               </div>
 
               <p class="mb-2 mt-3 border-t border-dashed border-slate-200 pt-2 text-[12px] font-semibold text-slate-700">Ledger Details</p>
@@ -126,18 +128,109 @@
       </aside>
     </div>
 
+    <div id="additional-details-modal" data-modal-shell class="modal-shell" aria-hidden="true">
+      <button type="button" data-modal-backdrop="additional-details-modal" class="modal-backdrop"></button>
+      <div class="modal-panel modal-panel--overflow-visible flex flex-col text-[11px] text-slate-700" style="width:min(860px, calc(100vw - 56px));">
+        <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4"><h2 class="text-[14px] font-semibold text-ink-900">Additional Details</h2><button type="button" data-close-modal="additional-details-modal" class="text-rose-500"><i data-lucide="x" class="h-4 w-4"></i></button></div>
+        <div class="details-modal-body flex-1 px-6 py-5" data-tab-root>
+          <div class="mb-5 border-b border-slate-200">
+            <div class="flex flex-wrap gap-6 text-[12px] font-semibold" role="tablist">
+              <button type="button" role="tab" aria-selected="true" data-tab-trigger="dispatch" class="border-b-2 border-brand-500 pb-2 text-brand-600">Dispatch Details</button>
+              <button type="button" role="tab" aria-selected="false" data-tab-trigger="order" class="border-b-2 border-transparent pb-2 text-slate-500">Order Details</button>
+              <button type="button" role="tab" aria-selected="false" data-tab-trigger="export" class="border-b-2 border-transparent pb-2 text-slate-500">Export Details</button>
+              <button type="button" role="tab" aria-selected="false" data-tab-trigger="party" class="border-b-2 border-transparent pb-2 text-slate-500">Party Details</button>
+            </div>
+          </div>
+
+          <div data-tab-panel="dispatch" role="tabpanel" class="grid gap-x-6 gap-y-4 md:grid-cols-2">
+            <div><label class="text-[11px] font-semibold text-slate-600">Delivery Note No(s)</label><input class="voucher-input mt-1" placeholder="Select Delivery Note No(s)" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Invoice date</label><div class="stock-select-shell stock-date-shell mt-1" data-date-picker><input class="voucher-input pr-8" placeholder="Select date" readonly data-date-display /><input class="native-date-input" type="date" data-date-native aria-label="Invoice date" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Dispatch Doc No.</label><input class="voucher-input mt-1" placeholder="Select Dispatch Doc No." /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Dispatched through</label><input class="voucher-input mt-1" placeholder="Select Dispatched through" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Destination</label><input class="voucher-input mt-1" placeholder="Select Destination" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Carrier Name/Agent</label><input class="voucher-input mt-1" placeholder="Select Carrier Name/Agent" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Bill of Lading/LR-RR No.</label><input class="voucher-input mt-1" placeholder="Select Bill of Lading/LR-RR No." /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Bill of Lading date</label><div class="stock-select-shell stock-date-shell mt-1" data-date-picker><input class="voucher-input pr-8" placeholder="Select date" readonly data-date-display /><input class="native-date-input" type="date" data-date-native aria-label="Bill of Lading date" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
+          </div>
+
+          <div data-tab-panel="order" role="tabpanel" class="hidden grid gap-x-6 gap-y-4 md:grid-cols-2">
+            <div><label class="text-[11px] font-semibold text-slate-600">Order No(s)</label><input class="voucher-input mt-1" placeholder="Select Order No(s)" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Order date</label><div class="stock-select-shell stock-date-shell mt-1" data-date-picker><input class="voucher-input pr-8" placeholder="Select date" readonly data-date-display /><input class="native-date-input" type="date" data-date-native aria-label="Order date" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Mode/Terms of Payment</label><input class="voucher-input mt-1" placeholder="Select Mode/Terms of Payment" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Other References</label><input class="voucher-input mt-1" placeholder="Select Other References" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Terms of Delivery</label><input class="voucher-input mt-1" placeholder="Select Terms of Delivery" /></div>
+          </div>
+
+          <div data-tab-panel="export" role="tabpanel" class="hidden grid gap-x-6 gap-y-4 md:grid-cols-2">
+            <div><label class="text-[11px] font-semibold text-slate-600">Place of Receipt by Shipper</label><input class="voucher-input mt-1" placeholder="Select Place of Receipt by Shipper" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Vessel/Flight/Motor-Vehicle No.</label><input class="voucher-input mt-1" placeholder="Select Vessel/Flight/Motor-Vehicle No." /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Shipping bill date</label><div class="stock-select-shell stock-date-shell mt-1" data-date-picker><input class="voucher-input pr-8" placeholder="Select date" readonly data-date-display /><input class="native-date-input" type="date" data-date-native aria-label="Shipping bill date" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Port of Loading</label><input class="voucher-input mt-1" placeholder="Select Port of Loading" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Port of Discharge</label><input class="voucher-input mt-1" placeholder="Select Port of Discharge" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Shipping Bill No.</label><input class="voucher-input mt-1" placeholder="Select Shipping Bill No." /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Tracking date</label><div class="stock-select-shell stock-date-shell mt-1" data-date-picker><input class="voucher-input pr-8" placeholder="Select date" readonly data-date-display /><input class="native-date-input" type="date" data-date-native aria-label="Tracking date" /><i data-lucide="calendar-days" class="stock-select-icon"></i></div></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Port Code</label><input class="voucher-input mt-1" placeholder="Select Port Code" /></div>
+          </div>
+
+          <div data-tab-panel="party" role="tabpanel" class="hidden grid gap-x-6 gap-y-4 md:grid-cols-2">
+            <div><label class="text-[11px] font-semibold text-slate-600">GSTIN/UIN</label><input class="voucher-input mt-1" placeholder="Select GSTIN/UIN" /></div>
+            <div><label class="text-[11px] font-semibold text-slate-600">Place of Supply</label><div class="stock-select-shell mt-1"><input class="voucher-input pr-8" placeholder="Select Place of Supply" data-autocomplete-source="states" /><i data-lucide="chevron-down" class="stock-select-icon"></i><div class="autocomplete-list"></div></div></div>
+          </div>
+        </div>
+        <div class="flex items-center justify-end gap-2 border-t border-slate-200 px-6 py-4"><button type="button" data-close-modal="additional-details-modal" class="rounded border border-brand-500 bg-white px-4 py-2 text-[12px] font-semibold text-brand-600">Cancel</button><button type="button" data-close-modal="additional-details-modal" class="rounded border border-brand-500 bg-brand-600 px-4 py-2 text-[12px] font-semibold text-white">OK</button></div>
+      </div>
+    </div>
+
     <div id="config-modal" data-modal-shell class="modal-shell" aria-hidden="true">
       <button type="button" data-modal-backdrop="config-modal" class="modal-backdrop"></button>
-      <div class="modal-panel flex flex-col text-[11px] text-slate-700">
-        <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3"><h2 class="text-[12px] font-semibold text-ink-900">Configuration</h2><button type="button" data-close-modal="config-modal" class="text-rose-500"><i data-lucide="x" class="h-4 w-4"></i></button></div>
-        <div class="space-y-2 px-4 py-4 text-[11px]">
-          <label class="config-row"><input class="config-check" type="checkbox" checked /> Voucher Date</label>
-          <label class="config-row"><input class="config-check" type="checkbox" checked /> Reference No</label>
-          <label class="config-row"><input class="config-check" type="checkbox" checked /> Place Of Supply</label>
-          <label class="config-row"><input class="config-check" type="checkbox" checked /> Item Narration</label>
-          <label class="config-row"><input class="config-check" type="checkbox" checked /> Narration</label>
+      <div class="modal-panel flex flex-col text-[11px] text-slate-700" style="width:min(820px, calc(100vw - 48px));">
+        <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4"><h2 class="text-[14px] font-semibold text-ink-900">Configuration</h2><button type="button" data-close-modal="config-modal" class="text-rose-500"><i data-lucide="x" class="h-4 w-4"></i></button></div>
+        <div class="px-6 py-5">
+          <div class="grid gap-8 md:grid-cols-2">
+            <div class="space-y-3">
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Voucher Date</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Reference Date</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Reference No</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Voucher No</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Voucher Type</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Party A/C Name</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Dispatch Details</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Order Details</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Export Details</label>
+            </div>
+            <div class="space-y-3">
+              <div>
+                <button type="button" data-collapsible-trigger data-collapsible-target="config-party-details-purchase" data-expanded="false" aria-expanded="false" class="flex w-full items-center gap-2 text-left">
+                  <input class="config-check" type="checkbox" onclick="event.stopPropagation();" />
+                  <span class="flex-1 text-[12px] text-slate-700">Party Details</span>
+                  <i data-lucide="chevron-down" data-collapsible-icon class="-rotate-90 text-slate-400 transition-transform"></i>
+                </button>
+                <div id="config-party-details-purchase" class="ml-6 mt-2 hidden space-y-2.5">
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Buyer (Bill to)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Mailing Name(Buyer)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Address(Buyer)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> State(Buyer)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Pincode(Buyer)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" checked /> GSTIN/UIN</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Consignee (Ship to)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Mailing Name(Consignee)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Consignee GSTIN/UIN</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Address(Consignee)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> State(Consignee)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" /> Pincode(Consignee)</label>
+                  <label class="config-row"><input class="config-check" type="checkbox" checked /> Place of Supply</label>
+                </div>
+              </div>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Cost Center/Classes</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Particulars</label>
+              <label class="config-row"><input class="config-check" type="checkbox" /> Description</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Amount</label>
+              <label class="config-row"><input class="config-check opacity-60" type="checkbox" checked disabled /> Total Amount</label>
+              <label class="config-row"><input class="config-check" type="checkbox" checked /> Narration</label>
+            </div>
+          </div>
         </div>
-        <div class="flex items-center justify-end gap-2 border-t border-slate-200 px-4 py-2"><button type="button" data-close-modal="config-modal" class="rounded border border-brand-500 bg-white px-3 py-1.5 text-[11px] font-semibold text-brand-600">Cancel</button><button type="button" data-close-modal="config-modal" class="rounded border border-brand-500 bg-brand-600 px-3 py-1.5 text-[11px] font-semibold text-white">Save</button></div>
+        <div class="flex items-center justify-end gap-2 border-t border-slate-200 px-6 py-4"><button type="button" data-close-modal="config-modal" class="rounded border border-brand-500 bg-white px-4 py-2 text-[12px] font-semibold text-brand-600">Cancel</button><button type="button" data-close-modal="config-modal" class="rounded border border-brand-500 bg-brand-600 px-4 py-2 text-[12px] font-semibold text-white">Save</button></div>
       </div>
     </div>
 
@@ -153,9 +246,134 @@
     <div id="ledger-create-modal" data-modal-shell class="stock-modal-shell" aria-hidden="true">
       <button type="button" data-modal-backdrop="ledger-create-modal" class="stock-modal-backdrop"></button>
       <div class="stock-modal-panel flex flex-col text-[11px] text-slate-700" style="width:min(1180px, calc(100vw - 120px));">
-        <div class="flex items-center justify-between border-b border-slate-200 px-4 py-3"><h2 class="text-[12px] font-semibold text-ink-900">Create Ledger</h2><button type="button" data-close-modal="ledger-create-modal" class="text-rose-500"><i data-lucide="x" class="h-4 w-4"></i></button></div>
-        <div class="grid gap-x-3 gap-y-3 px-4 py-4 xl:grid-cols-4"><div><label class="text-[11px] font-semibold text-slate-600">GSTIN/UIN</label><input class="voucher-input mt-1" value="07AAKCS4535K1Z1" /></div><div><label class="text-[11px] font-semibold text-slate-600">Name</label><input class="voucher-input mt-1" placeholder="Enter Name" /></div><div><label class="text-[11px] font-semibold text-slate-600">Ledger Type</label><div class="stock-select-shell mt-1"><input class="voucher-input pr-8" value="Sundry Creditors" data-autocomplete-source="ledger-types" /><i data-lucide="chevron-down" class="stock-select-icon"></i><div class="autocomplete-list"></div></div></div><div class="flex items-end justify-end"><button type="button" data-open-modal="view-ledger-modal" class="text-[11px] font-semibold text-brand-600">View Ledger</button></div></div>
-        <div class="flex items-center justify-end gap-2 border-t border-slate-200 px-4 py-3"><button type="button" data-close-modal="ledger-create-modal" class="rounded border border-brand-500 bg-white px-3 py-1.5 text-[11px] font-semibold text-brand-600">Cancel</button><button type="button" data-close-modal="ledger-create-modal" class="rounded border border-brand-500 bg-brand-600 px-3 py-1.5 text-[11px] font-semibold text-white">Add</button></div>
+        <div class="flex items-center justify-between border-b border-slate-200 px-6 py-4">
+          <h2 class="text-[14px] font-semibold text-ink-900">Add Ledger For <span id="ledger-modal-party-name">SVA COUTURE PRIVATE LIMITED</span> (100000)</h2>
+          <button type="button" data-close-modal="ledger-create-modal" class="text-rose-500"><i data-lucide="x" class="h-4 w-4"></i></button>
+        </div>
+        <div class="flex-1 overflow-auto px-6 py-5">
+          <div class="space-y-5">
+            <div class="flex flex-wrap items-end gap-4">
+              <div class="w-full max-w-[280px]">
+                <label class="text-[11px] font-semibold text-slate-600">GSTIN/UIN</label>
+                <input class="voucher-input mt-1 border-brand-200" placeholder="Enter GSTIN/UIN" value="07AAKCS4535K1Z1" />
+              </div>
+              <button type="button" class="rounded bg-brand-600 px-4 py-2 text-[12px] font-semibold text-white hover:bg-brand-700">Get Data</button>
+              <div class="ml-auto flex flex-wrap items-center gap-4 pt-1 text-[12px]">
+                <label class="flex items-center gap-1.5 text-slate-700">
+                  <input type="radio" name="ledger-name-type-purchase" checked class="h-3.5 w-3.5 accent-brand-600" />
+                  <span>Trade Name</span>
+                </label>
+                <label class="flex items-center gap-1.5 text-slate-700">
+                  <input type="radio" name="ledger-name-type-purchase" class="h-3.5 w-3.5 accent-brand-600" />
+                  <span>Business Name</span>
+                </label>
+                <button type="button" data-open-modal="view-ledger-modal" class="font-semibold text-brand-600">View Ledger</button>
+              </div>
+            </div>
+
+            <div class="grid gap-x-4 gap-y-4 xl:grid-cols-4">
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Name</label>
+                <input class="voucher-input mt-1" placeholder="Enter Name" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600"><span class="text-rose-500">*</span> Ledger Type</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" value="Sundry Creditors" data-autocomplete-source="ledger-types" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Bill by Bill</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" value="Yes" data-autocomplete-source="bill-by-bill" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Inventory values are affected</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8 bg-slate-50" value="No" data-autocomplete-source="inventory-affected" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Credit Period(Days)</label>
+                <input class="voucher-input mt-1" placeholder="Enter Credit Period" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Mailing Name</label>
+                <input class="voucher-input mt-1" placeholder="Enter Mailing Name" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Address 1</label>
+                <input class="voucher-input mt-1" placeholder="Enter address" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Address 2</label>
+                <input class="voucher-input mt-1" placeholder="Enter address" />
+              </div>
+
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Country</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" value="India" data-autocomplete-source="countries" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">State</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" placeholder="Please select state" data-autocomplete-source="states" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Pincode</label>
+                <input class="voucher-input mt-1" placeholder="Enter pincode" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">PAN/IT</label>
+                <input class="voucher-input mt-1" placeholder="Enter PAN/IT" />
+              </div>
+
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Registration Type</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" value="Regular" data-autocomplete-source="registration-types" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">GSTIN/UIN</label>
+                <input class="voucher-input mt-1" placeholder="Enter GSTIN/UIN" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Opening Balance</label>
+                <input class="voucher-input mt-1" placeholder="Enter Opening Balance" />
+              </div>
+              <div>
+                <label class="text-[11px] font-semibold text-slate-600">Dr./Cr.</label>
+                <div class="stock-select-shell mt-1">
+                  <input class="voucher-input pr-8" value="Cr." data-autocomplete-source="drcr" />
+                  <i data-lucide="chevron-down" class="stock-select-icon"></i>
+                  <div class="autocomplete-list"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-end gap-2 border-t border-slate-200 px-6 py-4">
+          <button type="button" data-close-modal="ledger-create-modal" class="rounded border border-brand-500 bg-white px-4 py-2 text-[12px] font-semibold text-brand-600">Cancel</button>
+          <button type="button" data-close-modal="ledger-create-modal" class="rounded border border-brand-500 bg-brand-600 px-4 py-2 text-[12px] font-semibold text-white">Add</button>
+        </div>
       </div>
     </div>
 

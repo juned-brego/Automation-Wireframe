@@ -1,0 +1,395 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - link "<" [ref=e6] [cursor=pointer]:
+          - /url: "#"
+        - generic [ref=e7]: Accounting Invoice
+      - generic [ref=e8]: "Company Name: SVA COUTURE PRIVATE..."
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - generic [ref=e11]: Accounting Invoice
+          - button "Toggle invoice mode" [active] [ref=e12] [cursor=pointer]
+          - generic [ref=e14]: Item Invoice
+        - button "Configuration" [ref=e15] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - button "≡" [ref=e20] [cursor=pointer]
+          - generic [ref=e22]: 1 / 1
+          - generic [ref=e23]:
+            - button "-" [ref=e24] [cursor=pointer]
+            - generic [ref=e25]: 35%
+            - button "+" [ref=e26] [cursor=pointer]
+          - button "⇩" [ref=e27] [cursor=pointer]
+        - paragraph [ref=e32]: "1"
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - generic [ref=e38]:
+            - generic [ref=e39]: "* Voucher Type"
+            - generic [ref=e40]:
+              - textbox [ref=e41]: Sales
+              - img
+          - generic [ref=e42]:
+            - generic [ref=e43]: "* Invoice No."
+            - textbox [ref=e44]: SI/2025-26/117
+          - generic [ref=e45]:
+            - generic [ref=e46]: "* Voucher Date"
+            - generic [ref=e47]:
+              - textbox [ref=e48]: 28/01/2026
+              - img
+          - generic [ref=e49]:
+            - generic [ref=e50]: "* Party Name"
+            - generic [ref=e51]:
+              - textbox [ref=e52]: SVA COUTURE PRIVATE LIMITED
+              - button "+" [ref=e53] [cursor=pointer]
+          - button "View Customer Details" [ref=e162] [cursor=pointer]
+          - generic [ref=e54]:
+            - text: GST Number
+            - generic [ref=e55]:
+              - textbox [ref=e56]: 07AAKCS4535K1Z1
+              - button "Details" [ref=e57] [cursor=pointer]
+          - generic [ref=e62]:
+            - text: Place of Supply
+            - generic [ref=e63]:
+              - textbox [ref=e64]: Delhi
+              - img
+        - generic [ref=e65]:
+          - paragraph [ref=e96]: Ledger Details
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - generic [ref=e99]: Sr. No
+              - generic [ref=e100]: Ledger Name
+              - generic [ref=e101]: Amount
+              - generic [ref=e102]:
+                - text: Action
+                - button [ref=e103] [cursor=pointer]:
+                  - img [ref=e104]
+            - generic [ref=e106]:
+              - generic [ref=e107]: "1"
+              - textbox "Ledger name" [ref=e109]: Freight & Packing
+              - spinbutton [ref=e111]: "42500.00"
+              - button [ref=e113] [cursor=pointer]:
+                - img [ref=e114]
+            - generic [ref=e117]: "Total: Rs 42,500.00"
+          - paragraph [ref=e118]: Tax Ledger Details
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - generic [ref=e121]: Sr. No
+              - generic [ref=e122]: "* Ledger Name"
+              - generic [ref=e123]: Description
+              - generic [ref=e124]: Amount
+            - generic [ref=e127]:
+              - generic [ref=e128]: "1"
+              - textbox "Ledger name" [ref=e130]: Output IGST 18%
+              - textbox "Description" [ref=e132]: GST Output Tax
+              - spinbutton [ref=e134]: "7650"
+              - button [ref=e135] [cursor=pointer]:
+                - img [ref=e136]
+            - button "+ Add Ledger" [ref=e140] [cursor=pointer]
+            - generic [ref=e141]: "Total: Rs 7,650.00"
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - paragraph [ref=e144]: Narration
+              - textbox "Add Your Narration" [ref=e145]: Sales invoice for bridal apparel dispatch. GST applied as per place of supply and customer GST details.
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: "Sub Total:"
+                - generic [ref=e149]: Rs 42,500.00
+              - generic [ref=e150]:
+                - generic [ref=e151]: "Tax Amount :"
+                - generic [ref=e152]: Rs 7,650.00
+              - generic [ref=e154]:
+                - generic [ref=e155]: "Total Amount:"
+                - generic [ref=e156]: Rs 50,150.00
+        - generic [ref=e157]:
+          - generic [ref=e158]: Invoice ready for review and sync.
+          - button "Save & Close" [ref=e159] [cursor=pointer]
+          - button "Save & Sync" [ref=e160] [cursor=pointer]
+  - generic:
+    - button
+    - complementary:
+      - generic:
+        - button:
+          - img
+        - heading [level=2]: Customer Details
+      - generic:
+        - generic:
+          - generic: "Customer Name: SVA COUTURE PRIVATE LIMITED"
+          - generic: Phone No. +91 98765 43210
+          - generic: "Email: accounts@svacouture.in"
+          - generic: "Address:"
+          - generic: 2/1, Arunodaya Society, Alkapuri, Vadodara, Gujarat, 390007
+  - generic:
+    - button
+    - generic:
+      - generic:
+        - heading [level=2]: Additional Details
+        - button:
+          - img
+      - generic:
+        - generic:
+          - tablist:
+            - tab [selected]: Dispatch Details
+            - tab: Order Details
+            - tab: Export Details
+            - tab: Party Details
+        - tabpanel:
+          - generic:
+            - text: Delivery Note No(s)
+            - textbox:
+              - /placeholder: Select Delivery Note No(s)
+          - generic:
+            - text: Invoice date
+            - generic:
+              - textbox:
+                - /placeholder: Select date
+              - textbox
+              - img
+          - generic:
+            - text: Dispatch Doc No.
+            - textbox:
+              - /placeholder: Select Dispatch Doc No.
+          - generic:
+            - text: Dispatched through
+            - textbox:
+              - /placeholder: Select Dispatched through
+          - generic:
+            - text: Destination
+            - textbox:
+              - /placeholder: Select Destination
+          - generic:
+            - text: Carrier Name/Agent
+            - textbox:
+              - /placeholder: Select Carrier Name/Agent
+          - generic:
+            - text: Bill of Lading/LR-RR No.
+            - textbox:
+              - /placeholder: Select Bill of Lading/LR-RR No.
+          - generic:
+            - text: Bill of Lading date
+            - generic:
+              - textbox:
+                - /placeholder: Select date
+              - textbox
+              - img
+      - generic:
+        - button: Cancel
+        - button: OK
+  - generic:
+    - button
+    - generic:
+      - generic:
+        - heading [level=2]: Configuration
+        - button:
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Voucher Date
+            - generic:
+              - checkbox
+              - text: Reference Date
+            - generic:
+              - checkbox
+              - text: Reference No
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Voucher No
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Voucher Type
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Party A/C Name
+            - generic:
+              - checkbox
+              - text: Dispatch Details
+            - generic:
+              - checkbox
+              - text: Order Details
+            - generic:
+              - checkbox
+              - text: Export Details
+          - generic:
+            - generic:
+              - button:
+                - checkbox
+                - generic: Party Details
+                - img
+            - generic:
+              - checkbox
+              - text: Cost Center/Classes
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Particulars
+            - generic:
+              - checkbox
+              - text: Description
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Amount
+            - generic:
+              - checkbox [checked] [disabled]
+              - text: Total Amount
+            - generic:
+              - checkbox [checked]
+              - text: Narration
+      - generic:
+        - button: Cancel
+        - button: Save
+  - generic:
+    - button
+    - generic:
+      - generic:
+        - heading [level=2]: Stock creation from sales screen
+        - button:
+          - img
+      - generic:
+        - generic:
+          - text: Name
+          - textbox:
+            - /placeholder: Enter item name
+            - text: Bridal Kurta Set
+        - generic:
+          - text: Description
+          - textbox:
+            - /placeholder: Enter description
+            - text: Finished garment item
+        - generic:
+          - text: Under
+          - generic:
+            - textbox: KURTA SET
+            - img
+        - generic:
+          - text: Category
+          - generic:
+            - textbox: Finished Goods
+            - img
+      - generic:
+        - button: Cancel
+        - button: Add
+  - generic:
+    - button
+    - generic:
+      - generic:
+        - heading [level=2]: Add Ledger For SVA COUTURE PRIVATE LIMITED (100000)
+        - button:
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - text: GSTIN/UIN
+              - textbox:
+                - /placeholder: Enter GSTIN/UIN
+                - text: 07AAKCS4535K1Z1
+            - button: Get Data
+            - generic:
+              - generic:
+                - radio [checked]
+                - generic: Trade Name
+              - generic:
+                - radio
+                - generic: Business Name
+              - button: View Ledger
+          - generic:
+            - generic:
+              - generic: "* Name"
+              - textbox:
+                - /placeholder: Enter Name
+            - generic:
+              - generic: "* Ledger Type"
+              - generic:
+                - textbox: Sundry Debtors
+                - img
+            - generic:
+              - text: Bill by Bill
+              - generic:
+                - textbox: "Yes"
+                - img
+            - generic:
+              - text: Inventory values are affected
+              - generic:
+                - textbox: "No"
+                - img
+            - generic:
+              - text: Credit Period(Days)
+              - textbox:
+                - /placeholder: Enter Credit Period
+            - generic:
+              - text: Mailing Name
+              - textbox:
+                - /placeholder: Enter Mailing Name
+            - generic:
+              - text: Address 1
+              - textbox:
+                - /placeholder: Enter address
+            - generic:
+              - text: Address 2
+              - textbox:
+                - /placeholder: Enter address
+            - generic:
+              - text: Country
+              - generic:
+                - textbox: India
+                - img
+            - generic:
+              - text: State
+              - generic:
+                - textbox:
+                  - /placeholder: Please select state
+                - img
+            - generic:
+              - text: Pincode
+              - textbox:
+                - /placeholder: Enter pincode
+            - generic:
+              - text: PAN/IT
+              - textbox:
+                - /placeholder: Enter PAN/IT
+            - generic:
+              - text: Registration Type
+              - generic:
+                - textbox: Regular
+                - img
+            - generic:
+              - text: GSTIN/UIN
+              - textbox:
+                - /placeholder: Enter GSTIN/UIN
+            - generic:
+              - text: Opening Balance
+              - textbox:
+                - /placeholder: Enter Opening Balance
+            - generic:
+              - text: Dr./Cr.
+              - generic:
+                - textbox: Cr.
+                - img
+      - generic:
+        - button: Cancel
+        - button: Add
+  - generic:
+    - button
+    - generic:
+      - generic:
+        - generic:
+          - img
+          - generic: View Ledger
+        - button:
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic: Name
+            - generic: Type
+            - generic: Action
+          - generic:
+            - generic:
+              - img
+            - paragraph: No data
+      - generic:
+        - button: Cancel
+        - button: Add Ledger

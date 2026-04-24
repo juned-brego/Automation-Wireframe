@@ -1,0 +1,3 @@
+[    6660ms] TypeError: Cannot read properties of null (reading 'addEventListener')
+    at HTMLDocument.<anonymous> (https://www.aiaccountant.com/:1063:42)
+[    7459ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://aplo-evnt.com/api/v1/intent_pixel/track_request?app_id=673da3cba4864e02cf6d164e:0

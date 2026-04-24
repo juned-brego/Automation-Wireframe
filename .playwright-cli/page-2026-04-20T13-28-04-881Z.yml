@@ -1,0 +1,101 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - list [ref=e7]:
+      - listitem [ref=e8]:
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e12]
+          - heading [level=2]
+      - listitem [ref=e33]:
+        - generic [ref=e34] [cursor=pointer]:
+          - img [ref=e35]
+          - text: 
+    - list [ref=e39]:
+      - listitem [ref=e40]:
+        - link "Dashboard" [ref=e41] [cursor=pointer]:
+          - /url: /dashboard
+          - img [ref=e42]
+          - generic [ref=e46]: Dashboard
+      - listitem [ref=e47]:
+        - link "My Clients" [ref=e48] [cursor=pointer]:
+          - /url: /my-companies
+          - img [ref=e49]
+          - generic [ref=e53]: My Clients
+      - listitem [ref=e54]:
+        - link "Client Settings" [ref=e55] [cursor=pointer]:
+          - /url: /company-settings
+          - img [ref=e56]
+          - generic [ref=e60]: Client Settings
+      - listitem [ref=e61]:
+        - link "Import History" [ref=e62] [cursor=pointer]:
+          - /url: /imported-file-log
+          - img [ref=e63]
+          - generic [ref=e68]: Import History
+      - listitem [ref=e69]:
+        - link "User Activity" [ref=e70] [cursor=pointer]:
+          - /url: /user-activity
+          - img [ref=e71]
+          - generic [ref=e77]: User Activity
+      - listitem [ref=e78]:
+        - link "Switch to A/c. & Billing" [ref=e79] [cursor=pointer]:
+          - /url: /
+          - img [ref=e80]
+          - generic [ref=e83]: Switch to A/c. & Billing
+      - listitem
+      - listitem [ref=e84]:
+        - link "Live Chat" [ref=e85] [cursor=pointer]:
+          - /url: /
+          - img [ref=e86]
+          - generic [ref=e89]: Live Chat
+      - listitem [ref=e90]:
+        - link "Settings" [ref=e91] [cursor=pointer]:
+          - /url: /setting
+          - img [ref=e92]
+          - generic [ref=e96]: Settings
+  - navigation [ref=e97]:
+    - list [ref=e102]:
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - button [ref=e106] [cursor=pointer]:
+            - img [ref=e109]
+          - generic [ref=e117]:
+            - combobox "Select Year" [ref=e118]: 2025-26
+            - button "Open" [ref=e120] [cursor=pointer]
+            - group
+          - generic [ref=e124]:
+            - combobox "Select Period" [ref=e125]: Mar 2026 (Monthly)
+            - button "Open" [ref=e127] [cursor=pointer]
+            - group
+        - heading "Bownbee Fashions Private Limited (29AAKCB0326P1ZB)" [level=5] [ref=e129]:
+          - paragraph [ref=e130]: Bownbee Fashions Private Limited (29AAKCB0326P1ZB)
+        - generic [ref=e131]:
+          - listitem [ref=e132]:
+            - link "Need help?" [ref=e133] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e134]:
+                - img [ref=e136]
+                - generic [ref=e138]: Need help?
+                - img [ref=e140]
+          - listitem [ref=e142]:
+            - link "Anil Chauhan Owner AC" [ref=e143] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: Anil Chauhan
+                - generic [ref=e146]: Owner
+              - generic [ref=e148]: AC
+  - generic [ref=e151]:
+    - generic [ref=e152]:
+      - heading "GSTR-3B - Nil Return Mar 2026 (Monthly)" [level=2] [ref=e336]:
+        - button [ref=e159] [cursor=pointer]:
+          - img [ref=e160]
+        - heading "GSTR-3B - Nil Return Mar 2026 (Monthly)" [level=2] [ref=e337]
+      - generic [ref=e167]:
+        - button [ref=e168] [cursor=pointer]
+        - generic [ref=e169] [cursor=pointer]: File Nil GSTR3B
+    - generic [ref=e340]:
+      - generic [ref=e341]:
+        - heading "Submit and File GSTR-3B Nil Return for Mar 2026 (Monthly)" [level=2] [ref=e342]
+        - paragraph [ref=e343]: You will need a One Time Password (OTP) for this
+      - generic [ref=e345]:
+        - button "File with EVC" [active] [ref=e386] [cursor=pointer]
+        - button "File with DSC" [disabled]

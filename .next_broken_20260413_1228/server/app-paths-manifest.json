@@ -1,0 +1,8 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/app/da/transactions/page": "app/app/da/transactions/page.js",
+  "/app/da/bulk-upload/banking/[fileId]/page": "app/app/da/bulk-upload/banking/[fileId]/page.js",
+  "/app/da/sales/manual-entry/page": "app/app/da/sales/manual-entry/page.js",
+  "/app/da/sales/[fileId]/field-mapping/page": "app/app/da/sales/[fileId]/field-mapping/page.js",
+  "/app/da/master/page": "app/app/da/master/page.js"
+}

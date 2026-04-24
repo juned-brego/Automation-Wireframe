@@ -1,0 +1,82 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e502]
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading "Rule List" [level=1] [ref=e506]
+              - generic [ref=e39]: "1"
+            - paragraph [ref=e40]: Track company banking rules and audit how many automated rules are active.
+          - generic [ref=e41]:
+            - img
+            - textbox "Search by Company Name" [ref=e507]
+        - generic [ref=e43]:
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+          - button [ref=e50] [cursor=pointer]:
+            - img [ref=e51]
+          - button "Rule guide" [ref=e508] [cursor=pointer]:
+            - img [ref=e55]
+            - text: Rule guide
+          - button "PAARIJAAT PERSONAL CARE PRIVATE LIMITED" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e60]
+      - generic [ref=e63]:
+        - button "Ledger" [ref=e64] [cursor=pointer]
+        - button "Item" [ref=e65] [cursor=pointer]
+        - button "Rule List" [active] [ref=e66] [cursor=pointer]
+      - generic [ref=e68]:
+        - table [ref=e510]:
+          - rowgroup [ref=e511]:
+            - row "Sr. No. Company Name Bank Name Total Rules Action" [ref=e512]:
+              - columnheader "Sr. No." [ref=e513]
+              - columnheader "Company Name" [ref=e514]
+              - columnheader "Bank Name" [ref=e515]
+              - columnheader "Total Rules" [ref=e516]
+              - columnheader "Action" [ref=e517]
+          - rowgroup [ref=e518]:
+            - row "1 PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000) HDFC 11" [ref=e519]:
+              - cell "1" [ref=e520]
+              - cell "PAARIJAAT PERSONAL CARE PRIVATE LIMITED (100000)" [ref=e521]
+              - cell "HDFC" [ref=e522]
+              - cell "11" [ref=e523]
+              - cell [ref=e524]:
+                - button [ref=e525] [cursor=pointer]:
+                  - img [ref=e526]
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: Page Size
+            - generic [ref=e291]:
+              - combobox [ref=e292]:
+                - option "10 / page"
+                - option "20 / page" [selected]
+                - option "50 / page"
+              - img
+          - generic [ref=e293]:
+            - button "Previous" [disabled] [ref=e294]:
+              - img [ref=e295]
+              - text: Previous
+            - button "1" [ref=e297] [cursor=pointer]
+            - button "Next" [disabled] [ref=e303]:
+              - text: Next
+              - img [ref=e304]
+  - alert [ref=e306]

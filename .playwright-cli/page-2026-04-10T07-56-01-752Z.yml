@@ -1,0 +1,305 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - img [ref=e34]
+          - generic [ref=e36]:
+            - generic [ref=e37]:
+              - heading "Ledger" [level=1] [ref=e38]
+              - generic [ref=e39]: "27"
+            - paragraph [ref=e40]: Manage ledgers mapped for sync and review master records before sending to Tally.
+          - generic [ref=e41]:
+            - img
+            - textbox "Search by Name" [ref=e42]
+        - generic [ref=e43]:
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+          - button [ref=e50] [cursor=pointer]:
+            - img [ref=e51]
+          - button "Ledger guide" [ref=e54] [cursor=pointer]:
+            - img [ref=e55]
+            - text: Ledger guide
+          - button "PAARIJAAT PERSONAL CARE PRIVATE LIMITED" [ref=e58] [cursor=pointer]:
+            - generic [ref=e59]: PAARIJAAT PERSONAL CARE PRIVATE LIMITED
+            - img [ref=e60]
+      - generic [ref=e63]:
+        - button "Ledger" [ref=e64] [cursor=pointer]
+        - button "Item" [ref=e65] [cursor=pointer]
+        - button "Rule List" [ref=e66] [cursor=pointer]
+      - generic [ref=e68]:
+        - table [ref=e71]:
+          - rowgroup [ref=e72]:
+            - row "Sr.No. Name Under All 181 Capital Account Events & Marketing Expense Fixed Assets Indirect Expenses Sundry Creditors Unsecured Loans GST No Integrated Tax Status" [ref=e307]:
+              - columnheader [ref=e74]:
+                - checkbox [ref=e75] [cursor=pointer]
+              - columnheader "Sr.No." [ref=e76]
+              - columnheader "Name" [ref=e77]
+              - columnheader "Under All 181 Capital Account Events & Marketing Expense Fixed Assets Indirect Expenses Sundry Creditors Unsecured Loans" [ref=e308]:
+                - generic [ref=e79]:
+                  - generic [ref=e80]: Under
+                  - button [ref=e81] [cursor=pointer]:
+                    - img [ref=e82]
+                  - generic [ref=e309]:
+                    - button "All 181" [ref=e310] [cursor=pointer]:
+                      - generic [ref=e311]: All
+                      - generic [ref=e312]: "181"
+                    - generic [ref=e313]:
+                      - generic [ref=e314] [cursor=pointer]:
+                        - checkbox "Capital Account" [checked] [active] [ref=e315]
+                        - generic [ref=e316]: Capital Account
+                      - generic [ref=e317] [cursor=pointer]:
+                        - checkbox "Events & Marketing Expense" [ref=e318]
+                        - generic [ref=e319]: Events & Marketing Expense
+                      - generic [ref=e320] [cursor=pointer]:
+                        - checkbox "Fixed Assets" [ref=e321]
+                        - generic [ref=e322]: Fixed Assets
+                      - generic [ref=e323] [cursor=pointer]:
+                        - checkbox "Indirect Expenses" [ref=e324]
+                        - generic [ref=e325]: Indirect Expenses
+                      - generic [ref=e326] [cursor=pointer]:
+                        - checkbox "Sundry Creditors" [ref=e327]
+                        - generic [ref=e328]: Sundry Creditors
+                      - generic [ref=e329] [cursor=pointer]:
+                        - checkbox "Unsecured Loans" [ref=e330]
+                        - generic [ref=e331]: Unsecured Loans
+              - columnheader "GST No" [ref=e84]
+              - columnheader "Integrated Tax" [ref=e85]
+              - columnheader "Status" [ref=e86]
+          - rowgroup [ref=e87]:
+            - row "2 AISHWARYA AALESH AVLANI Capital Account - - Saved" [ref=e98]:
+              - cell [ref=e99]:
+                - checkbox [ref=e100] [cursor=pointer]
+              - cell "2" [ref=e101]
+              - cell "AISHWARYA AALESH AVLANI" [ref=e102]
+              - cell "Capital Account" [ref=e103]
+              - cell "-" [ref=e104]
+              - cell "-" [ref=e105]
+              - cell "Saved" [ref=e106]:
+                - generic [ref=e107]: Saved
+            - row "5 ANEESH ASHIT SHETH Capital Account - - Saved" [ref=e128]:
+              - cell [ref=e129]:
+                - checkbox [ref=e130] [cursor=pointer]
+              - cell "5" [ref=e131]
+              - cell "ANEESH ASHIT SHETH" [ref=e132]
+              - cell "Capital Account" [ref=e133]
+              - cell "-" [ref=e134]
+              - cell "-" [ref=e135]
+              - cell "Saved" [ref=e136]:
+                - generic [ref=e137]: Saved
+            - row "10 Adhiraj Patel Share Capital Capital Account - - Saved" [ref=e178]:
+              - cell [ref=e179]:
+                - checkbox [ref=e180] [cursor=pointer]
+              - cell "10" [ref=e181]
+              - cell "Adhiraj Patel Share Capital" [ref=e182]
+              - cell "Capital Account" [ref=e183]
+              - cell "-" [ref=e184]
+              - cell "-" [ref=e185]
+              - cell "Saved" [ref=e186]:
+                - generic [ref=e187]: Saved
+            - row "22 AISHWARYA AALESH AVLANI 2 Capital Account - - Saved" [ref=e332]:
+              - cell [ref=e333]:
+                - checkbox [ref=e334] [cursor=pointer]
+              - cell "22" [ref=e335]
+              - cell "AISHWARYA AALESH AVLANI 2" [ref=e336]
+              - cell "Capital Account" [ref=e337]
+              - cell "-" [ref=e338]
+              - cell "-" [ref=e339]
+              - cell "Saved" [ref=e340]:
+                - generic [ref=e341]: Saved
+            - row "25 ANEESH ASHIT SHETH 2 Capital Account - - Saved" [ref=e342]:
+              - cell [ref=e343]:
+                - checkbox [ref=e344] [cursor=pointer]
+              - cell "25" [ref=e345]
+              - cell "ANEESH ASHIT SHETH 2" [ref=e346]
+              - cell "Capital Account" [ref=e347]
+              - cell "-" [ref=e348]
+              - cell "-" [ref=e349]
+              - cell "Saved" [ref=e350]:
+                - generic [ref=e351]: Saved
+            - row "30 Adhiraj Patel Share Capital 2 Capital Account - - Saved" [ref=e352]:
+              - cell [ref=e353]:
+                - checkbox [ref=e354] [cursor=pointer]
+              - cell "30" [ref=e355]
+              - cell "Adhiraj Patel Share Capital 2" [ref=e356]
+              - cell "Capital Account" [ref=e357]
+              - cell "-" [ref=e358]
+              - cell "-" [ref=e359]
+              - cell "Saved" [ref=e360]:
+                - generic [ref=e361]: Saved
+            - row "42 AISHWARYA AALESH AVLANI 3 Capital Account - - Saved" [ref=e362]:
+              - cell [ref=e363]:
+                - checkbox [ref=e364] [cursor=pointer]
+              - cell "42" [ref=e365]
+              - cell "AISHWARYA AALESH AVLANI 3" [ref=e366]
+              - cell "Capital Account" [ref=e367]
+              - cell "-" [ref=e368]
+              - cell "-" [ref=e369]
+              - cell "Saved" [ref=e370]:
+                - generic [ref=e371]: Saved
+            - row "45 ANEESH ASHIT SHETH 3 Capital Account - - Saved" [ref=e372]:
+              - cell [ref=e373]:
+                - checkbox [ref=e374] [cursor=pointer]
+              - cell "45" [ref=e375]
+              - cell "ANEESH ASHIT SHETH 3" [ref=e376]
+              - cell "Capital Account" [ref=e377]
+              - cell "-" [ref=e378]
+              - cell "-" [ref=e379]
+              - cell "Saved" [ref=e380]:
+                - generic [ref=e381]: Saved
+            - row "50 Adhiraj Patel Share Capital 3 Capital Account - - Saved" [ref=e382]:
+              - cell [ref=e383]:
+                - checkbox [ref=e384] [cursor=pointer]
+              - cell "50" [ref=e385]
+              - cell "Adhiraj Patel Share Capital 3" [ref=e386]
+              - cell "Capital Account" [ref=e387]
+              - cell "-" [ref=e388]
+              - cell "-" [ref=e389]
+              - cell "Saved" [ref=e390]:
+                - generic [ref=e391]: Saved
+            - row "62 AISHWARYA AALESH AVLANI 4 Capital Account - - Saved" [ref=e392]:
+              - cell [ref=e393]:
+                - checkbox [ref=e394] [cursor=pointer]
+              - cell "62" [ref=e395]
+              - cell "AISHWARYA AALESH AVLANI 4" [ref=e396]
+              - cell "Capital Account" [ref=e397]
+              - cell "-" [ref=e398]
+              - cell "-" [ref=e399]
+              - cell "Saved" [ref=e400]:
+                - generic [ref=e401]: Saved
+            - row "65 ANEESH ASHIT SHETH 4 Capital Account - - Saved" [ref=e402]:
+              - cell [ref=e403]:
+                - checkbox [ref=e404] [cursor=pointer]
+              - cell "65" [ref=e405]
+              - cell "ANEESH ASHIT SHETH 4" [ref=e406]
+              - cell "Capital Account" [ref=e407]
+              - cell "-" [ref=e408]
+              - cell "-" [ref=e409]
+              - cell "Saved" [ref=e410]:
+                - generic [ref=e411]: Saved
+            - row "70 Adhiraj Patel Share Capital 4 Capital Account - - Saved" [ref=e412]:
+              - cell [ref=e413]:
+                - checkbox [ref=e414] [cursor=pointer]
+              - cell "70" [ref=e415]
+              - cell "Adhiraj Patel Share Capital 4" [ref=e416]
+              - cell "Capital Account" [ref=e417]
+              - cell "-" [ref=e418]
+              - cell "-" [ref=e419]
+              - cell "Saved" [ref=e420]:
+                - generic [ref=e421]: Saved
+            - row "82 AISHWARYA AALESH AVLANI 5 Capital Account - - Saved" [ref=e422]:
+              - cell [ref=e423]:
+                - checkbox [ref=e424] [cursor=pointer]
+              - cell "82" [ref=e425]
+              - cell "AISHWARYA AALESH AVLANI 5" [ref=e426]
+              - cell "Capital Account" [ref=e427]
+              - cell "-" [ref=e428]
+              - cell "-" [ref=e429]
+              - cell "Saved" [ref=e430]:
+                - generic [ref=e431]: Saved
+            - row "85 ANEESH ASHIT SHETH 5 Capital Account - - Saved" [ref=e432]:
+              - cell [ref=e433]:
+                - checkbox [ref=e434] [cursor=pointer]
+              - cell "85" [ref=e435]
+              - cell "ANEESH ASHIT SHETH 5" [ref=e436]
+              - cell "Capital Account" [ref=e437]
+              - cell "-" [ref=e438]
+              - cell "-" [ref=e439]
+              - cell "Saved" [ref=e440]:
+                - generic [ref=e441]: Saved
+            - row "90 Adhiraj Patel Share Capital 5 Capital Account - - Saved" [ref=e442]:
+              - cell [ref=e443]:
+                - checkbox [ref=e444] [cursor=pointer]
+              - cell "90" [ref=e445]
+              - cell "Adhiraj Patel Share Capital 5" [ref=e446]
+              - cell "Capital Account" [ref=e447]
+              - cell "-" [ref=e448]
+              - cell "-" [ref=e449]
+              - cell "Saved" [ref=e450]:
+                - generic [ref=e451]: Saved
+            - row "102 AISHWARYA AALESH AVLANI 6 Capital Account - - Saved" [ref=e452]:
+              - cell [ref=e453]:
+                - checkbox [ref=e454] [cursor=pointer]
+              - cell "102" [ref=e455]
+              - cell "AISHWARYA AALESH AVLANI 6" [ref=e456]
+              - cell "Capital Account" [ref=e457]
+              - cell "-" [ref=e458]
+              - cell "-" [ref=e459]
+              - cell "Saved" [ref=e460]:
+                - generic [ref=e461]: Saved
+            - row "105 ANEESH ASHIT SHETH 6 Capital Account - - Saved" [ref=e462]:
+              - cell [ref=e463]:
+                - checkbox [ref=e464] [cursor=pointer]
+              - cell "105" [ref=e465]
+              - cell "ANEESH ASHIT SHETH 6" [ref=e466]
+              - cell "Capital Account" [ref=e467]
+              - cell "-" [ref=e468]
+              - cell "-" [ref=e469]
+              - cell "Saved" [ref=e470]:
+                - generic [ref=e471]: Saved
+            - row "110 Adhiraj Patel Share Capital 6 Capital Account - - Saved" [ref=e472]:
+              - cell [ref=e473]:
+                - checkbox [ref=e474] [cursor=pointer]
+              - cell "110" [ref=e475]
+              - cell "Adhiraj Patel Share Capital 6" [ref=e476]
+              - cell "Capital Account" [ref=e477]
+              - cell "-" [ref=e478]
+              - cell "-" [ref=e479]
+              - cell "Saved" [ref=e480]:
+                - generic [ref=e481]: Saved
+            - row "122 AISHWARYA AALESH AVLANI 7 Capital Account - - Saved" [ref=e482]:
+              - cell [ref=e483]:
+                - checkbox [ref=e484] [cursor=pointer]
+              - cell "122" [ref=e485]
+              - cell "AISHWARYA AALESH AVLANI 7" [ref=e486]
+              - cell "Capital Account" [ref=e487]
+              - cell "-" [ref=e488]
+              - cell "-" [ref=e489]
+              - cell "Saved" [ref=e490]:
+                - generic [ref=e491]: Saved
+            - row "125 ANEESH ASHIT SHETH 7 Capital Account - - Saved" [ref=e492]:
+              - cell [ref=e493]:
+                - checkbox [ref=e494] [cursor=pointer]
+              - cell "125" [ref=e495]
+              - cell "ANEESH ASHIT SHETH 7" [ref=e496]
+              - cell "Capital Account" [ref=e497]
+              - cell "-" [ref=e498]
+              - cell "-" [ref=e499]
+              - cell "Saved" [ref=e500]:
+                - generic [ref=e501]: Saved
+        - generic [ref=e288]:
+          - generic [ref=e289]:
+            - generic [ref=e290]: Page Size
+            - generic [ref=e291]:
+              - combobox [ref=e292]:
+                - option "10 / page"
+                - option "20 / page" [selected]
+                - option "50 / page"
+              - img
+          - generic [ref=e293]:
+            - button "Previous" [disabled] [ref=e294]:
+              - img [ref=e295]
+              - text: Previous
+            - button "1" [ref=e297] [cursor=pointer]
+            - button "2" [ref=e298] [cursor=pointer]
+            - button "Next" [ref=e303] [cursor=pointer]:
+              - text: Next
+              - img [ref=e304]
+  - alert [ref=e306]

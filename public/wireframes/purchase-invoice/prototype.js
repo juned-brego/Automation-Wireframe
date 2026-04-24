@@ -103,15 +103,32 @@ const autocompleteSources = {
     "Goa",
     "Gujarat",
     "Haryana",
+    "Himachal Pradesh",
+    "Jammu & Kashmir",
+    "Jharkhand",
     "Karnataka",
+    "Kerala",
+    "Ladakh",
+    "Lakshadweep",
     "Madhya Pradesh",
     "Maharashtra",
+    "Manipur",
+    "Meghalaya",
+    "Mizoram",
+    "Nagaland",
+    "Odisha",
+    "Other Territory",
+    "Puducherry",
     "Punjab",
     "Rajasthan",
+    "Sikkim",
     "Tamil Nadu",
     "Telangana",
+    "Tripura",
     "Uttar Pradesh",
+    "Uttarakhand",
     "West Bengal",
+    "Foreign Country",
   ],
   "registration-types": ["Regular", "Composition", "Consumer", "Unregistered"],
   drcr: ["Cr.", "Dr."],
@@ -120,6 +137,8 @@ const autocompleteSources = {
   "bank-ledgers": ["Cash", "HDFC Bank Ltd", "Axis Bank Ltd", "ICICI Bank Ltd"],
   "journal-types": ["Expense Booking", "Stock Adjustment", "Provision Entry", "Reclass Entry"],
 };
+
+let invoiceMode = "item";
 
 function renderIcons() {
   if (window.lucide) {
@@ -226,12 +245,87 @@ function openAutocompleteForElement(element) {
   renderAutocomplete(wrapper, input.value);
 }
 
+function formatDateDisplay(value) {
+  if (!value) {
+    return "";
+  }
+
+  const [year, month, day] = value.split("-");
+  if (!year || !month || !day) {
+    return value;
+  }
+
+  return `${day}/${month}/${year}`;
+}
+
+function syncDatePickerDisplay(nativeInput) {
+  const wrapper = nativeInput.closest("[data-date-picker]");
+  const displayInput = wrapper?.querySelector("[data-date-display]");
+
+  if (!displayInput) {
+    return;
+  }
+
+  displayInput.value = formatDateDisplay(nativeInput.value);
+}
+
+function openDatePickerForElement(element) {
+  const nativeInput = element?.closest("[data-date-picker]")?.querySelector("[data-date-native]");
+
+  if (!nativeInput) {
+    return;
+  }
+
+  try {
+    if (typeof nativeInput.showPicker === "function") {
+      nativeInput.showPicker();
+      return;
+    }
+  } catch (error) {
+    // Fallback to focus when native showPicker is unavailable.
+  }
+
+  nativeInput.focus();
+}
+
 function formatCurrency(value) {
   const number = Number(value) || 0;
   return `Rs ${number.toLocaleString("en-IN", {
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   })}`;
+}
+
+function syncLedgerModalPartyName() {
+  const partyInput = document.getElementById("party-name-input");
+  const titleNode = document.getElementById("ledger-modal-party-name");
+
+  if (!titleNode) {
+    return;
+  }
+
+  titleNode.textContent = partyInput?.value?.trim() || "PAARIJAAT PERSONAL CARE PRIVATE LIMITED";
+}
+
+function activateTabSet(root, tabId) {
+  if (!root) {
+    return;
+  }
+
+  root.querySelectorAll("[data-tab-trigger]").forEach((button) => {
+    const isActive = button.dataset.tabTrigger === tabId;
+    button.setAttribute("aria-selected", String(isActive));
+    button.classList.toggle("border-brand-500", isActive);
+    button.classList.toggle("text-brand-600", isActive);
+    button.classList.toggle("border-transparent", !isActive);
+    button.classList.toggle("text-slate-500", !isActive);
+  });
+
+  root.querySelectorAll("[data-tab-panel]").forEach((panel) => {
+    const isActive = panel.dataset.tabPanel === tabId;
+    panel.classList.toggle("hidden", !isActive);
+    panel.setAttribute("aria-hidden", String(!isActive));
+  });
 }
 
 function updateEntryTotals() {
@@ -268,14 +362,16 @@ function updateEntryTotals() {
   const taxTotalNode = document.getElementById("tax-total");
   const grandTotalNode = document.getElementById("grand-total");
   const errorNode = document.getElementById("total-error");
+  const ledgerTotal = Number(ledgerAmountInput?.value) || 0;
+  const subTotal = invoiceMode === "item" ? itemAmount : ledgerTotal;
 
   if (itemTotalNode) itemTotalNode.textContent = formatCurrency(itemAmount);
-  if (ledgerTotalNode && ledgerAmountInput) ledgerTotalNode.textContent = formatCurrency(ledgerAmountInput.value);
+  if (ledgerTotalNode) ledgerTotalNode.textContent = formatCurrency(ledgerTotal);
   if (taxLedgerTotalNode) taxLedgerTotalNode.textContent = formatCurrency(taxTotal);
-  if (subTotalNode) subTotalNode.textContent = formatCurrency(itemAmount);
+  if (subTotalNode) subTotalNode.textContent = formatCurrency(subTotal);
   if (taxTotalNode) taxTotalNode.textContent = formatCurrency(taxTotal);
 
-  const grandTotal = itemAmount + taxTotal;
+  const grandTotal = subTotal + taxTotal;
   if (grandTotalNode) grandTotalNode.textContent = formatCurrency(grandTotal);
 
   if (errorNode) {
@@ -286,6 +382,47 @@ function updateEntryTotals() {
     errorNode.classList.toggle("text-rose-500", grandTotal <= 0);
     errorNode.classList.toggle("text-emerald-600", grandTotal > 0);
   }
+}
+
+function setInvoiceMode(nextMode) {
+  invoiceMode = nextMode === "accounting" ? "accounting" : "item";
+
+  const titleNode = document.getElementById("invoice-mode-title");
+  const toggle = document.getElementById("invoice-mode-toggle");
+  const knob = document.getElementById("invoice-mode-knob");
+  const accountingLabel = document.getElementById("invoice-mode-accounting-label");
+  const itemLabel = document.getElementById("invoice-mode-item-label");
+
+  if (titleNode) {
+    titleNode.textContent = invoiceMode === "item" ? "Item Invoice" : "Accounting Invoice";
+  }
+
+  if (toggle) {
+    toggle.dataset.invoiceMode = invoiceMode;
+    toggle.setAttribute("aria-pressed", String(invoiceMode === "item"));
+    toggle.classList.toggle("bg-brand-500", invoiceMode === "item");
+    toggle.classList.toggle("bg-slate-300", invoiceMode !== "item");
+  }
+
+  if (knob) {
+    knob.classList.toggle("ml-auto", invoiceMode === "item");
+  }
+
+  if (accountingLabel) {
+    accountingLabel.classList.toggle("text-ink-900", invoiceMode === "accounting");
+    accountingLabel.classList.toggle("text-slate-700", invoiceMode !== "accounting");
+  }
+
+  if (itemLabel) {
+    itemLabel.classList.toggle("text-ink-900", invoiceMode === "item");
+    itemLabel.classList.toggle("text-slate-700", invoiceMode !== "item");
+  }
+
+  document.querySelectorAll("[data-item-only]").forEach((element) => {
+    element.classList.toggle("hidden", invoiceMode === "accounting");
+  });
+
+  updateEntryTotals();
 }
 
 function updateTaxRowNumbers() {
@@ -418,6 +555,11 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  if (event.target.closest("#invoice-mode-toggle")) {
+    setInvoiceMode(invoiceMode === "item" ? "accounting" : "item");
+    return;
+  }
+
   if (!event.target.closest("[data-popover-menu]")) {
     closeAllMenus();
   }
@@ -425,7 +567,26 @@ document.addEventListener("click", (event) => {
   const openTrigger = event.target.closest("[data-open-modal]");
   if (openTrigger) {
     closeAllMenus();
-    setShellOpen(document.getElementById(openTrigger.dataset.openModal), true);
+    if (openTrigger.dataset.openModal === "ledger-create-modal") {
+      syncLedgerModalPartyName();
+    }
+    const shell = document.getElementById(openTrigger.dataset.openModal);
+    if (openTrigger.dataset.openModal === "additional-details-modal") {
+      activateTabSet(shell?.querySelector("[data-tab-root]"), "dispatch");
+    }
+    setShellOpen(shell, true);
+    return;
+  }
+
+  const tabTrigger = event.target.closest("[data-tab-trigger]");
+  if (tabTrigger) {
+    activateTabSet(tabTrigger.closest("[data-tab-root]"), tabTrigger.dataset.tabTrigger);
+    return;
+  }
+
+  const datePickerTrigger = event.target.closest("[data-date-picker]");
+  if (datePickerTrigger) {
+    openDatePickerForElement(datePickerTrigger);
     return;
   }
 
@@ -462,6 +623,8 @@ document.addEventListener("click", (event) => {
     collapsible.dataset.expanded = String(!expanded);
     collapsible.setAttribute("aria-expanded", String(!expanded));
     target?.classList.toggle("hidden", expanded);
+    const icon = collapsible.querySelector("[data-collapsible-icon]");
+    icon?.classList.toggle("-rotate-90", expanded);
     return;
   }
 
@@ -502,9 +665,17 @@ document.addEventListener("focusin", (event) => {
 });
 
 document.addEventListener("input", (event) => {
+  if (event.target.id === "party-name-input") {
+    syncLedgerModalPartyName();
+  }
+
   const autocompleteInput = event.target.closest("[data-autocomplete-source]");
   if (autocompleteInput) {
     renderAutocomplete(getAutocompleteWrapper(autocompleteInput) || autocompleteInput.parentElement, autocompleteInput.value);
+  }
+
+  if (event.target.matches("[data-date-native]")) {
+    syncDatePickerDisplay(event.target);
   }
 
   if (event.target.id === "ledger-amount") {
@@ -520,11 +691,26 @@ document.addEventListener("input", (event) => {
   }
 });
 
+document.addEventListener("change", (event) => {
+  if (event.target.matches("[data-date-native]")) {
+    syncDatePickerDisplay(event.target);
+  }
+});
+
 document.addEventListener("keydown", (event) => {
   const rowLink = event.target.closest("[data-row-link]");
   if (rowLink && (event.key === "Enter" || event.key === " ")) {
     event.preventDefault();
     window.location.href = rowLink.dataset.rowLink;
+    return;
+  }
+
+  if (
+    event.target.matches("[data-date-display]") &&
+    (event.key === "Enter" || event.key === " " || event.key === "ArrowDown")
+  ) {
+    event.preventDefault();
+    openDatePickerForElement(event.target);
     return;
   }
 
@@ -536,5 +722,6 @@ document.addEventListener("keydown", (event) => {
 });
 
 renderIcons();
+setInvoiceMode(invoiceMode);
 updateEntryTotals();
 renderPdfViewer();

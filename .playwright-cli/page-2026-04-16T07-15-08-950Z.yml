@@ -1,0 +1,207 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - complementary [ref=e3]:
+      - img "Brego" [ref=e6]
+      - navigation [ref=e7]:
+        - paragraph [ref=e8]: Workspace
+        - generic [ref=e9]:
+          - button "Dashboard" [ref=e10] [cursor=pointer]:
+            - img [ref=e12]
+            - generic: Dashboard
+          - button "Bulk Upload" [ref=e14] [cursor=pointer]:
+            - img [ref=e16]
+            - generic: Bulk Upload
+          - button "Transactions" [ref=e19] [cursor=pointer]:
+            - img [ref=e21]
+            - generic: Transactions
+          - button "Master" [ref=e24] [cursor=pointer]:
+            - img [ref=e26]
+            - generic: Master
+          - button "GST" [ref=e28] [cursor=pointer]:
+            - img [ref=e30]
+            - generic: GST
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]:
+          - img [ref=e37]
+          - generic [ref=e40]:
+            - heading "Audit" [level=1] [ref=e41]
+            - generic [ref=e42]: "2"
+            - img [ref=e43]
+        - button "PAARIJAAT PERSONAL CARE PRIVATE... 01/04/2026 - 31/03/2027" [ref=e45] [cursor=pointer]:
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: PAARIJAAT PERSONAL CARE PRIVATE...
+            - paragraph [ref=e48]: 01/04/2026 - 31/03/2027
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Overview" [ref=e53] [cursor=pointer]
+          - button "GSTR1" [ref=e54] [cursor=pointer]
+          - button "GSTR2B" [ref=e55] [cursor=pointer]
+          - button "GSTR3B" [ref=e56] [cursor=pointer]
+          - button "ITC" [ref=e57] [cursor=pointer]
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - generic [ref=e60]: "Financial Year:"
+            - generic [ref=e61]:
+              - combobox [ref=e62]:
+                - option "2017-18"
+                - option "2018-19"
+                - option "2019-20"
+                - option "2020-21"
+                - option "2021-22"
+                - option "2022-23"
+                - option "2023-24"
+                - option "2024-25"
+                - option "2025-26" [selected]
+              - img
+          - generic [ref=e63]:
+            - generic [ref=e64]: "Period:"
+            - generic [ref=e65]:
+              - combobox [ref=e66]:
+                - option "Mar 2026 (Monthly)" [selected]
+                - option "Feb 2026 (Monthly)"
+                - option "Jan 2026 (Monthly)"
+              - img
+      - generic [ref=e68]:
+        - generic [ref=e70]:
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: GSTR-1 Workflow
+            - heading "Add Amendment Invoice" [level=2] [ref=e73]
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - generic [ref=e76]: "Doc Type :"
+              - combobox [ref=e77]:
+                - option "B2B Amendment"
+                - option "B2C Large Amendment"
+                - option "Credit / Debit Note (Registered) Amendment"
+                - option "Credit / Debit Note (Unregistered) Amendment"
+                - option "Export Amendment"
+                - option "B2C Others Amendment"
+                - option "Advances Received Amendment" [selected]
+                - option "Adjustment of Advances Amendment"
+                - option "Supplies through E-Commerce Amendment"
+                - option "Supplies U/s 9(5) Amendment"
+            - button "Add Row" [ref=e78] [cursor=pointer]
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - paragraph [ref=e82]: Count of Documents
+              - paragraph [ref=e83]: "5"
+            - generic [ref=e84]:
+              - paragraph [ref=e85]: Taxable Amount
+              - paragraph [ref=e86]: ₹0.00
+            - generic [ref=e87]:
+              - paragraph [ref=e88]: Tax Amount
+              - paragraph [ref=e89]: ₹0.00
+            - generic [ref=e90]:
+              - paragraph [ref=e91]: Invoice Value
+              - paragraph [ref=e92]: ₹0.00
+          - table [ref=e94]:
+            - rowgroup [ref=e95]:
+              - row "Sr.No. Original Receipt Date Revised Receipt Date Place Of Supply Applicable % of Tax Rate Rate (%) Gross Advance Received Cess Amount" [ref=e340]:
+                - columnheader [ref=e97]
+                - columnheader "Sr.No." [ref=e98]
+                - columnheader "Original Receipt Date" [ref=e341]
+                - columnheader "Revised Receipt Date" [ref=e342]
+                - columnheader "Place Of Supply" [ref=e343]
+                - columnheader "Applicable % of Tax Rate" [ref=e344]
+                - columnheader "Rate (%)" [ref=e111]
+                - columnheader "Gross Advance Received" [ref=e345]
+                - columnheader "Cess Amount" [ref=e113]
+            - rowgroup [ref=e114]:
+              - row "1 No" [ref=e346]:
+                - cell [ref=e116]:
+                  - button [ref=e117] [cursor=pointer]
+                - cell "1" [ref=e118]
+                - cell [ref=e125]:
+                  - textbox [ref=e126]
+                - cell [ref=e129]:
+                  - textbox [ref=e130]
+                - cell [ref=e347]:
+                  - textbox [ref=e348]
+                - cell "No" [ref=e349]:
+                  - textbox [ref=e350]: "No"
+                - cell [ref=e143]:
+                  - textbox [ref=e144]
+                - cell [ref=e351]:
+                  - textbox [ref=e352]
+                - cell [ref=e147]:
+                  - textbox [ref=e148]
+              - row "2 No" [ref=e353]:
+                - cell [ref=e150]:
+                  - button [ref=e151] [cursor=pointer]
+                - cell "2" [ref=e152]
+                - cell [ref=e159]:
+                  - textbox [ref=e160]
+                - cell [ref=e163]:
+                  - textbox [ref=e164]
+                - cell [ref=e354]:
+                  - textbox [ref=e355]
+                - cell "No" [ref=e356]:
+                  - textbox [ref=e357]: "No"
+                - cell [ref=e177]:
+                  - textbox [ref=e178]
+                - cell [ref=e358]:
+                  - textbox [ref=e359]
+                - cell [ref=e181]:
+                  - textbox [ref=e182]
+              - row "3 No" [ref=e360]:
+                - cell [ref=e184]:
+                  - button [ref=e185] [cursor=pointer]
+                - cell "3" [ref=e186]
+                - cell [ref=e193]:
+                  - textbox [ref=e194]
+                - cell [ref=e197]:
+                  - textbox [ref=e198]
+                - cell [ref=e361]:
+                  - textbox [ref=e362]
+                - cell "No" [ref=e363]:
+                  - textbox [ref=e364]: "No"
+                - cell [ref=e211]:
+                  - textbox [ref=e212]
+                - cell [ref=e365]:
+                  - textbox [ref=e366]
+                - cell [ref=e215]:
+                  - textbox [ref=e216]
+              - row "4 No" [ref=e367]:
+                - cell [ref=e218]:
+                  - button [ref=e219] [cursor=pointer]
+                - cell "4" [ref=e220]
+                - cell [ref=e227]:
+                  - textbox [ref=e228]
+                - cell [ref=e231]:
+                  - textbox [ref=e232]
+                - cell [ref=e368]:
+                  - textbox [ref=e369]
+                - cell "No" [ref=e370]:
+                  - textbox [ref=e371]: "No"
+                - cell [ref=e245]:
+                  - textbox [ref=e246]
+                - cell [ref=e372]:
+                  - textbox [ref=e373]
+                - cell [ref=e249]:
+                  - textbox [ref=e250]
+              - row "5 No" [ref=e374]:
+                - cell [ref=e252]:
+                  - button [ref=e253] [cursor=pointer]
+                - cell "5" [ref=e254]
+                - cell [ref=e261]:
+                  - textbox [ref=e262]
+                - cell [ref=e265]:
+                  - textbox [ref=e266]
+                - cell [ref=e375]:
+                  - textbox [ref=e376]
+                - cell "No" [ref=e377]:
+                  - textbox [ref=e378]: "No"
+                - cell [ref=e279]:
+                  - textbox [ref=e280]
+                - cell [ref=e379]:
+                  - textbox [ref=e380]
+                - cell [ref=e283]:
+                  - textbox [ref=e284]
+          - generic [ref=e285]:
+            - button "Cancel" [ref=e286] [cursor=pointer]
+            - button "Delete Items" [disabled] [ref=e287]
+            - button "Save & Verify" [disabled] [ref=e288]
+  - alert [ref=e289]
